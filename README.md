@@ -45,7 +45,7 @@ A premium, interactive dashboard that computes and tracks relative strength metr
 
 To handle large watchlist databases (e.g. 5,000+ tickers) efficiently and avoid Yahoo Finance endpoint rate limits, the system operates with the following optimizations:
 
-- **Simplified Watchlist Format:** `data/universe.csv` is now a simple list of ticker symbols (one per line, no column headers, no name entries).
+- **Simplified Watchlist Format:** `data/universe.csv` is now a simple list of ticker symbols (one per line, no column headers, no name entries). The original dataset consists of US-listed stocks with a market capitalization greater than $1B.
 - **Slash Filter:** Tickers containing `/` (such as preferred shares `JPM/PD`) are automatically skipped from querying to ensure API compatibility.
 - **Three-Batch Round-Robin Partitioning:** Tickers are divided into 3 equal batches and processed sequentially.
 - **Throttling & Cool-Down Sleeps:**

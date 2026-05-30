@@ -46,4 +46,4 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/*.json data/*.csv docs/*.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update relative strength rankings (Batch: ${{ github.event.inputs.batch || 'all' }}) [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update relative strength rankings (Batch: ${{ github.event.inputs.batch || 'all' }}) [skip ci]" && git pull --rebase origin main && git push)
