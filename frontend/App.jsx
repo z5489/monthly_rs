@@ -61,7 +61,8 @@ export default function App() {
   const [selectedDate, setSelectedDate] = useState('');
   const [availableDates, setAvailableDates] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
-  const [activeFilter, setActiveFilter] = useState('all');
+  const [activeFilter, setActiveFilter] = useState('key');
+  const [keyTickers, setKeyTickers] = useState([]);
   const [sortConfig, setSortConfig] = useState({
     column: 'one_month_pct',
     direction: 'desc'
@@ -85,6 +86,29 @@ export default function App() {
       }
     };
     fetchDates();
+  }, []);
+
+  // Fetch key.csv on mount
+  useEffect(() => {
+    const fetchKeyTickers = async () => {
+      const paths = ['/data/key.csv', 'data/key.csv', '../data/key.csv', './data/key.csv'];
+      for (const p of paths) {
+        try {
+          const res = await fetch(p);
+          if (res.ok) {
+            const text = await res.text();
+            const tickersList = text.split('\n')
+              .map(line => line.trim().toUpperCase())
+              .filter(line => line && !line.startsWith('#'));
+            setKeyTickers(tickersList);
+            break;
+          }
+        } catch (e) {
+          // ignore
+        }
+      }
+    };
+    fetchKeyTickers();
   }, []);
 
   // Fetch relative strength analytics based on selectedDate
@@ -223,7 +247,9 @@ export default function App() {
     
     if (!matchesSearch) return false;
 
-    if (activeFilter === 'ibd-leads') {
+    if (activeFilter === 'key') {
+      return keyTickers.includes(t.ticker.toUpperCase());
+    } else if (activeFilter === 'ibd-leads') {
       return t.ibd_rs >= 80;
     } else if (activeFilter === 'sts-leads') {
       return t.rs_sts_spy >= 80 || t.rs_sts_qqq >= 80;
@@ -294,6 +320,13 @@ export default function App() {
         </div>
 
         <div className="filter-buttons">
+          <button
+            className={`btn ${activeFilter === 'key' ? 'active' : ''}`}
+            onClick={() => setActiveFilter('key')}
+            title="Show only key tickers from key.csv"
+          >
+            ⭐ Key Watchlist
+          </button>
           <button
             className={`btn ${activeFilter === 'all' ? 'active' : ''}`}
             onClick={() => setActiveFilter('all')}
