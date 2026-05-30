@@ -287,5 +287,23 @@ def main():
     print(f"JSON outputs saved to {output_path} and {json_date_path}")
     print(f"CSV outputs saved to {csv_path} and {csv_date_path}")
 
+    # Generate/update dates.json with list of available dates
+    import glob
+    data_dir = os.path.join(base_dir, 'data')
+    json_files = glob.glob(os.path.join(data_dir, 'latest_*.json'))
+    dates = []
+    for f_path in json_files:
+        basename = os.path.basename(f_path)
+        parts = basename.split('_')
+        if len(parts) >= 2:
+            date_str = parts[1].split('.')[0]
+            dates.append(date_str)
+    # Deduplicate and sort descending (newest first)
+    dates = sorted(list(set(dates)), reverse=True)
+    dates_path = os.path.join(data_dir, 'dates.json')
+    with open(dates_path, 'w', encoding='utf-8') as f:
+        json.dump(dates, f, indent=2)
+    print(f"Updated dates.json with available dates: {dates}")
+
 if __name__ == "__main__":
     main()

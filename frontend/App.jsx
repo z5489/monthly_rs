@@ -59,12 +59,33 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [selectedDate, setSelectedDate] = useState('');
+  const [availableDates, setAvailableDates] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [activeFilter, setActiveFilter] = useState('all');
   const [sortConfig, setSortConfig] = useState({
     column: 'one_month_pct',
     direction: 'desc'
   });
+
+  // Fetch available dates on mount
+  useEffect(() => {
+    const fetchDates = async () => {
+      const paths = ['/data/dates.json', 'data/dates.json', '../data/dates.json', './data/dates.json'];
+      for (const p of paths) {
+        try {
+          const res = await fetch(p);
+          if (res.ok) {
+            const json = await res.json();
+            setAvailableDates(json);
+            break;
+          }
+        } catch (e) {
+          // ignore
+        }
+      }
+    };
+    fetchDates();
+  }, []);
 
   // Fetch relative strength analytics based on selectedDate
   useEffect(() => {
@@ -123,7 +144,20 @@ export default function App() {
             <p>Nightly calculations of short-term (1-month) and long-term (12-month) Relative Strength</p>
           </div>
           <div className="header-meta">
-            Market Date: <span>Loading...</span>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '0.5rem' }}>
+              <span>Market Date:</span>
+              <select
+                value={selectedDate}
+                onChange={(e) => setSelectedDate(e.target.value)}
+                className="date-select"
+                disabled={availableDates.length === 0}
+              >
+                <option value="">Latest (Loading...)</option>
+                {availableDates.map(d => (
+                  <option key={d} value={d}>{d}</option>
+                ))}
+              </select>
+            </div>
           </div>
         </header>
         <div className="status-message">
@@ -143,7 +177,19 @@ export default function App() {
             <p>Nightly calculations of short-term (1-month) and long-term (12-month) Relative Strength</p>
           </div>
           <div className="header-meta">
-            Market Date: <span style={{ color: 'var(--red-text)' }}>Error</span>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '0.5rem' }}>
+              <span>Market Date:</span>
+              <select
+                value={selectedDate}
+                onChange={(e) => setSelectedDate(e.target.value)}
+                className="date-select"
+              >
+                <option value="">Latest (Error)</option>
+                {availableDates.map(d => (
+                  <option key={d} value={d}>{d}</option>
+                ))}
+              </select>
+            </div>
           </div>
         </header>
         <div className="status-message">
@@ -215,9 +261,21 @@ export default function App() {
           <h1>Watchlist Relative Strength Leaderboard</h1>
           <p>Nightly calculations of short-term (1-month) and long-term (12-month) Relative Strength</p>
         </div>
-        <div className="header-meta">
-          Market Date: <span>{benchmark_date}</span><br />
-          Updated: <span>{formattedGen}</span>
+        <div className="header-meta" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '0.4rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <span>Market Date:</span>
+            <select
+              value={selectedDate}
+              onChange={(e) => setSelectedDate(e.target.value)}
+              className="date-select"
+            >
+              <option value="">Latest ({benchmark_date})</option>
+              {availableDates.map(d => (
+                <option key={d} value={d}>{d}</option>
+              ))}
+            </select>
+          </div>
+          <div>Updated: <span>{formattedGen}</span></div>
         </div>
       </header>
 
@@ -233,44 +291,6 @@ export default function App() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
-        </div>
-
-        {/* Date Selector */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
-          <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            backgroundColor: 'var(--surface-color)',
-            border: '1px solid var(--border-color)',
-            borderRadius: '8px',
-            padding: '0.45rem 0.75rem'
-          }}>
-            <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Jump to Date:</span>
-            <input
-              type="date"
-              style={{
-                backgroundColor: 'transparent',
-                border: 'none',
-                color: 'var(--text-primary)',
-                fontFamily: 'inherit',
-                fontSize: '0.9rem',
-                outline: 'none',
-                cursor: 'pointer'
-              }}
-              value={selectedDate}
-              onChange={(e) => setSelectedDate(e.target.value)}
-            />
-          </div>
-          {selectedDate && (
-            <button
-              className="btn"
-              style={{ borderColor: 'var(--accent-color)', color: 'var(--accent-color)' }}
-              onClick={() => setSelectedDate('')}
-            >
-              Reset to Latest
-            </button>
-          )}
         </div>
 
         <div className="filter-buttons">
