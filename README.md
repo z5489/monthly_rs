@@ -22,7 +22,7 @@ A premium, interactive dashboard that computes and tracks relative strength metr
 │       └── nightly_fetch.yml     # Nightly weeknight GitHub Actions cron job
 ├── data/
 │   ├── latest.json               # JSON payload containing computed rankings
-│   └── universe.csv              # Custom stock watchlist
+│   └── universe.csv              # Custom stock watchlist (ticker symbols, one per line)
 ├── scripts/
 │   └── fetch.py                  # Python data fetching and processing pipeline
 ├── frontend/
@@ -30,9 +30,23 @@ A premium, interactive dashboard that computes and tracks relative strength metr
 │   ├── main.jsx                  # React DOM mounting entry point
 │   ├── index.css                 # Premium dark theme stylesheet
 │   ├── index.html                # Entry point loaded by Vite
-│   ├── package.json              # NPM packages and build script definitions
-│   └── vite.config.js            # Standard Vite configurations
+│   ├── package.json              # NPM packages and dev/build scripts
+│   └── vite.config.js            # Vite configurations
 ```
+
+---
+
+## Watchlist & Pipeline Restructuring
+
+To handle large watchlist databases (e.g. 5,000+ tickers) efficiently and avoid Yahoo Finance endpoint rate limits, the system operates with the following optimizations:
+
+- **Simplified Watchlist Format:** `data/universe.csv` is now a simple list of ticker symbols (one per line, no column headers, no name entries).
+- **Slash Filter:** Tickers containing `/` (such as preferred shares `JPM/PD`) are automatically skipped from querying to ensure API compatibility.
+- **Three-Batch Round-Robin Partitioning:** Tickers are divided into 3 equal batches and processed sequentially.
+- **Throttling & Cool-Down Sleeps:**
+  - The pipeline pauses for `0.1` seconds between individual ticker history requests.
+  - The pipeline pauses for `5` seconds between each of the 3 batches.
+- **Rate-Limit Retry Handler:** If Yahoo Finance returns empty data or throttling errors occur, the script retries up to 3 times per ticker using progressive backoff delays (5s, 10s, and 20s).
 
 ---
 
@@ -43,24 +57,24 @@ A premium, interactive dashboard that computes and tracks relative strength metr
 Ensure Python 3 and Node.js are installed. Navigate to the project root and install the required Python dependencies:
 
 ```bash
-pip install yfinance pandas numpy
+pip install -r requirements.txt
 ```
 
 ### 2. Configure Your Watchlist
 
-You can modify `data/universe.csv` to add or remove stock symbols:
+You can modify `data/universe.csv` to add or remove stock symbols (simply add one ticker symbol per line):
 
 ```csv
-ticker,name
-AAPL,Apple Inc
-MSFT,Microsoft Corporation
-GOOGL,Alphabet Inc
-...
+NVDA
+GOOGL
+AAPL
+MSFT
+AMZN
 ```
 
 ### 3. Run the Data Pipeline
 
-Execute the data pipeline to retrieve market data and output rankings:
+Execute the data pipeline to retrieve market data, divide the queries into batches, and output the consolidated rankings:
 
 ```bash
 python scripts/fetch.py
@@ -84,7 +98,7 @@ Now open [http://localhost:5173](http://localhost:5173) in your browser. When th
 
 ## Deployment & Automations
 
-- **Data Updates (GitHub Actions):** The `.github/workflows/nightly_fetch.yml` cron job runs automatically on weeknights (Midnight ET / 4:00 AM UTC). It fetches the latest prices, recalculates ratings, and commits the updated `data/latest.json` back to the repository.
+- **Data Updates (GitHub Actions):** The `.github/workflows/nightly_fetch.yml` cron job runs automatically on weeknights (Midnight ET / 4:00 AM UTC). It fetches the latest prices, recalculates ratings across the 3 batches, and commits the updated `data/latest.json` back to the repository.
 - **UI Hosting (Vercel):** Connect the GitHub repository to **Vercel** as a Vite application:
   - **Framework Preset:** Vite
   - **Root Directory:** `frontend`
