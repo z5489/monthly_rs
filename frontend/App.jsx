@@ -297,26 +297,30 @@ export default function App() {
           <button
             className={`btn ${activeFilter === 'all' ? 'active' : ''}`}
             onClick={() => setActiveFilter('all')}
+            title="Show all tickers in the watchlist without filtering"
           >
             All Watchlist
           </button>
           <button
             className={`btn ${activeFilter === 'ibd-leads' ? 'active' : ''}`}
             onClick={() => setActiveFilter('ibd-leads')}
+            title="Show stocks with a 12-month IBD Relative Strength rating of 80 or higher"
           >
-            IBD Leads (≥ 80)
+            IBD RS Leads (≥ 80)
           </button>
           <button
             className={`btn ${activeFilter === 'sts-leads' ? 'active' : ''}`}
             onClick={() => setActiveFilter('sts-leads')}
+            title="Show stocks with a 1-month Short-Term Strength (STS) percentile rank of 80 or higher vs SPY or QQQ"
           >
-            STS Leads (≥ 80)
+            STS Leads (≥ 80 vs SPY/QQQ)
           </button>
           <button
             className={`btn ${activeFilter === 'weak' ? 'active' : ''}`}
             onClick={() => setActiveFilter('weak')}
+            title="Show stocks with weak 12-month strength (IBD RS ≤ 40) or weak short-term strength (STS ≤ 20 vs SPY/QQQ)"
           >
-            Underperforming (≤ 40)
+            Underperforming (IBD ≤ 40 or STS ≤ 20)
           </button>
         </div>
       </div>
