@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import os
+import csv
 import json
 import time
 from datetime import datetime
@@ -244,19 +245,47 @@ def main():
     benchmark_date = spy_close.index[-1].strftime('%Y-%m-%d')
     generated_at = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
     
-    # Save output
+    # Consolidate JSON data
     output_data = {
         "generated_at": generated_at,
         "benchmark_date": benchmark_date,
         "tickers": calculated_tickers
     }
     
+    # Ensure directory exists
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(output_data, f, indent=2)
+    
+    # Save JSON files (latest.json and date-suffixed JSON)
+    json_date_path = os.path.join(base_dir, 'data', f'latest_{benchmark_date}.json')
+    for path in [output_path, json_date_path]:
+        with open(path, 'w', encoding='utf-8') as f:
+            json.dump(output_data, f, indent=2)
+            
+    # Save CSV files (latest.csv and date-suffixed CSV)
+    csv_headers = ['ticker', 'name', 'daily_pct', 'one_month_pct', 'rs_sts_spy', 'rs_sts_qqq', 'ibd_rs']
+    csv_rows = []
+    for t_data in calculated_tickers:
+        csv_rows.append({
+            'ticker': t_data['ticker'],
+            'name': t_data['name'],
+            'daily_pct': t_data['daily_pct'],
+            'one_month_pct': t_data['one_month_pct'],
+            'rs_sts_spy': t_data['rs_sts_spy'],
+            'rs_sts_qqq': t_data['rs_sts_qqq'],
+            'ibd_rs': t_data['ibd_rs']
+        })
+        
+    csv_path = os.path.join(base_dir, 'data', 'latest.csv')
+    csv_date_path = os.path.join(base_dir, 'data', f'latest_{benchmark_date}.csv')
+    for path in [csv_path, csv_date_path]:
+        with open(path, 'w', encoding='utf-8', newline='') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=csv_headers)
+            writer.writeheader()
+            writer.writerows(csv_rows)
         
     print(f"\nSuccessfully calculated results for {N} tickers.")
-    print(f"Output saved to {output_path} (Benchmark date: {benchmark_date})")
+    print(f"JSON outputs saved to {output_path} and {json_date_path}")
+    print(f"CSV outputs saved to {csv_path} and {csv_date_path}")
 
 if __name__ == "__main__":
     main()

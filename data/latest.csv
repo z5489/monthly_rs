@@ -1,0 +1,6 @@
+ticker,name,daily_pct,one_month_pct,rs_sts_spy,rs_sts_qqq,ibd_rs
+AAPL,Apple Inc,-0.14,15.11,94,62,79
+NVDA,NVIDIA Corporation,-1.45,5.8,17,0,59
+MSFT,Microsoft Corporation,5.45,10.65,100,92,20
+TSLA,Tesla Inc,-1.43,14.19,60,36,40
+GOOGL,Alphabet Inc,-2.51,-1.16,0,0,99

@@ -1,6 +1,6 @@
 # Watchlist Relative Strength (RS) Dashboard
 
-A premium, interactive dashboard that computes and tracks relative strength metrics for a customized stock watchlist. The dashboard is populated by a nightly data pipeline running via GitHub Actions, which processes historical data from Yahoo Finance and commits the results as a static JSON file.
+A premium, interactive dashboard that computes and tracks relative strength metrics for a customized stock watchlist. The dashboard is populated by a nightly data pipeline running via GitHub Actions, which processes historical data from Yahoo Finance and commits the results as static JSON and CSV files.
 
 ## Features
 
@@ -9,6 +9,7 @@ A premium, interactive dashboard that computes and tracks relative strength metr
   $$RS_{\text{raw}} = 0.4 \times (C / C_{63}) + 0.2 \times (C / C_{126}) + 0.2 \times (C / C_{189}) + 0.2 \times (C / C_{252})$$
   The raw scores are then ranked as a percentile score (1-99) within the universe.
 - **Sparklines & Progress Bars:** Visually represents the 20-day relative strength trajectory against SPY and QQQ using HTML Canvas sparklines overlaid on colored progress bars.
+- **Date Filtering & Historical Archives:** Let users jump to a specific market date in the past via a date picker. The dashboard loads the corresponding archived dataset (or falls back to the latest dataset by default).
 - **Search & Filters:** Real-time search by symbol/name and quick-action buttons to filter by Leaders or Underperformers.
 - **Interactive Sorting:** Sort all columns (Ticker, RS_STS%, IBD RS, Daily%, 1-Month%) dynamically.
 
@@ -21,17 +22,21 @@ A premium, interactive dashboard that computes and tracks relative strength metr
 │   └── workflows/
 │       └── nightly_fetch.yml     # Nightly weeknight GitHub Actions cron job
 ├── data/
-│   ├── latest.json               # JSON payload containing computed rankings
+│   ├── latest.json               # Consolidated latest JSON payload
+│   ├── latest_YYYY-MM-DD.json    # Date-suffixed archived JSON payload
+│   ├── latest.csv                # Consolidated latest CSV spreadsheet
+│   ├── latest_YYYY-MM-DD.csv     # Date-suffixed archived CSV spreadsheet
 │   └── universe.csv              # Custom stock watchlist (ticker symbols, one per line)
 ├── scripts/
-│   └── fetch.py                  # Python data fetching and processing pipeline
+│   ├── fetch.py                  # Python data fetching and processing pipeline
+│   └── copy-data.js              # Post-build data copy script for production
 ├── frontend/
-│   ├── App.jsx                   # React App container (imports latest.json directly)
+│   ├── App.jsx                   # React App container with state and date filters
 │   ├── main.jsx                  # React DOM mounting entry point
 │   ├── index.css                 # Premium dark theme stylesheet
 │   ├── index.html                # Entry point loaded by Vite
 │   ├── package.json              # NPM packages and dev/build scripts
-│   └── vite.config.js            # Vite configurations
+│   └── vite.config.js            # Vite configurations (with dev server middleware)
 ```
 
 ---
@@ -47,6 +52,7 @@ To handle large watchlist databases (e.g. 5,000+ tickers) efficiently and avoid 
   - The pipeline pauses for `0.1` seconds between individual ticker history requests.
   - The pipeline pauses for `5` seconds between each of the 3 batches.
 - **Rate-Limit Retry Handler:** If Yahoo Finance returns empty data or throttling errors occur, the script retries up to 3 times per ticker using progressive backoff delays (5s, 10s, and 20s).
+- **Data File Outputs:** Each pipeline run generates both standard files (`latest.json`, `latest.csv`) and date-suffixed archive files (`latest_YYYY-MM-DD.json`, `latest_YYYY-MM-DD.csv` based on the market close date).
 
 ---
 
@@ -74,13 +80,13 @@ AMZN
 
 ### 3. Run the Data Pipeline
 
-Execute the data pipeline to retrieve market data, divide the queries into batches, and output the consolidated rankings:
+Execute the data pipeline to retrieve market data, divide the queries into batches, and output the consolidated and archived rankings:
 
 ```bash
 python scripts/fetch.py
 ```
 
-This generates or updates `data/latest.json`.
+This generates `latest.json`, `latest.csv` and their date-suffixed counterparts inside `data/`.
 
 ### 4. Run the React Dashboard
 
@@ -92,16 +98,15 @@ npm install
 npm run dev
 ```
 
-Now open [http://localhost:5173](http://localhost:5173) in your browser. When the Python script updates `data/latest.json`, Vite's dev server will automatically hot-reload the changes on the page.
+Now open [http://localhost:5173](http://localhost:5173) in your browser. 
 
 ---
 
 ## Deployment & Automations
 
-- **Data Updates (GitHub Actions):** The `.github/workflows/nightly_fetch.yml` cron job runs automatically on weeknights (Midnight ET / 4:00 AM UTC). It fetches the latest prices, recalculates ratings across the 3 batches, and commits the updated `data/latest.json` back to the repository.
+- **Data Updates (GitHub Actions):** The `.github/workflows/nightly_fetch.yml` cron job runs automatically on weeknights (Midnight ET / 4:00 AM UTC). It fetches the latest prices, recalculates ratings across the 3 batches, and commits all updated and new date-suffixed calculations back to the repository.
 - **UI Hosting (Vercel):** Connect the GitHub repository to **Vercel** as a Vite application:
   - **Framework Preset:** Vite
   - **Root Directory:** `frontend`
-  - **Build Command:** `npm run build`
+  - **Build Command:** `npm run build` (vite build + our copy script to transfer all JSON/CSV archives to the deploy static assets folder)
   - **Output Directory:** `dist`
-  Vercel automatically rebuilds and redeploys the site whenever a new `data/latest.json` is committed by the actions bot.

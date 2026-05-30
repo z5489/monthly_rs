@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import latestData from '../data/latest.json';
 
 // Self-contained Sparkline canvas cell component
 function SparklineCell({ series, color }) {
@@ -56,6 +55,10 @@ function SparklineCell({ series, color }) {
 }
 
 export default function App() {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [selectedDate, setSelectedDate] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
   const [activeFilter, setActiveFilter] = useState('all');
   const [sortConfig, setSortConfig] = useState({
@@ -63,7 +66,43 @@ export default function App() {
     direction: 'desc'
   });
 
-  const { benchmark_date, generated_at, tickers } = latestData;
+  // Fetch relative strength analytics based on selectedDate
+  useEffect(() => {
+    const loadData = async () => {
+      setLoading(true);
+      setError(null);
+
+      const fileName = selectedDate ? `latest_${selectedDate}.json` : 'latest.json';
+      const paths = [`/data/${fileName}`, `data/${fileName}`, `../data/${fileName}`, `./data/${fileName}`];
+      let response;
+      let success = false;
+
+      for (const p of paths) {
+        try {
+          response = await fetch(p);
+          if (response.ok) {
+            const json = await response.json();
+            setData(json);
+            success = true;
+            break;
+          }
+        } catch (e) {
+          // try next path
+        }
+      }
+
+      if (!success) {
+        throw new Error(selectedDate ? `No relative strength data found for ${selectedDate}.` : "Could not find latest.json in any standard path.");
+      }
+      setLoading(false);
+    };
+
+    loadData().catch(err => {
+      console.error(err);
+      setError(err.message);
+      setLoading(false);
+    });
+  }, [selectedDate]);
 
   // Sorting handler
   const handleSort = (col) => {
@@ -74,6 +113,57 @@ export default function App() {
       return { column: col, direction: 'desc' }; // Default to desc for rankings
     });
   };
+
+  if (loading) {
+    return (
+      <div className="container">
+        <header>
+          <div className="header-title">
+            <h1>Watchlist Relative Strength Leaderboard</h1>
+            <p>Nightly calculations of short-term (1-month) and long-term (12-month) Relative Strength</p>
+          </div>
+          <div className="header-meta">
+            Market Date: <span>Loading...</span>
+          </div>
+        </header>
+        <div className="status-message">
+          <div className="spinner"></div>
+          <p>Loading relative strength analytics...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="container">
+        <header>
+          <div className="header-title">
+            <h1>Watchlist Relative Strength Leaderboard</h1>
+            <p>Nightly calculations of short-term (1-month) and long-term (12-month) Relative Strength</p>
+          </div>
+          <div className="header-meta">
+            Market Date: <span style={{ color: 'var(--red-text)' }}>Error</span>
+          </div>
+        </header>
+        <div className="status-message">
+          <p style={{ color: 'var(--red-text)' }}>⚠️ {error}</p>
+          <p style={{ fontSize: '0.85rem', marginTop: '-0.5rem' }}>
+            Ensure the pipeline has run on this date, or select another date.
+          </p>
+          <button
+            className="btn"
+            style={{ borderColor: 'var(--accent-color)', color: 'var(--accent-color)', marginTop: '0.5rem' }}
+            onClick={() => setSelectedDate('')}
+          >
+            Reset to Latest
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  const { benchmark_date, generated_at, tickers } = data;
 
   // Format generate time
   const genDate = new Date(generated_at);
@@ -143,6 +233,44 @@ export default function App() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
+        </div>
+
+        {/* Date Selector */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5rem',
+            backgroundColor: 'var(--surface-color)',
+            border: '1px solid var(--border-color)',
+            borderRadius: '8px',
+            padding: '0.45rem 0.75rem'
+          }}>
+            <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Jump to Date:</span>
+            <input
+              type="date"
+              style={{
+                backgroundColor: 'transparent',
+                border: 'none',
+                color: 'var(--text-primary)',
+                fontFamily: 'inherit',
+                fontSize: '0.9rem',
+                outline: 'none',
+                cursor: 'pointer'
+              }}
+              value={selectedDate}
+              onChange={(e) => setSelectedDate(e.target.value)}
+            />
+          </div>
+          {selectedDate && (
+            <button
+              className="btn"
+              style={{ borderColor: 'var(--accent-color)', color: 'var(--accent-color)' }}
+              onClick={() => setSelectedDate('')}
+            >
+              Reset to Latest
+            </button>
+          )}
         </div>
 
         <div className="filter-buttons">
