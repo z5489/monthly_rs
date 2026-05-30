@@ -74,6 +74,12 @@ def fetch_history_with_retry(ticker, max_retries=3, initial_sleep=5):
     return pd.DataFrame(), t_obj
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="Relative Strength Data Fetcher")
+    parser.add_argument("--batch", type=str, default="all", choices=["all", "1", "2", "3"],
+                        help="Specify which batch to run (1, 2, 3, or all)")
+    args = parser.parse_args()
+
     # Paths
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     universe_path = os.path.join(base_dir, 'data', 'universe.csv')
@@ -125,12 +131,47 @@ def main():
     spy_close = spy_df['Close']
     qqq_close = qqq_df['Close']
     
-    # We will accumulate data for tickers across all batches
+    # Determine which batches to run and pre-load other batches if running a single batch
     calculated_tickers = []
     raw_scores = {}
+    
+    batches_to_run = []
+    if args.batch == "all":
+        batches_to_run = [0, 1, 2]
+        print("Running all 3 batches.")
+    else:
+        active_idx = int(args.batch) - 1
+        batches_to_run = [active_idx]
+        print(f"Running only Batch {args.batch} of 3.")
+        
+        # Load existing data to populate the other batches
+        existing_lookup = {}
+        if os.path.exists(output_path):
+            try:
+                with open(output_path, 'r', encoding='utf-8') as f:
+                    existing_data = json.load(f)
+                    if "tickers" in existing_data:
+                        existing_lookup = {t_item["ticker"]: t_item for t_item in existing_data["tickers"]}
+                        print(f"Loaded {len(existing_lookup)} cached stock records from {output_path}")
+            except Exception as e:
+                print(f"Warning: Could not read existing latest.json for caching: {e}")
+        
+        # Copy cached data for the batches we are NOT running
+        for idx in range(num_batches):
+            if idx != active_idx:
+                cached_count = 0
+                for t in batches[idx]:
+                    if t in existing_lookup:
+                        cached_item = existing_lookup[t]
+                        calculated_tickers.append(cached_item)
+                        # Reconstruct raw score for ranking
+                        raw_scores[t] = cached_item.get("ibd_raw", cached_item.get("ibd_rs", 50) / 99)
+                        cached_count += 1
+                print(f"Cached data loaded for Batch {idx + 1}: {cached_count}/{len(batches[idx])} tickers")
 
     # Process batches
-    for b_idx, batch in enumerate(batches):
+    for b_idx in batches_to_run:
+        batch = batches[b_idx]
         print(f"\n--- Processing Batch {b_idx + 1}/{num_batches} ({len(batch)} tickers) ---")
         
         for t_idx, ticker in enumerate(batch):
@@ -214,6 +255,7 @@ def main():
                     "rs_sts_qqq": int(rs_sts_qqq),
                     "rs_bar_spy": [round(x, 4) for x in rs_bar_spy],
                     "rs_bar_qqq": [round(x, 4) for x in rs_bar_qqq],
+                    "ibd_raw": round(rs_raw, 4)
                 })
                 
             except Exception as e:

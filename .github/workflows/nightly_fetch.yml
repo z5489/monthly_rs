@@ -4,7 +4,18 @@ on:
   schedule:
     # 4:00 AM UTC (12:00 AM / Midnight ET), Tuesday-Saturday (which covers Monday-Friday US trading days)
     - cron: '0 4 * * 2-6'
-  workflow_dispatch: # Allows manual trigger from GitHub UI
+  workflow_dispatch: # Allows manual trigger from GitHub UI and parameter selection
+    inputs:
+      batch:
+        description: 'Which batch to run (1, 2, 3, or all)'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - 'all'
+          - '1'
+          - '2'
+          - '3'
 
 jobs:
   fetch-and-update:
@@ -28,11 +39,11 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run data pipeline
-        run: python scripts/fetch.py
+        run: python scripts/fetch.py --batch ${{ github.event.inputs.batch || 'all' }}
 
       - name: Commit and push updates
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/latest.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update relative strength rankings [skip ci]" && git push)
+          git add data/*.json data/*.csv docs/*.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update relative strength rankings (Batch: ${{ github.event.inputs.batch || 'all' }}) [skip ci]" && git push)
