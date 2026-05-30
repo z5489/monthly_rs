@@ -306,14 +306,14 @@ export default function App() {
           <table>
             <thead>
               <tr>
-                <th className={`sortable ${getSortClass('ticker')}`} onClick={() => handleSort('ticker')}>Ticker</th>
-                <th style={{ width: '140px' }}>1-Mo RS vs SPY</th>
-                <th style={{ width: '140px' }}>1-Mo RS vs QQQ</th>
-                <th className={`sortable ${getSortClass('rs_sts_spy')}`} onClick={() => handleSort('rs_sts_spy')}>RS_STS% SPY</th>
-                <th className={`sortable ${getSortClass('rs_sts_qqq')}`} onClick={() => handleSort('rs_sts_qqq')}>RS_STS% QQQ</th>
-                <th className={`sortable ${getSortClass('ibd_rs')}`} onClick={() => handleSort('ibd_rs')}>IBD RS</th>
-                <th className={`sortable ${getSortClass('daily_pct')}`} onClick={() => handleSort('daily_pct')}>Daily%</th>
-                <th className={`sortable ${getSortClass('one_month_pct')}`} onClick={() => handleSort('one_month_pct')}>1-Month%</th>
+                <th className={`sortable ${getSortClass('ticker')}`} onClick={() => handleSort('ticker')} title="Stock ticker symbol and company name">Ticker</th>
+                <th style={{ width: '140px' }} title="Visual 1-month Relative Strength (bar represents percentile rank, sparkline shows daily ratio vs SPY)">1-Mo RS vs SPY</th>
+                <th style={{ width: '140px' }} title="Visual 1-month Relative Strength (bar represents percentile rank, sparkline shows daily ratio vs QQQ)">1-Mo RS vs QQQ</th>
+                <th className={`sortable ${getSortClass('rs_sts_spy')}`} onClick={() => handleSort('rs_sts_spy')} title="1-month Short-Term Strength (STS) percentile rank vs SPY. High values indicate short-term market leaders.">RS_STS% SPY</th>
+                <th className={`sortable ${getSortClass('rs_sts_qqq')}`} onClick={() => handleSort('rs_sts_qqq')} title="1-month Short-Term Strength (STS) percentile rank vs QQQ. High values indicate short-term tech leaders.">RS_STS% QQQ</th>
+                <th className={`sortable ${getSortClass('ibd_rs')}`} onClick={() => handleSort('ibd_rs')} title="12-month traditional IBD-style Relative Strength percentile rank vs the whole market (weighted: 40% Q4, 20% each Q3/Q2/Q1)">IBD RS</th>
+                <th className={`sortable ${getSortClass('daily_pct')}`} onClick={() => handleSort('daily_pct')} title="Single-day price change percentage">Daily%</th>
+                <th className={`sortable ${getSortClass('one_month_pct')}`} onClick={() => handleSort('one_month_pct')} title="Trailing 1-month price change percentage">1-Month%</th>
               </tr>
             </thead>
             <tbody>
