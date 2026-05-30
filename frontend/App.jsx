@@ -113,11 +113,17 @@ export default function App() {
 
   // Fetch relative strength analytics based on selectedDate
   useEffect(() => {
+    if (!selectedDate && availableDates.length > 0) {
+      setSelectedDate(availableDates[0]);
+      return;
+    }
+    if (!selectedDate) return;
+
     const loadData = async () => {
       setLoading(true);
       setError(null);
 
-      const fileName = selectedDate ? `latest_${selectedDate}.json` : 'latest.json';
+      const fileName = `latest_${selectedDate}.json`;
       const paths = [`/data/${fileName}`, `data/${fileName}`, `../data/${fileName}`, `./data/${fileName}`];
       let response;
       let success = false;
@@ -176,7 +182,7 @@ export default function App() {
                 className="date-select"
                 disabled={availableDates.length === 0}
               >
-                <option value="">Latest (Loading...)</option>
+                {availableDates.length === 0 && <option value="">Loading dates...</option>}
                 {availableDates.map(d => (
                   <option key={d} value={d}>{d}</option>
                 ))}
@@ -208,7 +214,6 @@ export default function App() {
                 onChange={(e) => setSelectedDate(e.target.value)}
                 className="date-select"
               >
-                <option value="">Latest (Error)</option>
                 {availableDates.map(d => (
                   <option key={d} value={d}>{d}</option>
                 ))}
@@ -224,9 +229,13 @@ export default function App() {
           <button
             className="btn"
             style={{ borderColor: 'var(--accent-color)', color: 'var(--accent-color)', marginTop: '0.5rem' }}
-            onClick={() => setSelectedDate('')}
+            onClick={() => {
+              if (availableDates.length > 0) {
+                setSelectedDate(availableDates[0]);
+              }
+            }}
           >
-            Reset to Latest
+            Reset to Latest Date
           </button>
         </div>
       </div>
@@ -295,7 +304,6 @@ export default function App() {
               onChange={(e) => setSelectedDate(e.target.value)}
               className="date-select"
             >
-              <option value="">Latest ({benchmark_date})</option>
               {availableDates.map(d => (
                 <option key={d} value={d}>{d}</option>
               ))}
