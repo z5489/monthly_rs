@@ -78,6 +78,9 @@ export default function App() {
           if (res.ok) {
             const json = await res.json();
             setAvailableDates(json);
+            if (json && json.length > 0) {
+              setSelectedDate(json[0]);
+            }
             break;
           }
         } catch (e) {
@@ -153,7 +156,7 @@ export default function App() {
       setError(err.message);
       setLoading(false);
     });
-  }, [selectedDate]);
+  }, [selectedDate, availableDates]);
 
   // Sorting handler
   const handleSort = (col) => {
