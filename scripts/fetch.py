@@ -85,39 +85,46 @@ def main():
     universe_path = os.path.join(base_dir, 'data', 'universe.csv')
     output_path = os.path.join(base_dir, 'data', 'latest.json')
     
-    # Read tickers from universe.csv
-    raw_tickers = []
-    if os.path.exists(universe_path):
-        with open(universe_path, mode='r', encoding='utf-8') as f:
-            for line in f:
-                ticker = line.strip().upper()
-                # Skip comments, blank lines, or the optional column header
-                if ticker and ticker != 'TICKER' and not ticker.startswith('#'):
-                    raw_tickers.append(ticker)
-    else:
-        print(f"Error: Watchlist not found at {universe_path}")
-        return
-
-    # Filter out tickers containing '/'
-    tickers = [t for t in raw_tickers if '/' not in t]
-    filtered_out_count = len(raw_tickers) - len(tickers)
-    
-    if filtered_out_count > 0:
-        print(f"Filtered out {filtered_out_count} tickers containing '/' from query list.")
-
-    if not tickers:
-        print("No valid tickers found in watchlist.")
-        return
-
-    # Split tickers into exactly 3 batches using round-robin partitioning
+    # Load batches from explicit universe_batch_1.csv, universe_batch_2.csv, universe_batch_3.csv files
     num_batches = 3
     batches = [[] for _ in range(num_batches)]
-    for i, t in enumerate(tickers):
-        batches[i % num_batches].append(t)
+    loaded_from_batches = True
 
-    print(f"Total tickers to process: {len(tickers)}")
-    for b_idx, batch in enumerate(batches):
-        print(f"  Batch {b_idx + 1}: {len(batch)} tickers")
+    for idx in range(num_batches):
+        batch_file = os.path.join(base_dir, 'data', f'universe_batch_{idx + 1}.csv')
+        if os.path.exists(batch_file):
+            with open(batch_file, 'r', encoding='utf-8') as f:
+                for line in f:
+                    ticker = line.strip().upper()
+                    if ticker:
+                        batches[idx].append(ticker)
+        else:
+            loaded_from_batches = False
+
+    if not loaded_from_batches:
+        print("Explicit batch files not found. Splitting universe.csv dynamically...")
+        # Read tickers from universe.csv
+        raw_tickers = []
+        if os.path.exists(universe_path):
+            with open(universe_path, mode='r', encoding='utf-8') as f:
+                for line in f:
+                    ticker = line.strip().upper()
+                    if ticker and ticker != 'TICKER' and not ticker.startswith('#'):
+                        raw_tickers.append(ticker)
+        else:
+            print(f"Error: Watchlist not found at {universe_path}")
+            return
+
+        tickers = [t for t in raw_tickers if '/' not in t]
+        batches = [[] for _ in range(num_batches)]
+        for i, t in enumerate(tickers):
+            batches[i % num_batches].append(t)
+
+    # Print summary
+    total_tickers = sum(len(b) for b in batches)
+    print(f"Total tickers to process across all batches: {total_tickers}")
+    for idx, batch in enumerate(batches):
+        print(f"  Batch {idx + 1}: {len(batch)} tickers")
 
     # Fetch benchmarks first
     print("Fetching benchmark data (SPY & QQQ)...")
