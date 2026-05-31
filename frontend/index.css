@@ -389,6 +389,53 @@ tr:hover td {
   color: var(--text-secondary);
 }
 
+/* Pagination Row Styling mimicking Shadcn card footer */
+.pagination-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--border-color);
+  background-color: #0c0c0e;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.pagination-row span {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.pagination-controls {
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.pagination-btn {
+  background-color: #18181b; /* Zinc 900 */
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  outline: none;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background-color: #27272a;
+  border-color: var(--border-hover);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 /* Responsive updates */
 @media (max-width: 900px) {
   body {

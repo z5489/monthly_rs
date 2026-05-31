@@ -67,6 +67,13 @@ export default function App() {
     column: 'one_month_pct',
     direction: 'desc'
   });
+  const [currentPage, setCurrentPage] = useState(1);
+  const pageSize = 100;
+
+  // Reset pagination when search query, filter, or date changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchQuery, activeFilter, selectedDate]);
 
   // Fetch available dates on mount
   useEffect(() => {
@@ -286,6 +293,9 @@ export default function App() {
     return sortConfig.direction === 'asc' ? valA - valB : valB - valA;
   });
 
+  const totalPages = Math.max(1, Math.ceil(sortedTickers.length / pageSize));
+  const paginatedTickers = sortedTickers.slice((currentPage - 1) * pageSize, currentPage * pageSize);
+
   // Sort indicator helper
   const getSortClass = (col) => {
     if (sortConfig.column === col) {
@@ -394,7 +404,7 @@ export default function App() {
                   </td>
                 </tr>
               ) : (
-                sortedTickers.map(t => {
+                paginatedTickers.map(t => {
                   const dailyClass = t.daily_pct > 0 ? 'badge-green' : (t.daily_pct < 0 ? 'badge-red' : 'badge-neutral');
                   const monthlyClass = t.one_month_pct > 0 ? 'badge-green' : (t.one_month_pct < 0 ? 'badge-red' : 'badge-neutral');
                   const stsSpyClass = t.rs_sts_spy >= 80 ? 'badge-green' : (t.rs_sts_spy <= 20 ? 'badge-red' : 'badge-neutral');
@@ -457,6 +467,48 @@ export default function App() {
             </tbody>
           </table>
         </div>
+        {sortedTickers.length > 0 && (
+          <div className="pagination-row">
+            <div>
+              Showing <span>{((currentPage - 1) * pageSize) + 1}</span> to{' '}
+              <span>{Math.min(currentPage * pageSize, sortedTickers.length)}</span> of{' '}
+              <span>{sortedTickers.length}</span> entries
+            </div>
+            <div className="pagination-controls">
+              <button
+                className="pagination-btn"
+                onClick={() => setCurrentPage(1)}
+                disabled={currentPage === 1}
+              >
+                First
+              </button>
+              <button
+                className="pagination-btn"
+                onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+                disabled={currentPage === 1}
+              >
+                Previous
+              </button>
+              <span style={{ margin: '0 0.5rem', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                Page <strong>{currentPage}</strong> of <strong>{totalPages}</strong>
+              </span>
+              <button
+                className="pagination-btn"
+                onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
+                disabled={currentPage === totalPages}
+              >
+                Next
+              </button>
+              <button
+                className="pagination-btn"
+                onClick={() => setCurrentPage(totalPages)}
+                disabled={currentPage === totalPages}
+              >
+                Last
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
