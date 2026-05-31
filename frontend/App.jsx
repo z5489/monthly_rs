@@ -198,8 +198,8 @@ export default function App() {
             <p>Short-term (1-month) and long-term (12-month) Relative Strength</p>
           </div>
           <div className="header-meta">
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '0.75rem' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <div className="header-controls">
+              <div className="header-control-group">
                 <span>Market Date:</span>
                 <select
                   value={selectedDate}
@@ -257,8 +257,8 @@ export default function App() {
             <p>Short-term (1-month) and long-term (12-month) Relative Strength</p>
           </div>
           <div className="header-meta">
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '0.75rem' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <div className="header-controls">
+              <div className="header-control-group">
                 <span>Market Date:</span>
                 <select
                   value={selectedDate}
@@ -377,9 +377,9 @@ export default function App() {
           <h1>Relative Strength Leaderboard</h1>
           <p>Short-term (1-month) and long-term (12-month) Relative Strength</p>
         </div>
-        <div className="header-meta" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '0.4rem' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+        <div className="header-meta">
+          <div className="header-controls">
+            <div className="header-control-group">
               <span>Market Date:</span>
               <select
                 value={selectedDate}
@@ -440,14 +440,14 @@ export default function App() {
             onClick={() => setActiveFilter('key')}
             title="Show only key tickers from key.csv"
           >
-            ⭐ Key Watchlist
+            ⭐ Key Tickers
           </button>
           <button
             className={`btn ${activeFilter === 'all' ? 'active' : ''}`}
             onClick={() => setActiveFilter('all')}
             title="Show all tickers in the watchlist without filtering"
           >
-            All Watchlist
+            All Tickers
           </button>
           <button
             className={`btn ${activeFilter === 'ibd-leads' ? 'active' : ''}`}
@@ -582,7 +582,7 @@ export default function App() {
               >
                 Previous
               </button>
-              <span style={{ margin: '0 0.5rem', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+              <span className="pagination-status">
                 Page <strong>{currentPage}</strong> of <strong>{totalPages}</strong>
               </span>
               <button
