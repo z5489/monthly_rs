@@ -1,4 +1,4 @@
-# Watchlist Relative Strength (RS) Dashboard
+# Relative Strength (RS) Dashboard
 
 A premium, interactive dashboard that computes and tracks relative strength metrics for a customized stock watchlist. The dashboard is populated by a nightly data pipeline running via GitHub Actions, which processes historical data from Yahoo Finance and commits the results as static JSON and CSV files.
 

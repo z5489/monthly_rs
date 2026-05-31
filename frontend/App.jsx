@@ -194,8 +194,8 @@ export default function App() {
       <div className="container">
         <header>
           <div className="header-title">
-            <h1>Watchlist Relative Strength Leaderboard</h1>
-            <p>Nightly calculations of short-term (1-month) and long-term (12-month) Relative Strength</p>
+            <h1>Relative Strength Leaderboard</h1>
+            <p>Short-term (1-month) and long-term (12-month) Relative Strength</p>
           </div>
           <div className="header-meta">
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '0.75rem' }}>
@@ -253,8 +253,8 @@ export default function App() {
       <div className="container">
         <header>
           <div className="header-title">
-            <h1>Watchlist Relative Strength Leaderboard</h1>
-            <p>Nightly calculations of short-term (1-month) and long-term (12-month) Relative Strength</p>
+            <h1>Relative Strength Leaderboard</h1>
+            <p>Short-term (1-month) and long-term (12-month) Relative Strength</p>
           </div>
           <div className="header-meta">
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '0.75rem' }}>
@@ -330,8 +330,8 @@ export default function App() {
     const nameVal = t.name || '';
     const matchQuery = searchQuery.trim().toLowerCase();
     const matchesSearch = tickerVal.toLowerCase().includes(matchQuery) ||
-                          nameVal.toLowerCase().includes(matchQuery);
-    
+      nameVal.toLowerCase().includes(matchQuery);
+
     if (!matchesSearch) return false;
 
     if (activeFilter === 'key') {
@@ -374,8 +374,8 @@ export default function App() {
     <div className="container">
       <header>
         <div className="header-title">
-          <h1>Watchlist Relative Strength Leaderboard</h1>
-          <p>Nightly calculations of short-term (1-month) and long-term (12-month) Relative Strength</p>
+          <h1>Relative Strength Leaderboard</h1>
+          <p>Short-term (1-month) and long-term (12-month) Relative Strength</p>
         </div>
         <div className="header-meta" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '0.4rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
