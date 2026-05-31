@@ -69,6 +69,20 @@ export default function App() {
   });
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 100;
+  const [theme, setTheme] = useState(() => {
+    const stored = localStorage.getItem('theme');
+    if (stored) return stored;
+    return 'dark';
+  });
+
+  useEffect(() => {
+    document.body.className = theme === 'light' ? 'light-theme' : '';
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'light' ? 'dark' : 'light');
+  };
 
   // Reset pagination when search query, filter, or date changes
   useEffect(() => {
@@ -184,19 +198,45 @@ export default function App() {
             <p>Nightly calculations of short-term (1-month) and long-term (12-month) Relative Strength</p>
           </div>
           <div className="header-meta">
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '0.5rem' }}>
-              <span>Market Date:</span>
-              <select
-                value={selectedDate}
-                onChange={(e) => setSelectedDate(e.target.value)}
-                className="date-select"
-                disabled={availableDates.length === 0}
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '0.75rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <span>Market Date:</span>
+                <select
+                  value={selectedDate}
+                  onChange={(e) => setSelectedDate(e.target.value)}
+                  className="date-select"
+                  disabled={availableDates.length === 0}
+                >
+                  {availableDates.length === 0 && <option value="">Loading dates...</option>}
+                  {availableDates.map(d => (
+                    <option key={d} value={d}>{d}</option>
+                  ))}
+                </select>
+              </div>
+
+              <button
+                onClick={toggleTheme}
+                className="theme-toggle-btn"
+                title={theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
               >
-                {availableDates.length === 0 && <option value="">Loading dates...</option>}
-                {availableDates.map(d => (
-                  <option key={d} value={d}>{d}</option>
-                ))}
-              </select>
+                {theme === 'light' ? (
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                  </svg>
+                ) : (
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                  </svg>
+                )}
+              </button>
             </div>
           </div>
         </header>
@@ -217,17 +257,43 @@ export default function App() {
             <p>Nightly calculations of short-term (1-month) and long-term (12-month) Relative Strength</p>
           </div>
           <div className="header-meta">
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '0.5rem' }}>
-              <span>Market Date:</span>
-              <select
-                value={selectedDate}
-                onChange={(e) => setSelectedDate(e.target.value)}
-                className="date-select"
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '0.75rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <span>Market Date:</span>
+                <select
+                  value={selectedDate}
+                  onChange={(e) => setSelectedDate(e.target.value)}
+                  className="date-select"
+                >
+                  {availableDates.map(d => (
+                    <option key={d} value={d}>{d}</option>
+                  ))}
+                </select>
+              </div>
+
+              <button
+                onClick={toggleTheme}
+                className="theme-toggle-btn"
+                title={theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
               >
-                {availableDates.map(d => (
-                  <option key={d} value={d}>{d}</option>
-                ))}
-              </select>
+                {theme === 'light' ? (
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                  </svg>
+                ) : (
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                  </svg>
+                )}
+              </button>
             </div>
           </div>
         </header>
@@ -312,17 +378,43 @@ export default function App() {
           <p>Nightly calculations of short-term (1-month) and long-term (12-month) Relative Strength</p>
         </div>
         <div className="header-meta" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '0.4rem' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <span>Market Date:</span>
-            <select
-              value={selectedDate}
-              onChange={(e) => setSelectedDate(e.target.value)}
-              className="date-select"
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span>Market Date:</span>
+              <select
+                value={selectedDate}
+                onChange={(e) => setSelectedDate(e.target.value)}
+                className="date-select"
+              >
+                {availableDates.map(d => (
+                  <option key={d} value={d}>{d}</option>
+                ))}
+              </select>
+            </div>
+
+            <button
+              onClick={toggleTheme}
+              className="theme-toggle-btn"
+              title={theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
             >
-              {availableDates.map(d => (
-                <option key={d} value={d}>{d}</option>
-              ))}
-            </select>
+              {theme === 'light' ? (
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+              ) : (
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+              )}
+            </button>
           </div>
           <div>Updated: <span>{formattedGen}</span></div>
         </div>
@@ -411,9 +503,10 @@ export default function App() {
                   const stsQqqClass = t.rs_sts_qqq >= 80 ? 'badge-green' : (t.rs_sts_qqq <= 20 ? 'badge-red' : 'badge-neutral');
                   const ibdClass = t.ibd_rs >= 80 ? 'badge-green' : (t.ibd_rs <= 40 ? 'badge-red' : 'badge-neutral');
 
-                  // Sparkline line colors
-                  const spyColor = t.rs_sts_spy >= 80 ? '#3fb950' : (t.rs_sts_spy <= 20 ? '#f85149' : '#58a6ff');
-                  const qqqColor = t.rs_sts_qqq >= 80 ? '#3fb950' : (t.rs_sts_qqq <= 20 ? '#f85149' : '#58a6ff');
+                  // Sparkline line colors (adapted for light/dark themes)
+                  const isLight = theme === 'light';
+                  const spyColor = t.rs_sts_spy >= 80 ? (isLight ? '#059669' : '#10b981') : (t.rs_sts_spy <= 20 ? (isLight ? '#dc2626' : '#ef4444') : (isLight ? '#4f46e5' : '#6366f1'));
+                  const qqqColor = t.rs_sts_qqq >= 80 ? (isLight ? '#059669' : '#10b981') : (t.rs_sts_qqq <= 20 ? (isLight ? '#dc2626' : '#ef4444') : (isLight ? '#4f46e5' : '#6366f1'));
 
                   return (
                     <tr key={t.ticker}>

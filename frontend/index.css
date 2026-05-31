@@ -22,8 +22,41 @@
   --accent-color: #6366f1; /* Indigo 500 */
   --accent-glow: rgba(99, 102, 241, 0.15);
   
+  --filter-bg: #18181b;
+  --filter-active-bg: #27272a;
+  --select-bg: #18181b;
+  --th-bg: #0c0c0e;
+  
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
+}
+
+body.light-theme {
+  --bg-color: #ffffff; /* Zinc 50 / White */
+  --surface-color: #ffffff;
+  --card-bg: #ffffff;
+  --surface-hover: #f4f4f5; /* Zinc 100 */
+  --border-color: #e4e4e7; /* Zinc 200 */
+  --border-hover: #d4d4d8; /* Zinc 300 */
+  --text-primary: #09090b; /* Zinc 950 */
+  --text-secondary: #71717a; /* Zinc 500 */
+  --text-tertiary: #a1a1aa; /* Zinc 400 */
+  
+  --green-glow: rgba(16, 185, 129, 0.06);
+  --green-text: #059669; /* Emerald 600 */
+  --green-border: rgba(16, 185, 129, 0.25);
+  
+  --red-glow: rgba(239, 68, 68, 0.06);
+  --red-text: #dc2626; /* Red 600 */
+  --red-border: rgba(239, 68, 68, 0.25);
+  
+  --accent-color: #4f46e5; /* Indigo 600 */
+  --accent-glow: rgba(79, 70, 229, 0.1);
+  
+  --filter-bg: #f4f4f5;
+  --filter-active-bg: #ffffff;
+  --select-bg: #f4f4f5;
+  --th-bg: #fafafa;
 }
 
 * {
@@ -135,7 +168,7 @@ header {
   display: flex;
   gap: 0.25rem;
   flex-wrap: wrap;
-  background-color: #18181b; /* Zinc 900 background for segment selector */
+  background-color: var(--filter-bg); /* Themed background for segment selector */
   padding: 0.25rem;
   border-radius: 8px;
   border: 1px solid var(--border-color);
@@ -155,18 +188,18 @@ header {
 
 .btn:hover {
   color: var(--text-primary);
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--surface-hover);
 }
 
 .btn.active {
-  background-color: #27272a; /* Zinc 800 active segment */
+  background-color: var(--filter-active-bg); /* Themed active segment */
   color: var(--text-primary);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 /* Dropdown styling mimicking Shadcn Select */
 .date-select {
-  background-color: #18181b;
+  background-color: var(--select-bg);
   border: 1px solid var(--border-color);
   color: var(--text-primary);
   border-radius: 6px;
@@ -181,7 +214,27 @@ header {
 
 .date-select:hover, .date-select:focus {
   border-color: var(--border-hover);
-  background-color: #27272a;
+  background-color: var(--filter-active-bg);
+}
+
+/* Theme switcher button styled like a Shadcn icon button */
+.theme-toggle-btn {
+  background-color: var(--select-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+  outline: none;
+}
+
+.theme-toggle-btn:hover {
+  background-color: var(--filter-active-bg);
+  border-color: var(--border-hover);
 }
 
 /* Table Card styled like a flat border Card */
@@ -204,7 +257,7 @@ table {
 }
 
 th {
-  background-color: #0c0c0e;
+  background-color: var(--th-bg);
   padding: 0.75rem 1rem;
   font-weight: 500;
   font-size: 0.75rem;
@@ -308,7 +361,7 @@ tr:hover td {
 }
 
 .badge-neutral {
-  background-color: #27272a; /* Muted zinc */
+  background-color: var(--border-color);
   color: var(--text-secondary);
   border: 1px solid var(--border-color);
 }
@@ -328,7 +381,7 @@ tr:hover td {
   left: 8px;
   right: 8px;
   bottom: 3px;
-  background-color: #09090b;
+  background-color: var(--bg-color);
   border: 1px solid var(--border-color);
   border-radius: 6px;
   overflow: hidden;
@@ -370,7 +423,7 @@ tr:hover td {
 }
 
 .spinner {
-  border: 2px solid rgba(255, 255, 255, 0.05);
+  border: 2px solid var(--border-color);
   border-top: 2px solid var(--accent-color);
   border-radius: 50%;
   width: 24px;
@@ -396,7 +449,7 @@ tr:hover td {
   align-items: center;
   padding: 0.75rem 1rem;
   border-top: 1px solid var(--border-color);
-  background-color: #0c0c0e;
+  background-color: var(--th-bg);
   font-size: 0.8rem;
   color: var(--text-secondary);
 }
@@ -413,7 +466,7 @@ tr:hover td {
 }
 
 .pagination-btn {
-  background-color: #18181b; /* Zinc 900 */
+  background-color: var(--select-bg);
   color: var(--text-primary);
   border: 1px solid var(--border-color);
   padding: 0.25rem 0.5rem;
@@ -427,7 +480,7 @@ tr:hover td {
 }
 
 .pagination-btn:hover:not(:disabled) {
-  background-color: #27272a;
+  background-color: var(--filter-active-bg);
   border-color: var(--border-hover);
 }
 
