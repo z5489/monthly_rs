@@ -647,39 +647,41 @@ export default function App() {
               <span>{Math.min(currentPage * pageSize, sortedTickers.length)}</span> of{' '}
               <span>{sortedTickers.length}</span> entries
             </div>
-            <div className="pagination-controls">
-              <button
-                className="pagination-btn"
-                onClick={() => setCurrentPage(1)}
-                disabled={currentPage === 1}
-              >
-                First
-              </button>
-              <button
-                className="pagination-btn"
-                onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
-                disabled={currentPage === 1}
-              >
-                Previous
-              </button>
-              <span className="pagination-status">
-                Page <strong>{currentPage}</strong> of <strong>{totalPages}</strong>
-              </span>
-              <button
-                className="pagination-btn"
-                onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
-                disabled={currentPage === totalPages}
-              >
-                Next
-              </button>
-              <button
-                className="pagination-btn"
-                onClick={() => setCurrentPage(totalPages)}
-                disabled={currentPage === totalPages}
-              >
-                Last
-              </button>
-            </div>
+            {totalPages > 1 && (
+              <div className="pagination-controls">
+                <button
+                  className="pagination-btn"
+                  onClick={() => setCurrentPage(1)}
+                  disabled={currentPage === 1}
+                >
+                  First
+                </button>
+                <button
+                  className="pagination-btn"
+                  onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+                  disabled={currentPage === 1}
+                >
+                  Previous
+                </button>
+                <span className="pagination-status">
+                  Page <strong>{currentPage}</strong> of <strong>{totalPages}</strong>
+                </span>
+                <button
+                  className="pagination-btn"
+                  onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
+                  disabled={currentPage === totalPages}
+                >
+                  Next
+                </button>
+                <button
+                  className="pagination-btn"
+                  onClick={() => setCurrentPage(totalPages)}
+                  disabled={currentPage === totalPages}
+                >
+                  Last
+                </button>
+              </div>
+            )}
           </div>
         )}
       </div>
