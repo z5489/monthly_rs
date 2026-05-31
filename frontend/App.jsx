@@ -253,9 +253,11 @@ export default function App() {
 
   // Filter & Search stock list
   const filteredTickers = tickers.filter(t => {
+    const tickerVal = t.ticker || '';
+    const nameVal = t.name || '';
     const matchQuery = searchQuery.trim().toLowerCase();
-    const matchesSearch = t.ticker.toLowerCase().includes(matchQuery) ||
-                          t.name.toLowerCase().includes(matchQuery);
+    const matchesSearch = tickerVal.toLowerCase().includes(matchQuery) ||
+                          nameVal.toLowerCase().includes(matchQuery);
     
     if (!matchesSearch) return false;
 
