@@ -61,6 +61,10 @@ export default function App() {
   const [selectedDate, setSelectedDate] = useState('');
   const [availableDates, setAvailableDates] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
+  const [selectedSector, setSelectedSector] = useState('All');
+  const [sectorsList, setSectorsList] = useState([]);
+  const [selectedIndustry, setSelectedIndustry] = useState('All');
+  const [industriesList, setIndustriesList] = useState([]);
   const [activeFilter, setActiveFilter] = useState('key');
   const [keyTickers, setKeyTickers] = useState([]);
   const [sortConfig, setSortConfig] = useState({
@@ -84,10 +88,39 @@ export default function App() {
     setTheme(prev => prev === 'light' ? 'dark' : 'light');
   };
 
-  // Reset pagination when search query, filter, or date changes
+  // Extract unique sectors list when data loads
+  useEffect(() => {
+    if (data && data.tickers) {
+      const sectors = new Set();
+      data.tickers.forEach(t => {
+        if (t.sector) {
+          sectors.add(t.sector);
+        }
+      });
+      setSectorsList(['All', ...Array.from(sectors).sort()]);
+    }
+  }, [data]);
+
+  // Extract unique industries list based on currently selected sector
+  useEffect(() => {
+    if (data && data.tickers) {
+      const industries = new Set();
+      data.tickers.forEach(t => {
+        if (selectedSector === 'All' || t.sector === selectedSector) {
+          if (t.industry) {
+            industries.add(t.industry);
+          }
+        }
+      });
+      setIndustriesList(['All', ...Array.from(industries).sort()]);
+      setSelectedIndustry('All'); // Reset selected industry when sector changes
+    }
+  }, [data, selectedSector]);
+
+  // Reset pagination when search query, filter, sector, industry, or date changes
   useEffect(() => {
     setCurrentPage(1);
-  }, [searchQuery, activeFilter, selectedDate]);
+  }, [searchQuery, activeFilter, selectedSector, selectedIndustry, selectedDate]);
 
   // Fetch available dates on mount
   useEffect(() => {
@@ -334,6 +367,18 @@ export default function App() {
 
     if (!matchesSearch) return false;
 
+    // Sector Filter
+    if (selectedSector !== 'All') {
+      const tickerSector = t.sector || 'Unknown';
+      if (tickerSector !== selectedSector) return false;
+    }
+
+    // Industry Filter
+    if (selectedIndustry !== 'All') {
+      const tickerIndustry = t.industry || 'Unknown';
+      if (tickerIndustry !== selectedIndustry) return false;
+    }
+
     if (activeFilter === 'key') {
       return keyTickers.includes(t.ticker.toUpperCase());
     } else if (activeFilter === 'ibd-leads') {
@@ -421,17 +466,44 @@ export default function App() {
       </header>
 
       <div className="controls-row">
-        <div className="search-container">
-          <svg className="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-          </svg>
-          <input
-            type="text"
-            className="search-input"
-            placeholder="Search symbol or name..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
+        <div className="search-group">
+          <div className="search-container">
+            <svg className="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+            <input
+              type="text"
+              className="search-input"
+              placeholder="Search symbol or name..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </div>
+
+          <select
+            value={selectedSector}
+            onChange={(e) => setSelectedSector(e.target.value)}
+            className="sector-select"
+            title="Filter stocks by broad sector"
+          >
+            <option value="All">All Sectors</option>
+            {sectorsList.filter(s => s !== 'All').map(s => (
+              <option key={s} value={s}>{s}</option>
+            ))}
+          </select>
+
+          <select
+            value={selectedIndustry}
+            onChange={(e) => setSelectedIndustry(e.target.value)}
+            className="industry-select"
+            title="Filter stocks by specific industry sub-sector"
+            disabled={industriesList.length <= 1}
+          >
+            <option value="All">All Industries</option>
+            {industriesList.filter(i => i !== 'All').map(i => (
+              <option key={i} value={i}>{i}</option>
+            ))}
+          </select>
         </div>
 
         <div className="filter-buttons">
@@ -512,7 +584,15 @@ export default function App() {
                     <tr key={t.ticker}>
                       <td>
                         <div className="ticker-cell">
-                          <span className="ticker-symbol">{t.ticker}</span>
+                          <div className="ticker-symbol-row">
+                            <span className="ticker-symbol">{t.ticker}</span>
+                            {t.sector && t.sector !== 'Unknown' && (
+                              <span className="sector-pill" title={`Sector: ${t.sector}`}>{t.sector}</span>
+                            )}
+                            {t.industry && t.industry !== 'Unknown' && (
+                              <span className="industry-pill" title={`Industry: ${t.industry}`}>{t.industry}</span>
+                            )}
+                          </div>
                           <span className="ticker-name" title={t.name}>{t.name}</span>
                         </div>
                       </td>

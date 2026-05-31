@@ -189,6 +189,79 @@ header {
   height: 14px;
 }
 
+.search-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-grow: 1;
+  max-width: 700px;
+}
+
+.sector-select, .industry-select {
+  background-color: var(--select-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: 6px;
+  padding: 0 12px;
+  height: 36px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  max-width: 180px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sector-select:hover, .sector-select:focus,
+.industry-select:hover, .industry-select:focus {
+  border-color: var(--border-hover);
+  background-color: var(--filter-active-bg);
+}
+
+.industry-select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ticker-symbol-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.sector-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 500;
+  background-color: var(--border-color);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+
+.industry-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 500;
+  background-color: var(--accent-glow);
+  color: var(--accent-color);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  white-space: nowrap;
+}
+
 /* Tab button selector like Shadcn tabs */
 .filter-buttons {
   display: flex;
@@ -581,8 +654,14 @@ tr:hover td:first-child {
     gap: 12px;
   }
 
+  .search-group {
+    max-width: 100%;
+    width: 100%;
+  }
+
   .search-container {
     max-width: 100%;
+    flex-grow: 1;
   }
 
   .search-input {
@@ -617,6 +696,13 @@ tr:hover td:first-child {
     padding: 0 12px;
     height: 36px;
     font-size: 12px;
+  }
+
+  .sector-select, .industry-select {
+    padding: 0 12px;
+    height: 36px;
+    font-size: 12px;
+    max-width: none;
   }
 
   .theme-toggle-btn {
@@ -679,6 +765,20 @@ tr:hover td:first-child {
 
   .ticker-name {
     max-width: 90px;
+  }
+
+  .search-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+
+  .sector-select, .industry-select {
+    width: 100%;
   }
   
   /* Make columns scrollable and clear visual indicators */

@@ -84,6 +84,50 @@ def main():
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     universe_path = os.path.join(base_dir, 'data', 'universe.csv')
     output_path = os.path.join(base_dir, 'data', 'latest.json')
+    sectors_path = os.path.join(base_dir, 'data', 'sectors.json')
+    
+    # Load sector cache
+    sector_map = {}
+    if os.path.exists(sectors_path):
+        try:
+            with open(sectors_path, 'r', encoding='utf-8') as sf:
+                sector_map = json.load(sf)
+            print(f"Loaded {len(sector_map)} sector classifications from cache.")
+        except Exception as e:
+            print(f"Warning: Could not read sectors.json: {e}")
+    else:
+        # Download and build cache automatically from NASDAQ screener
+        print("sectors.json not found. Automatically downloading sector/industry mappings from NASDAQ...")
+        try:
+            import urllib.request
+            url = "https://api.nasdaq.com/api/screener/stocks?tableonly=true&limit=25&download=true"
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'Accept': 'application/json, text/plain, */*',
+                'Accept-Language': 'en-US,en;q=0.9',
+                'Origin': 'https://www.nasdaq.com',
+                'Referer': 'https://www.nasdaq.com/'
+            }
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req) as response:
+                res_data = json.loads(response.read().decode('utf-8'))
+                rows = res_data.get("data", {}).get("rows", [])
+                for row in rows:
+                    symbol = row['symbol'].strip().upper()
+                    sector = row.get('sector', '').strip()
+                    industry = row.get('industry', '').strip()
+                    if symbol:
+                        sector_map[symbol] = {
+                            "sector": sector if sector else "Unknown",
+                            "industry": industry if industry else "Unknown"
+                        }
+            
+            # Save it
+            with open(sectors_path, 'w', encoding='utf-8') as sf:
+                json.dump(sector_map, sf, indent=2)
+            print(f"Successfully generated sectors.json with {len(sector_map)} records.")
+        except Exception as e:
+            print(f"Warning: Could not automatically generate sector cache: {e}")
     
     # Load batches from explicit universe_batch_1.csv, universe_batch_2.csv, universe_batch_3.csv files
     num_batches = 3
@@ -170,6 +214,14 @@ def main():
                 for t in batches[idx]:
                     if t in existing_lookup:
                         cached_item = existing_lookup[t]
+                        if "sector" not in cached_item or "industry" not in cached_item:
+                            s_data = sector_map.get(t, {})
+                            if isinstance(s_data, str):
+                                cached_item["sector"] = s_data
+                                cached_item["industry"] = s_data
+                            else:
+                                cached_item["sector"] = s_data.get("sector", "Unknown")
+                                cached_item["industry"] = s_data.get("industry", "Unknown")
                         calculated_tickers.append(cached_item)
                         # Reconstruct raw score for ranking
                         raw_scores[t] = cached_item.get("ibd_raw", cached_item.get("ibd_rs", 50) / 99)
@@ -207,14 +259,37 @@ def main():
                     print(f"Warning: Insufficient history for {ticker} after aligning. Skipping.")
                     continue
                     
-                # Get company name
+                # Get company name, sector & industry
                 name = COMMON_NAMES.get(ticker)
-                if not name:
+                s_data = sector_map.get(ticker, {})
+                if isinstance(s_data, str):
+                    sector = s_data
+                    industry = s_data
+                else:
+                    sector = s_data.get("sector", "Unknown")
+                    industry = s_data.get("industry", "Unknown")
+                
+                if not name or sector == "Unknown" or industry == "Unknown":
                     try:
-                        # Fallback to info lookup for custom tickers
-                        name = t_obj.info.get('longName', ticker)
+                        info = t_obj.info
+                        if not name:
+                            name = info.get('longName', ticker)
+                        if sector == "Unknown":
+                            sector = info.get('sector', 'Unknown')
+                        if industry == "Unknown":
+                            industry = info.get('industry', 'Unknown')
+                        
+                        sector_map[ticker] = {
+                            "sector": sector,
+                            "industry": industry
+                        }
                     except Exception:
-                        name = ticker
+                        if not name:
+                            name = ticker
+                        if sector == "Unknown":
+                            sector = 'Unknown'
+                        if industry == "Unknown":
+                            industry = 'Unknown'
                 
                 # Today's close
                 c_today = merged['ticker'].iloc[-1]
@@ -262,7 +337,9 @@ def main():
                     "rs_sts_qqq": int(rs_sts_qqq),
                     "rs_bar_spy": [round(x, 4) for x in rs_bar_spy],
                     "rs_bar_qqq": [round(x, 4) for x in rs_bar_qqq],
-                    "ibd_raw": round(rs_raw, 4)
+                    "ibd_raw": round(rs_raw, 4),
+                    "sector": sector,
+                    "industry": industry
                 })
                 
             except Exception as e:
@@ -311,7 +388,7 @@ def main():
             json.dump(output_data, f, indent=2)
             
     # Save CSV files (latest.csv and date-suffixed CSV)
-    csv_headers = ['ticker', 'name', 'daily_pct', 'one_month_pct', 'rs_sts_spy', 'rs_sts_qqq', 'ibd_rs']
+    csv_headers = ['ticker', 'name', 'daily_pct', 'one_month_pct', 'rs_sts_spy', 'rs_sts_qqq', 'ibd_rs', 'sector', 'industry']
     csv_rows = []
     for t_data in calculated_tickers:
         csv_rows.append({
@@ -321,7 +398,9 @@ def main():
             'one_month_pct': t_data['one_month_pct'],
             'rs_sts_spy': t_data['rs_sts_spy'],
             'rs_sts_qqq': t_data['rs_sts_qqq'],
-            'ibd_rs': t_data['ibd_rs']
+            'ibd_rs': t_data['ibd_rs'],
+            'sector': t_data.get('sector', 'Unknown'),
+            'industry': t_data.get('industry', 'Unknown')
         })
         
     csv_path = os.path.join(base_dir, 'data', 'latest.csv')
@@ -331,6 +410,14 @@ def main():
             writer = csv.DictWriter(csvfile, fieldnames=csv_headers)
             writer.writeheader()
             writer.writerows(csv_rows)
+        
+    # Save updated sector cache
+    try:
+        with open(sectors_path, 'w', encoding='utf-8') as sf:
+            json.dump(sector_map, sf, indent=2)
+        print("Updated sectors.json cache saved.")
+    except Exception as e:
+        print(f"Warning: Could not write sectors.json cache: {e}")
         
     print(f"\nSuccessfully calculated results for {N} tickers.")
     print(f"JSON outputs saved to {output_path} and {json_date_path}")
