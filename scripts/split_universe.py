@@ -9,15 +9,27 @@ def main():
         print(f"Error: universe.csv not found at {universe_path}")
         return
 
+    # Load omit list if it exists
+    omit_path = os.path.join(base_dir, 'data', 'omit.csv')
+    omit_tickers = set()
+    if os.path.exists(omit_path):
+        with open(omit_path, mode='r', encoding='utf-8') as f:
+            for line in f:
+                t = line.strip().upper()
+                if t and not t.startswith('#'):
+                    omit_tickers.add(t)
+    print(f"Loaded {len(omit_tickers)} tickers to omit.")
+
     # Read clean tickers from universe.csv
     tickers = []
     with open(universe_path, mode='r', encoding='utf-8') as f:
         for line in f:
             ticker = line.strip().upper()
             if ticker and ticker != 'TICKER' and not ticker.startswith('#') and '/' not in ticker:
-                tickers.append(ticker)
+                if ticker not in omit_tickers:
+                    tickers.append(ticker)
 
-    print(f"Loaded {len(tickers)} tickers from universe.csv (filtered out comments and slashes).")
+    print(f"Loaded {len(tickers)} tickers from universe.csv (filtered out comments, slashes, and omitted tickers).")
 
     # Split into 3 batches round-robin
     num_batches = 3
