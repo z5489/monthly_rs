@@ -29532,8 +29532,8 @@
     "industry": "Real Estate Services"
   },
   "SNHIY": {
-    "sector": "Unknown",
-    "industry": "Unknown"
+    "sector": "Industrials",
+    "industry": "Farm & Heavy Construction Machinery"
   },
   "BDRPF": {
     "sector": "Industrials",
@@ -38442,5 +38442,45 @@
   "CTYMF": {
     "sector": "Basic Materials",
     "industry": "Gold"
+  },
+  "PALAF": {
+    "sector": "Energy",
+    "industry": "Uranium"
+  },
+  "KMRRF": {
+    "sector": "",
+    "industry": ""
+  },
+  "RMLRF": {
+    "sector": "Basic Materials",
+    "industry": "Gold"
+  },
+  "SYAXF": {
+    "sector": "Basic Materials",
+    "industry": "Other Industrial Metals & Mining"
+  },
+  "ENAKF": {
+    "sector": "Utilities",
+    "industry": "Utilities - Diversified"
+  },
+  "VLKPF": {
+    "sector": "Consumer Cyclical",
+    "industry": "Auto Manufacturers"
+  },
+  "USSJY": {
+    "sector": "Consumer Cyclical",
+    "industry": "Auto & Truck Dealerships"
+  },
+  "SMBMF": {
+    "sector": "Energy",
+    "industry": "Oil & Gas Equipment & Services"
+  },
+  "CVSGF": {
+    "sector": "Healthcare",
+    "industry": "Medical Care Facilities"
+  },
+  "BVHMF": {
+    "sector": "Consumer Cyclical",
+    "industry": "Residential Construction"
   }
 }
