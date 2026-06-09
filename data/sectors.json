@@ -33600,8 +33600,8 @@
     "industry": "Utilities - Diversified"
   },
   "CEF": {
-    "sector": "Unknown",
-    "industry": "Unknown"
+    "sector": "Financial Services",
+    "industry": "Asset Management"
   },
   "XROLF": {
     "sector": "Technology",
@@ -36328,8 +36328,8 @@
     "industry": "REIT - Retail"
   },
   "PHYS": {
-    "sector": "Unknown",
-    "industry": "Unknown"
+    "sector": "Financial Services",
+    "industry": "Asset Management"
   },
   "ACXIF": {
     "sector": "Industrials",
@@ -36368,8 +36368,8 @@
     "industry": "Utilities - Renewable"
   },
   "PSLV": {
-    "sector": "Unknown",
-    "industry": "Unknown"
+    "sector": "Financial Services",
+    "industry": "Asset Management"
   },
   "SONVY": {
     "sector": "Healthcare",
