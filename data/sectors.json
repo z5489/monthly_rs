@@ -31820,8 +31820,8 @@
     "industry": "Specialty Chemicals"
   },
   "RPGSF": {
-    "sector": "Unknown",
-    "industry": "Unknown"
+    "sector": "",
+    "industry": ""
   },
   "DPZUF": {
     "sector": "Consumer Cyclical",
