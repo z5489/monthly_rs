@@ -90,7 +90,7 @@ PH,Parker-Hannifin Corporation,0.77,10.92,98,89,65,Industrials,Metal Fabrication
 BPAQF,BP p.l.c.,-7.49,-20.26,0,0,35,Energy,Oil & Gas Integrated
 ZFSVF,Zurich Insurance Group AG,-2.57,-2.27,28,13,32,Financial Services,Insurance - Diversified
 CEG,Constellation Energy Corporation,2.58,-2.56,47,38,14,Utilities,Electric Utilities: Central
-HWM,Howmet Aerospace Inc.,-1.97,6.3,79,70,80,Industrials,Metal Fabrications
+HWM,Howmet Aerospace Inc.,-1.97,6.3,79,70,81,Industrials,Metal Fabrications
 BAMGF,Brookfield Corporation,0.0,-0.39,42,8,59,Financial Services,Asset Management
 FTNT,"Fortinet, Inc.",0.41,11.33,83,67,90,Technology,Computer peripheral equipment
 CME,CME Group Inc.,-2.44,-14.64,2,0,19,Finance,Investment Bankers/Brokers/Service
@@ -198,7 +198,7 @@ OKE,"ONEOK, Inc.",-0.64,-7.73,17,6,51,Utilities,Oil & Gas Production
 GWLIF,Great-West Lifeco Inc.,1.24,11.58,100,90,85,Financial Services,Insurance - Life
 CTVA,"Corteva, Inc.",1.58,-0.04,75,49,48,Consumer Staples,Farming/Seeds/Milling
 BAMXF,Bayerische Motoren Werke Aktiengesellschaft,-2.94,-18.85,0,0,7,Consumer Cyclical,Auto Manufacturers
-CBRS,Cerebras Systems Inc.,9.85,-19.26,38,29,8,Technology,Semiconductors
+CBRS,Cerebras Systems Inc.,9.85,-19.26,38,29,7,Technology,Semiconductors
 CVE,Cenovus Energy Inc.,-1.72,-17.13,0,0,78,Energy,Oil & Gas Production
 SDVKF,Sandvik AB (publ),0.0,-0.03,12,5,76,Industrials,Specialty Industrial Machinery
 ARGNF,argenx SE,0.0,12.05,89,67,63,Healthcare,Biotechnology
@@ -222,7 +222,7 @@ UOVEF,United Overseas Bank Limited,0.0,2.39,68,45,53,Financial Services,Banks - 
 MDLN,Medline Inc.,-1.32,-0.86,65,49,15,Health Care,Medical/Dental Instruments
 RWNFF,RWE Aktiengesellschaft,-1.49,-5.05,26,12,72,Utilities,Utilities - Diversified
 LNG,"Cheniere Energy, Inc.",-1.89,-6.83,17,4,27,Utilities,Oil/Gas Transmission
-LGRVF,Legrand SA,9.38,5.27,77,58,67,Industrials,Electrical Equipment & Parts
+LGRVF,Legrand SA,9.38,5.27,77,58,66,Industrials,Electrical Equipment & Parts
 FANUF,Fanuc Corporation,1.68,-3.22,22,11,82,Industrials,Specialty Industrial Machinery
 CAH,"Cardinal Health, Inc.",-1.99,11.31,81,74,67,Health Care,Other Pharmaceuticals
 DGEAF,Diageo plc,-1.14,-6.84,26,16,23,Consumer Defensive,Beverages - Wineries & Distilleries
@@ -273,7 +273,7 @@ MSADF,"MS&AD Insurance Group Holdings, Inc.",0.0,3.93,94,85,73,Financial Service
 STLD,"Steel Dynamics, Inc.",-7.49,9.47,31,19,89,Industrials,Steel/Iron Ore
 KMTUY,Komatsu Ltd.,0.75,4.7,55,41,64,Industrials,Farm & Heavy Construction Machinery
 PBCRF,PT Bank Central Asia Tbk,30.74,13.87,91,80,10,Financial Services,Banks - Regional
-EME,"EMCOR Group, Inc.",1.1,-1.94,61,26,77,Industrials,Engineering & Construction
+EME,"EMCOR Group, Inc.",1.1,-1.94,61,26,78,Industrials,Engineering & Construction
 FJTSY,Fujitsu Limited,0.54,-1.49,11,7,18,Technology,Information Technology Services
 WEGZY,WEG S.A.,4.77,5.88,100,100,51,Industrials,Electrical Equipment & Parts
 JPPHY,"Japan Post Holdings Co., Ltd.",-9.24,-12.01,34,30,77,Financial Services,Banks - Regional
@@ -390,7 +390,7 @@ OMVJF,OMV Aktiengesellschaft,0.0,-7.61,6,0,62,Energy,Oil & Gas Integrated
 DG,Dollar General Corporation,4.38,8.45,81,68,28,Consumer Discretionary,Department/Specialty Retail Stores
 DOW,Dow Inc.,-2.37,-11.63,0,0,54,Industrials,Major Chemicals
 BNTX,BioNTech SE,-1.44,0.59,51,35,28,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
-QBIEY,QBE Insurance Group Limited,2.06,-1.52,63,54,68,Financial Services,Insurance - Property & Casualty
+QBIEY,QBE Insurance Group Limited,2.06,-1.52,63,54,67,Financial Services,Insurance - Property & Casualty
 AIPUY,Airports of Thailand Public Company Limited,3.3,23.25,100,100,87,Industrials,Airports & Air Services
 BNCZF,Banco BPM S.p.A.,0.0,12.13,87,64,82,Financial Services,Banks - Regional
 FMXUF,"Fomento Económico Mexicano, S.A.B. de C.V.",0.0,3.88,87,75,71,Consumer Defensive,Beverages - Brewers
@@ -402,7 +402,7 @@ HALMY,Halma plc,3.75,-13.29,9,4,53,Industrials,Conglomerates
 WRB,W. R. Berkley Corporation,-1.34,-1.55,58,38,31,Finance,Property-Casualty Insurers
 OLCLY,"Oriental Land Co., Ltd.",0.28,0.85,67,41,6,Consumer Cyclical,Leisure
 BCEFF,BCE Inc.,0.0,1.27,39,10,61,Communication Services,Telecom Services
-CCOZF,China Coal Energy Company Limited,0.0,-22.29,5,2,39,Energy,Thermal Coal
+CCOZF,China Coal Energy Company Limited,0.0,-22.29,5,2,38,Energy,Thermal Coal
 BCE,BCE Inc.,0.0,-2.44,0,0,34,Telecommunications,Telecommunications Equipment
 DRI,"Darden Restaurants, Inc.",1.0,8.2,98,82,44,Consumer Discretionary,Restaurants
 OEZVY,VERBUND AG,-5.17,-7.07,0,0,23,Utilities,Utilities - Renewable
@@ -437,7 +437,7 @@ IHICF,IHI Corporation,0.0,24.53,88,75,3,Industrials,Specialty Industrial Machine
 SBAC,SBA Communications Corporation,-2.45,-9.5,0,0,29,Real Estate,Real Estate Investment Trusts
 JXHGF,"ENEOS Holdings, Inc.",0.0,-4.61,20,8,69,Energy,Oil & Gas Refining & Marketing
 SURDF,"Sumitomo Realty & Development Co., Ltd.",0.0,-30.33,1,0,2,Real Estate,Real Estate Services
-L,Loews Corporation,-0.37,-1.32,53,32,48,Finance,Property-Casualty Insurers
+L,Loews Corporation,-0.37,-1.32,53,32,47,Finance,Property-Casualty Insurers
 ASCCY,ASICS Corporation,-0.11,-1.82,14,3,45,Consumer Cyclical,Footwear & Accessories
 CNGKY,CK Asset Holdings Limited,-2.28,-23.1,0,0,60,Real Estate,Real Estate - Development
 CHRW,"C.H. Robinson Worldwide, Inc.",-0.09,2.79,52,37,78,Industrials,Integrated Freight & Logistics
@@ -466,7 +466,7 @@ KKPNF,Koninklijke KPN N.V.,-0.41,-10.46,0,0,35,Communication Services,Telecom Se
 MDIBF,Mediobanca Banca di Credito Finanziario S.p.A.,0.0,22.75,85,71,78,Financial Services,Banks - Regional
 TU,TELUS Corporation,-1.03,-4.75,0,0,15,Telecommunications,Telecommunications Equipment
 PKG,Packaging Corporation of America,-0.1,8.13,85,60,59,Consumer Discretionary,Containers/Packaging
-RS,"Reliance, Inc.",-1.92,9.78,59,41,78,Industrials,Metal Fabrications
+RS,"Reliance, Inc.",-1.92,9.78,59,41,79,Industrials,Metal Fabrications
 INCY,Incyte Corporation,-0.78,1.17,39,32,58,Health Care,Biotechnology: Commercial Physical & Biological Resarch
 DWAHF,"Daiwa House Industry Co., Ltd.",0.0,-13.4,32,26,1,Real Estate,Real Estate - Development
 ROKU,"Roku, Inc.",0.57,11.2,72,64,83,Telecommunications,Cable & Other Pay Television Services
@@ -548,7 +548,7 @@ UPMMY,UPM-Kymmene Oyj,-2.09,-6.34,0,0,36,Basic Materials,Paper & Paper Products
 DY,"Dycom Industries, Inc.",-1.03,10.63,37,28,86,Industrials,Water Sewer Pipeline Comm & Power Line Construction
 AHKSY,Asahi Kasei Corporation,0.32,3.79,51,33,76,Industrials,Conglomerates
 RTO,Rentokil Initial plc,-1.86,-10.86,0,0,42,Consumer Discretionary,Other Consumer Services
-CSDXF,"COSCO SHIPPING Energy Transportation Co., Ltd.",0.0,-27.39,3,1,81,Energy,Oil & Gas Midstream
+CSDXF,"COSCO SHIPPING Energy Transportation Co., Ltd.",0.0,-27.39,3,1,82,Energy,Oil & Gas Midstream
 BPCGF,"Banco Comercial Português, S.A.",0.0,5.0,41,28,64,Financial Services,Banks - Regional
 LI,Li Auto Inc.,-2.72,-18.36,0,0,4,Industrials,Auto Manufacturing
 GNMSF,Genmab A/S,0.0,-7.5,48,38,23,Healthcare,Biotechnology
@@ -629,7 +629,7 @@ RICFY,Recordati Industria Chimica e Farmaceutica S.p.A.,0.0,36.85,81,71,43,Healt
 JDLGF,"JD Logistics, Inc.",0.0,5.88,49,26,66,Industrials,Integrated Freight & Logistics
 AIZ,"Assurant, Inc.",-0.87,1.76,73,49,69,Finance,Property-Casualty Insurers
 IMPUF,Impala Platinum Holdings Limited,4.52,-17.03,19,16,36,Basic Materials,Other Precious Metals & Mining
-GPAEF,"Grupo Aeroportuario del Pacífico, S.A.B. de C.V.",0.0,-7.89,8,3,36,Industrials,Airports & Air Services
+GPAEF,"Grupo Aeroportuario del Pacífico, S.A.B. de C.V.",0.0,-7.89,8,3,35,Industrials,Airports & Air Services
 HAS,"Hasbro, Inc.",1.52,-3.57,28,16,48,Consumer Discretionary,Recreational Games/Products/Toys
 DKNG,DraftKings Inc.,0.27,5.52,39,33,14,Consumer Discretionary,Services-Misc. Amusement & Recreation
 NRDXF,Nordex SE,0.0,-18.88,5,2,83,Industrials,Specialty Industrial Machinery
@@ -782,7 +782,7 @@ CORZ,"Core Scientific, Inc.",2.75,25.8,100,100,93,Finance,Finance: Consumer Serv
 CELH,"Celsius Holdings, Inc.",1.38,7.58,61,54,5,Consumer Staples,Beverages (Production/Distribution)
 RGTI,"Rigetti Computing, Inc.",5.51,26.54,20,11,75,Technology,EDP Services
 WEGRY,The Weir Group PLC,1.01,-1.45,90,55,25,Industrials,Specialty Industrial Machinery
-KIKOY,Kikkoman Corporation,0.0,18.28,95,89,64,Consumer Defensive,Packaged Foods
+KIKOY,Kikkoman Corporation,0.0,18.28,95,89,63,Consumer Defensive,Packaged Foods
 SBSW,Sibanye Stillwater Limited,-4.73,-18.33,11,0,36,Basic Materials,Precious Metals
 MTCH,MTCH,0.4,-1.5,58,45,52,Technology,Computer Software: Programming Data Processing
 PRI,"Primerica, Inc.",0.16,0.69,89,68,53,Finance,Life Insurance
@@ -873,7 +873,7 @@ IMVT,"Immunovant, Inc.",1.82,-0.62,100,95,91,Health Care,Biotechnology: Biologic
 CDNAF,"Canadian Tire Corporation, Limited",1.02,2.85,86,54,42,Consumer Cyclical,Specialty Retail
 CBC,"Central Bancompany, Inc.",2.47,0.39,43,31,66,Financial Services,Banks - Regional
 OGC,OceanaGold Corporation,-4.24,-12.27,28,15,61,Basic Materials,Gold
-THNOF,Technology One Limited,0.0,3.62,54,24,73,Technology,Software - Application
+THNOF,Technology One Limited,0.0,3.62,54,24,72,Technology,Software - Application
 CEVMF,CTS Eventim AG & Co. KGaA,0.0,6.45,30,20,4,Communication Services,Entertainment
 AXTI,"AXT, Inc.",-8.19,-19.16,8,4,99,Technology,Semiconductors
 VBREY,VBREY,-5.91,-20.15,0,0,61,Consumer Cyclical,Specialty Retail
@@ -899,12 +899,12 @@ AUGO,Aura Minerals Inc.,-3.7,-15.22,40,31,88,Basic Materials,Gold
 SBFFF,SBM Offshore N.V.,0.0,-13.83,5,2,76,Energy,Oil & Gas Equipment & Services
 RADLY,Raia Drogasil S.A.,-17.22,-12.1,0,0,21,Healthcare,Pharmaceutical Retailers
 EDNMY,Edenred SE,17.15,20.28,100,100,76,Financial Services,Credit Services
-VAL,Valaris Limited,-5.41,-28.31,0,0,74,Energy,Oil & Gas Production
+VAL,Valaris Limited,-5.41,-28.31,0,0,73,Energy,Oil & Gas Production
 MNESP,MSA Safety Incorporated,0.0,0.0,31,10,26,Industrials,Security & Protection Services
 OTGLY,CD Projekt S.A.,-0.46,-15.2,3,1,17,Communication Services,Electronic Gaming & Multimedia
-OMF,"OneMain Holdings, Inc.",0.99,7.36,99,85,49,Finance,Finance: Consumer Services
+OMF,"OneMain Holdings, Inc.",0.99,7.36,99,85,48,Finance,Finance: Consumer Services
 GGPSF,GGPSF,1.51,12.53,100,94,99,Basic Materials,Gold
-CAG,"Conagra Brands, Inc.",0.3,-4.07,52,40,10,Consumer Staples,Packaged Foods
+CAG,"Conagra Brands, Inc.",0.3,-4.07,52,40,9,Consumer Staples,Packaged Foods
 DSGX,The Descartes Systems Group Inc.,-4.28,-7.14,0,0,10,Technology,Computer Software: Prepackaged Software
 STWD,"Starwood Property Trust, Inc.",0.24,-2.57,12,0,26,Real Estate,Real Estate Investment Trusts
 SGHC,Super Group (SGHC) Limited,-1.26,-3.06,54,38,67,Consumer Discretionary,Services-Misc. Amusement & Recreation
@@ -924,7 +924,7 @@ SATLF,"ZOZO, Inc.",0.0,6.04,84,63,1,Consumer Cyclical,Internet Retail
 PATH,"UiPath, Inc.",0.39,-4.64,0,0,10,Technology,Computer Software: Prepackaged Software
 ONEXF,Onex Corporation,0.5,0.8,67,39,36,Financial Services,Asset Management
 CHDN,Churchill Downs Incorporated,0.58,3.08,62,39,23,Consumer Discretionary,Services-Misc. Amusement & Recreation
-GKOS,Glaukos Corporation,2.57,-9.14,75,67,76,Health Care,Medical/Dental Instruments
+GKOS,Glaukos Corporation,2.57,-9.14,75,67,77,Health Care,Medical/Dental Instruments
 TOITF,Topicus.com Inc.,-1.42,-3.44,22,9,9,Technology,Software - Infrastructure
 DBX,"Dropbox, Inc.",-1.67,-5.77,2,0,25,Technology,Computer Software: Prepackaged Software
 TOKUY,Tokyu Corporation,0.0,-15.0,36,31,18,Consumer Cyclical,Department Stores
@@ -1052,7 +1052,7 @@ ACLS,"Axcelis Technologies, Inc.",6.89,25.39,94,92,95,Technology,Industrial Mach
 OCTV,Octave Intelligence plc,0.36,-24.41,0,0,8,Technology,Computer Software: Prepackaged Software
 CMZOF,"Corporación Moctezuma, S.A.B. de C.V.",0.0,170.54,95,90,99,Basic Materials,Building Materials
 PI,"Impinj, Inc.",4.12,-6.17,16,6,43,Technology,Industrial Machinery/Components
-SKBNF,Shikun & Binui Ltd.,0.0,10.06,75,54,91,Industrials,Engineering & Construction
+SKBNF,Shikun & Binui Ltd.,0.0,10.06,75,54,90,Industrials,Engineering & Construction
 MIR,"Mirion Technologies, Inc.",5.44,3.16,100,85,18,Industrials,Industrial Machinery/Components
 BKEAF,"The Bank of East Asia, Limited",0.0,-17.06,5,2,19,Financial Services,Banks - Regional
 REYN,Reynolds Consumer Products Inc.,2.31,9.8,89,69,53,Consumer Discretionary,Containers/Packaging
@@ -1192,9 +1192,7 @@ FIZZ,National Beverage Corp.,-1.41,2.89,49,32,33,Consumer Staples,Beverages (Pro
 ARCVF,Arcadis NV,0.0,-1.19,37,15,39,Industrials,Engineering & Construction
 BRCTF,BioArctic AB (publ),0.0,11.76,53,46,72,Healthcare,Biotechnology
 SMG,The Scotts Miracle-Gro Company,3.16,12.13,100,100,48,Industrials,Agricultural Chemicals
-GBDC,"Golub Capital BDC, Inc.",0.0,-2.95,0,0,30,Finance,Finance: Consumer Services
-ASO,"Academy Sports and Outdoors, Inc.",4.75,2.72,54,46,41,Consumer Discretionary,Other Specialty Stores
-MMTOY,Mitsubishi Motors Corporation,0.0,-12.61,7,2,7,Consumer Cyclical,Auto Manufacturers
+GBDC,GBDC,0.0,-2.95,0,0,30,Finance,Finance: Consumer Services
 SKYW,"SkyWest, Inc.",0.99,11.21,100,88,29,Consumer Discretionary,Air Freight/Delivery Services
 BEAM,Beam Therapeutics Inc.,5.11,25.93,100,100,86,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
 ICUI,"ICU Medical, Inc.",1.76,8.55,72,55,45,Health Care,Medical/Dental Instruments
@@ -1224,7 +1222,7 @@ BATRK,"Atlanta Braves Holdings, Inc.",-1.41,0.3,55,38,66,Consumer Discretionary,
 ERO,Ero Copper Corp.,-2.23,10.31,64,55,84,Basic Materials,Metal Mining
 TLX,Telix Pharmaceuticals Limited,1.51,-1.85,84,71,42,Health Care,Biotechnology: Pharmaceutical Preparations
 HSAI,Hesai Group,-1.11,-16.59,0,0,7,Industrials,Industrial Machinery/Components
-VC,Visteon Corporation,3.09,4.53,23,5,66,Consumer Discretionary,Auto Parts:O.E.M.
+VC,Visteon Corporation,3.09,4.53,23,5,65,Consumer Discretionary,Auto Parts:O.E.M.
 CZGZF,Colt CZ Group SE,0.0,-1.24,18,6,87,Industrials,Aerospace & Defense
 CRVL,CorVel Corporation,0.67,-8.92,28,19,16,Finance,Specialty Insurers
 CGNMF,CGN Mining Company Limited,0.0,-8.75,4,2,40,Energy,Uranium
@@ -1256,9 +1254,9 @@ JNPKF,Jenoptik AG,1.44,4.37,30,18,94,Technology,Electronic Components
 KALU,Kaiser Aluminum Corporation,1.28,8.17,55,36,93,Industrials,Metal Fabrications
 CSAN,Cosan S.A.,-2.21,-22.9,8,5,2,Consumer Discretionary,Retail-Auto Dealers and Gas Stations
 BANC,"Banc of California, Inc.",1.31,7.5,92,68,70,Finance,Major Banks
-BKFKF,P/F Bakkafrost,0.0,-14.49,4,2,16,Consumer Defensive,Farm Products
+BKFKF,P/F Bakkafrost,0.0,-14.49,4,2,17,Consumer Defensive,Farm Products
 TE,T1 Energy Inc.,3.43,7.47,35,30,97,Miscellaneous,Industrial Machinery/Components
-ADEA,Adeia Inc.,1.4,20.71,81,73,93,Technology,Computer Software: Prepackaged Software
+ADEA,Adeia Inc.,1.37,20.67,81,73,93,Technology,Computer Software: Prepackaged Software
 TNIPF,TNIPF,0.0,3.45,42,25,56,Unknown,Unknown
 SGAMY,Sega Sammy Holdings Inc.,-1.46,-7.9,14,10,7,Communication Services,Electronic Gaming & Multimedia
 LYSFF,Lerøy Seafood Group ASA,0.23,-12.09,6,3,19,Consumer Defensive,Packaged Foods
@@ -1331,7 +1329,7 @@ SMSOF,Samsonite Group S.A.,0.0,-3.24,16,6,16,Consumer Cyclical,Footwear & Access
 PENN,"PENN Entertainment, Inc.",0.33,31.73,84,71,81,Consumer Discretionary,Hotels/Resorts
 CSPKY,COSCO SHIPPING Ports Limited,0.0,-7.03,6,3,31,Industrials,Marine Shipping
 SPNT,SiriusPoint Ltd.,-1.22,-3.89,66,54,58,Finance,Property-Casualty Insurers
-KMT,Kennametal Inc.,-0.11,1.57,90,80,79,Industrials,Industrial Machinery/Components
+KMT,Kennametal Inc.,-0.11,1.57,90,80,80,Industrials,Industrial Machinery/Components
 WFRSF,West African Resources Limited,0.0,-7.27,3,2,56,Basic Materials,Gold
 WERN,"Werner Enterprises, Inc.",2.03,1.8,14,0,84,Industrials,Trucking Freight/Courier Services
 ICHR,"Ichor Holdings, Ltd.",10.24,49.95,100,100,98,Technology,Semiconductors
@@ -1394,7 +1392,7 @@ VERX,"Vertex, Inc.",-2.63,-17.69,0,0,3,Technology,Computer Software: Prepackaged
 PSNYW,Polestar Automotive Holding UK PLC,5.05,-3.64,50,40,2,Industrials,Auto Manufacturing
 WLY,"John Wiley & Sons, Inc.",2.82,12.91,100,87,75,Consumer Discretionary,Books
 FUN,Six Flags Entertainment Corporation,0.28,27.44,96,90,75,Consumer Discretionary,Services-Misc. Amusement & Recreation
-BLBD,Blue Bird Corporation,0.87,13.31,99,85,82,Consumer Discretionary,Construction/Ag Equipment/Trucks
+BLBD,Blue Bird Corporation,0.87,13.31,99,85,83,Consumer Discretionary,Construction/Ag Equipment/Trucks
 BMRPF,B&M European Value Retail plc,0.0,24.04,87,75,38,Consumer Defensive,Discount Stores
 ACPIF,Acen Corporation,0.0,-166.67,99,97,1,Utilities,Utilities - Renewable
 NGL,NGL Energy Partners LP,1.91,-6.93,20,2,94,Utilities,Natural Gas Distribution
@@ -1482,8 +1480,10 @@ ELVR,Elevra Lithium Limited,0.35,5.42,46,40,97,Industrials,Mining & Quarrying of
 LOB,"Live Oak Bancshares, Inc.",0.71,3.38,68,49,64,Finance,Major Banks
 KRP,"Kimbell Royalty Partners, LP",-0.2,-2.31,18,3,60,Energy,Oil & Gas Production
 AGRO,Adecoagro S.A.,-4.15,-30.63,0,0,24,Consumer Staples,Farming/Seeds/Milling
+SGRY,"Surgery Partners, Inc.",2.25,7.86,62,54,26,Health Care,Hospital/Nursing Management
+GLOB,Globant S.A.,-11.18,-26.44,0,0,2,Technology,EDP Services
 PAYO,Payoneer Global Inc.,0.0,41.53,97,92,73,Consumer Discretionary,Business Services
-STGW,Stagwell Inc.,0.75,7.88,39,22,70,Consumer Discretionary,Advertising
+STGW,Stagwell Inc.,0.75,7.88,39,22,69,Consumer Discretionary,Advertising
 STRA,"Strategic Education, Inc.",0.21,-5.1,18,12,25,Real Estate,Other Consumer Services
 VLXGF,Volex plc,-1.82,-10.02,11,0,86,Industrials,Electrical Equipment & Parts
 PEB,Pebblebrook Hotel Trust,3.98,27.66,94,86,90,Real Estate,Real Estate Investment Trusts
@@ -1512,7 +1512,7 @@ VTKLY,Vtech Holdings Limited,-4.41,-11.55,7,0,15,Technology,Communication Equipm
 MWTCY,"Manila Water Company, Inc.",0.0,0.0,31,10,54,Utilities,Utilities - Regulated Water
 HGRAF,HydroGraph Clean Power Inc.,0.54,-5.29,17,10,99,Basic Materials,Specialty Chemicals
 GHRS,GH Research PLC,2.49,-1.33,50,44,90,Health Care,Biotechnology: Pharmaceutical Preparations
-LILAK,Liberty Latin America Ltd.,-8.76,-8.19,0,0,27,Telecommunications,Cable & Other Pay Television Services
+LILAK,Liberty Latin America Ltd.,-8.76,-8.19,0,0,26,Telecommunications,Cable & Other Pay Television Services
 BDJ,BlackRock Enhanced Equity Dividend Trust,0.11,2.33,63,30,51,Finance,Finance Companies
 GPEAF,Great Portland Estates Plc,0.0,1.34,46,23,28,Real Estate,REIT - Office
 TCBK,TriCo Bancshares,0.98,2.31,53,38,60,Finance,Major Banks
@@ -1630,7 +1630,7 @@ WBTNF,Weebit Nano Limited,2.38,28.36,100,94,96,Technology,Semiconductors
 HLF,Herbalife Ltd.,2.41,-5.33,42,31,41,Health Care,Other Pharmaceuticals
 AMAL,Amalgamated Financial Corp.,1.81,7.46,76,56,79,Finance,Major Banks
 ZMPLF,Zimplats Holdings Limited,0.0,-13.19,0,0,20,Basic Materials,Other Precious Metals & Mining
-VTOL,Bristow Group Inc.,-0.19,-1.83,43,29,50,Consumer Discretionary,Transportation Services
+VTOL,Bristow Group Inc.,-0.19,-1.83,43,29,49,Consumer Discretionary,Transportation Services
 ASM,Avino Silver & Gold Mines Ltd.,-4.25,-3.54,53,46,77,Basic Materials,Metal Mining
 NPKI,NPK International Inc.,5.23,2.45,99,86,80,Consumer Discretionary,Oil and Gas Field Machinery
 CHYCY,Chiyoda Corporation,0.0,-3.26,43,17,79,Industrials,Engineering & Construction
@@ -1651,9 +1651,7 @@ DPZUF,Domino's Pizza Enterprises Limited,0.0,11.61,77,57,32,Consumer Cyclical,Re
 AAVVF,Advantage Energy Ltd.,0.14,-6.83,16,9,11,Energy,Oil & Gas E&P
 ATUUF,Tenaz Energy Corp.,-1.99,-16.59,6,0,89,Energy,Oil & Gas E&P
 TBN,Tamboran Resources Corporation,-2.75,-2.59,33,29,79,Energy,Oil & Gas Production
-BYITY,Bytes Technology Group plc,-7.06,4.0,29,18,20,Technology,Software - Infrastructure
-INGEF,Ingenia Communities Group,0.0,-5.51,20,7,22,Real Estate,REIT - Residential
-HTLD,"Heartland Express, Inc.",0.77,2.92,2,0,88,Industrials,Trucking Freight/Courier Services
+BYITY,BYITY,-7.06,4.0,29,18,20,Technology,Software - Infrastructure
 EVLV,"Evolv Technologies Holdings, Inc.",0.53,-4.07,0,0,24,Technology,Computer peripheral equipment
 DBVT,DBV Technologies S.A.,-4.61,-16.24,0,0,56,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
 ASTE,"Astec Industries, Inc.",5.55,15.24,100,100,67,Industrials,Construction/Ag Equipment/Trucks
@@ -1685,7 +1683,7 @@ GPRE,Green Plains Inc.,2.0,-5.3,33,28,85,Industrials,Major Chemicals
 GRRMY,Gerresheimer AG,0.0,0.0,31,10,20,Healthcare,Medical Instruments & Supplies
 EVO,Evotec SE,-1.92,-9.86,0,0,15,Health Care,Biotechnology: Pharmaceutical Preparations
 SBR,Sabine Royalty Trust,0.65,-6.31,12,7,41,Energy,Oil & Gas Production
-TSHTY,Toshiba Tec Corporation,-0.75,-5.9,10,4,45,Technology,Computer Hardware
+TSHTY,Toshiba Tec Corporation,-0.75,-5.9,10,4,44,Technology,Computer Hardware
 PXED,"Phoenix Education Partners, Inc.",2.07,6.56,49,28,28,Real Estate,Other Consumer Services
 TMVWY,TeamViewer SE,0.0,-11.76,0,0,20,Technology,Software - Application
 TMVWF,TeamViewer SE,0.0,7.73,72,50,34,Technology,Software - Application
@@ -1772,7 +1770,7 @@ ETN,Eaton Corporation plc,2.96,11.08,100,100,67,Technology,Industrial Machinery/
 SCHW,The Charles Schwab Corporation,-2.97,1.76,65,53,33,Finance,Investment Bankers/Brokers/Service
 HON,Honeywell International Inc.,0.17,5.35,72,54,50,Industrials,Aerospace
 RLLCF,Rolls-Royce Holdings plc,0.0,-15.79,33,28,1,Industrials,Aerospace & Defense
-PFE,Pfizer Inc.,-2.74,-2.25,4,0,38,Health Care,Biotechnology: Pharmaceutical Preparations
+PFE,Pfizer Inc.,-2.74,-2.25,4,0,37,Health Care,Biotechnology: Pharmaceutical Preparations
 IBKR,"Interactive Brokers Group, Inc.",0.96,14.69,99,90,87,Finance,Investment Bankers/Brokers/Service
 DE,Deere & Company,0.13,5.14,92,69,58,Industrials,Industrial Machinery/Components
 CSUAY,China Shenhua Energy Company Limited,2.31,-4.7,11,0,41,Energy,Thermal Coal
@@ -1841,7 +1839,7 @@ ICE,"Intercontinental Exchange, Inc.",-0.53,-11.41,0,0,11,Finance,Investment Ban
 RKLB,Rocket Lab Corporation,-0.69,-20.14,8,4,95,Industrials,Military/Government/Technical
 NGGTF,National Grid plc,0.32,-6.25,0,0,37,Utilities,Utilities - Regulated Electric
 JCI,Johnson Controls International plc,0.84,5.42,73,56,69,Industrials,Industrial Machinery/Components
-VCISY,Vinci SA,0.16,2.9,87,69,47,Industrials,Engineering & Construction
+VCISY,Vinci SA,0.16,2.9,87,69,46,Industrials,Engineering & Construction
 BE,Bloom Energy Corporation,15.41,16.51,100,100,98,Energy,Industrial Machinery/Components
 EMR,Emerson Electric Co.,1.11,13.4,100,84,61,Technology,Consumer Electronics/Appliances
 ABNB,"Airbnb, Inc.",1.33,5.06,100,85,50,Consumer Discretionary,Diversified Commercial Services
@@ -1987,7 +1985,7 @@ DLICY,"Daiichi Life Group, Inc.",0.98,7.18,99,87,80,Financial Services,Insurance
 DTRUY,Daimler Truck Holding AG,0.84,2.97,33,1,51,Industrials,Farm & Heavy Construction Machinery
 SATS,EchoStar Corporation,-2.26,-23.01,0,0,91,Consumer Discretionary,Telecommunications Equipment
 UAL,"United Airlines Holdings, Inc.",2.15,20.71,96,89,72,Consumer Discretionary,Air Freight/Delivery Services
-ADRNY,Koninklijke Ahold Delhaize N.V.,-1.81,-9.54,0,0,25,Consumer Defensive,Grocery Stores
+ADRNY,Koninklijke Ahold Delhaize N.V.,-1.81,-9.54,0,0,24,Consumer Defensive,Grocery Stores
 VMC,Vulcan Materials Company,2.72,15.26,100,93,55,Industrials,Mining & Quarrying of Nonmetallic Minerals (No Fuels)
 HUM,Humana Inc.,-0.37,18.6,73,66,90,Health Care,Medical Specialities
 PPRUY,Kering SA,5.56,10.79,100,98,59,Consumer Cyclical,Luxury Goods
@@ -1998,7 +1996,7 @@ NIPNF,NEC Corporation,3.95,-1.57,54,50,18,Technology,Information Technology Serv
 PUK,Prudential plc,0.0,-14.27,23,11,31,Finance,Life Insurance
 FRFHF,Fairfax Financial Holdings Limited,-0.32,-2.23,52,35,22,Financial Services,Insurance - Property & Casualty
 NHOLF,"Sompo Holdings, Inc.",0.0,2.57,32,15,56,Financial Services,Insurance - Property & Casualty
-PSZKY,Powszechna Kasa Oszczednosci Bank Polski Spólka Akcyjna,4.0,13.86,100,100,82,Financial Services,Banks - Regional
+PSZKY,Powszechna Kasa Oszczednosci Bank Polski Spólka Akcyjna,4.0,13.86,100,100,83,Financial Services,Banks - Regional
 DTGHF,Daimler Truck Holding AG,-1.64,4.61,41,19,51,Industrials,Farm & Heavy Construction Machinery
 SHNDY,Schindler Holding AG,0.56,-0.35,61,26,25,Industrials,Specialty Industrial Machinery
 JD,"JD.com, Inc.",-1.22,-15.06,0,0,25,Consumer Discretionary,Other Specialty Stores
@@ -2024,7 +2022,7 @@ FNLPF,Fresnillo plc,-7.19,-7.31,30,17,75,Basic Materials,Other Precious Metals &
 KYOCF,Kyocera Corporation,0.0,29.3,73,71,92,Industrials,Conglomerates
 CMXHF,CSL Limited,1.89,2.99,77,61,4,Healthcare,Biotechnology
 TS,Tenaris S.A.,-3.2,-5.72,0,0,79,Industrials,Steel/Iron Ore
-KMB,Kimberly-Clark Corporation,1.07,6.58,82,62,29,Consumer Discretionary,Containers/Packaging
+KMB,Kimberly-Clark Corporation,1.07,6.58,82,62,28,Consumer Discretionary,Containers/Packaging
 MLYBY,Malayan Banking Berhad,0.73,-6.9,68,58,40,Financial Services,Banks - Regional
 AVIFY,Advanced Info Service Public Company Limited,0.42,5.5,96,87,68,Communication Services,Telecom Services
 SBGOF,Standard Bank Group Limited,0.0,14.24,95,80,78,Financial Services,Banks - Regional
@@ -2224,7 +2222,7 @@ GH,"Guardant Health, Inc.",2.07,14.62,81,57,92,Health Care,Medical Specialities
 YAHOF,LY Corporation,0.0,-11.39,0,0,14,Consumer Cyclical,Internet Retail
 H,H,0.1,16.78,94,82,81,Consumer Discretionary,Hotels/Resorts
 JBARF,Julius Bär Gruppe AG,0.0,-3.25,57,39,66,Financial Services,Asset Management
-KGSPF,Kingspan Group plc,0.0,17.57,94,84,68,Industrials,Building Products & Equipment
+KGSPF,Kingspan Group plc,0.0,17.57,94,84,67,Industrials,Building Products & Equipment
 WES,"Western Midstream Partners, LP",-1.65,-6.65,14,0,58,Utilities,Natural Gas Distribution
 CLPXY,China Longyuan Power Group Corporation Limited,-8.77,-14.21,0,0,7,Utilities,Utilities - Renewable
 EWBC,"East West Bancorp, Inc.",-0.35,2.86,52,39,69,Finance,Major Banks
@@ -2286,7 +2284,7 @@ MPFRY,"Mapfre, S.A.",0.0,-4.06,63,54,63,Financial Services,Insurance - Diversifi
 OBYCF,Obayashi Corporation,3.5,-10.27,65,54,1,Industrials,Engineering & Construction
 SWGAY,The Swatch Group AG,0.92,1.0,42,11,80,Consumer Cyclical,Luxury Goods
 REG,Regency Centers Corporation,-0.63,-0.17,35,21,50,Real Estate,Real Estate Investment Trusts
-J,Jacobs Solutions Inc.,-1.53,6.62,47,25,23,Industrials,Military/Government/Technical
+J,Jacobs Solutions Inc.,-1.53,6.62,47,25,22,Industrials,Military/Government/Technical
 CHKP,Check Point Software Technologies Ltd.,0.36,-4.68,4,0,5,Technology,Computer Software: Prepackaged Software
 ARMK,Aramark,-0.3,3.49,48,11,81,Consumer Discretionary,Restaurants
 ASND,Ascendis Pharma A/S,-0.14,-4.35,55,41,55,Health Care,Biotechnology: Pharmaceutical Preparations
@@ -2402,7 +2400,7 @@ EQX,Equinox Gold Corp.,-4.71,-15.28,14,4,38,Basic Materials,Precious Metals
 PLCQF,PLCQF,0.0,167.61,98,99,96,Unknown,Unknown
 PUGBY,PUGBY,1.0,-6.45,49,36,44,Consumer Defensive,Household & Personal Products
 CR,Crane Company,2.75,24.1,100,100,66,Industrials,Metal Fabrications
-IAG,IAMGOLD Corporation,-3.98,1.56,57,41,79,Basic Materials,Precious Metals
+IAG,IAMGOLD Corporation,-3.98,1.56,57,41,80,Basic Materials,Precious Metals
 WYNN,"Wynn Resorts, Limited",3.15,7.62,67,48,33,Consumer Discretionary,Hotels/Resorts
 TSGTF,Tsingtao Brewery Company Limited,0.0,-6.31,17,8,25,Consumer Defensive,Beverages - Brewers
 AES,The AES Corporation,0.07,-0.75,24,5,62,Utilities,Electric Utilities: Central
@@ -2462,7 +2460,7 @@ CEF,Sprott Physical Gold and Silver Trust,-0.92,-9.28,9,0,51,Financial Services,
 CHWY,"Chewy, Inc.",2.48,-9.72,6,0,3,Consumer Discretionary,Catalog/Specialty Distribution
 XROLF,Xero Limited,-0.1,-5.14,6,2,5,Technology,Software - Application
 ZION,"Zions Bancorporation, National Association",0.03,7.23,77,58,70,Finance,Major Banks
-JCYGY,Jardine Cycle & Carriage Limited,0.0,-11.8,4,2,30,Industrials,Conglomerates
+JCYGY,Jardine Cycle & Carriage Limited,0.0,-11.8,4,2,29,Industrials,Conglomerates
 EVKIY,Evonik Industries AG,-5.58,-11.15,0,0,35,Basic Materials,Specialty Chemicals
 KRYS,"Krystal Biotech, Inc.",1.87,15.23,100,96,92,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
 TEM,"Tempus AI, Inc.",4.2,10.81,78,64,13,Technology,Computer Software: Programming Data Processing
@@ -2540,14 +2538,14 @@ SFM,"Sprouts Farmers Market, Inc.",1.04,-9.01,28,20,11,Consumer Staples,Food Cha
 JINFF,China Gold International Resources Corp. Ltd.,-8.27,-10.16,19,3,69,Basic Materials,Other Precious Metals & Mining
 GAP,"The Gap, Inc.",1.0,-5.16,11,6,21,Consumer Discretionary,Clothing/Shoe/Accessory Stores
 FRO,Frontline plc,5.35,9.69,100,100,90,Consumer Discretionary,Marine Transportation
-ELMUY,Elisa Oyj,5.57,-25.86,13,9,24,Communication Services,Telecom Services
+ELMUY,Elisa Oyj,5.57,-25.86,13,9,23,Communication Services,Telecom Services
 NXE,NexGen Energy Ltd.,1.53,0.57,40,31,65,Basic Materials,Other Metals and Minerals
 VLYPO,Valley National Bancorp,0.65,1.27,59,28,41,Finance,Major Banks
 CBSH,"Commerce Bancshares, Inc.",0.02,5.26,72,52,45,Finance,Major Banks
 MOS,The Mosaic Company,1.73,5.82,72,57,12,Industrials,Agricultural Chemicals
 ESE,ESCO Technologies Inc.,2.93,15.87,100,100,87,Telecommunications,Telecommunications Equipment
 HCXLY,Hiscox Ltd,-2.31,-4.33,37,15,58,Financial Services,Insurance - Property & Casualty
-JAPSY,"Japan Airlines Co., Ltd.",-1.26,7.1,75,64,26,Industrials,Airlines
+JAPSY,"Japan Airlines Co., Ltd.",-1.26,7.1,75,64,25,Industrials,Airlines
 SOBO,South Bow Corporation,-0.69,-4.35,9,0,69,Energy,Natural Gas Distribution
 ALBBY,Alibaba Health Information Technology Limited,0.0,-20.43,46,30,2,Healthcare,Pharmaceutical Retailers
 EGIEY,Engie Brasil Energia S.A.,-5.23,1.52,30,13,65,Utilities,Utilities - Renewable
@@ -2710,7 +2708,7 @@ PRM,"Perimeter Solutions, Inc.",6.0,12.78,100,100,92,Industrials,Major Chemicals
 MAAS,Maase Inc.,5.35,85.48,100,100,98,Finance,Investment Managers
 BLSH,Bullish,1.01,-34.81,0,0,2,Finance,Finance: Consumer Services
 RICOF,"Ricoh Company, Ltd.",0.0,6.49,66,41,1,Industrials,Business Equipment & Supplies
-MGY,Magnolia Oil & Gas Corporation,-1.68,-11.26,0,0,40,Energy,Oil & Gas Production
+MGY,Magnolia Oil & Gas Corporation,-1.68,-11.26,0,0,39,Energy,Oil & Gas Production
 GOLF,Acushnet Holdings Corp.,7.2,21.24,100,100,77,Consumer Discretionary,Recreational Games/Products/Toys
 JDDSF,JD Sports Fashion Plc,0.0,28.86,88,76,55,Consumer Cyclical,Apparel Retail
 NICE,NICE Ltd.,1.84,-9.69,5,0,4,Technology,Computer Software: Prepackaged Software
@@ -2749,7 +2747,7 @@ SON,Sonoco Products Company,0.04,5.58,85,64,51,Consumer Discretionary,Containers
 PSMMY,Persimmon Plc,-1.84,1.06,49,29,20,Consumer Cyclical,Residential Construction
 PMMAF,PUMA SE,5.77,5.6,100,87,74,Consumer Cyclical,Footwear & Accessories
 JMPLY,Johnson Matthey Plc,-3.02,2.4,34,17,60,Basic Materials,Specialty Chemicals
-XXI,"Twenty One Capital, Inc.",-2.13,-29.14,0,0,2,Finance,Finance: Consumer Services
+XXI,"Twenty One Capital, Inc.",-2.13,-29.14,0,0,1,Finance,Finance: Consumer Services
 MAIN,Main Street Capital Corporation,0.71,0.01,38,16,21,Finance,Finance/Investors Services
 ATDRF,Autotrader Group plc,-0.96,-6.33,55,45,10,Communication Services,Internet Content & Information
 REZI,"Resideo Technologies, Inc.",4.93,10.3,92,72,37,Industrials,Wholesale Distributors
@@ -2827,7 +2825,7 @@ FMCCP,Federal Home Loan Mortgage Corporation,0.77,-10.68,7,0,13,Financial Servic
 FMCKI,Federal Home Loan Mortgage Corporation,-3.76,-13.53,0,0,9,Financial Services,Mortgage Finance
 AGLXY,AGL Energy Limited,0.0,-7.13,35,28,29,Utilities,Utilities - Independent Power Producers
 CYGIY,"CyberAgent, Inc.",0.0,8.13,34,28,13,Communication Services,Advertising Agencies
-BDC,Belden Inc.,2.72,16.87,100,100,44,Industrials,Telecommunications Equipment
+BDC,Belden Inc.,2.72,16.87,100,100,43,Industrials,Telecommunications Equipment
 GTMEF,"Globe Telecom, Inc.",0.0,0.0,31,10,4,Communication Services,Telecom Services
 AZZ,AZZ Inc.,3.4,14.72,100,100,83,Industrials,Industrial Specialties
 KLBAY,Klabin S.A.,-0.9,-0.3,33,3,21,Basic Materials,Paper & Paper Products
@@ -2873,13 +2871,13 @@ SMSMY,Sims Limited,-2.0,30.17,88,81,91,Basic Materials,Steel
 BILL,"BILL Holdings, Inc.",0.87,-15.31,0,0,6,Technology,EDP Services
 EWTX,"Edgewise Therapeutics, Inc.",5.72,12.16,58,50,92,Health Care,Biotechnology: Pharmaceutical Preparations
 MJPNF,"Micronics Japan Co., Ltd.",0.0,29.67,7,3,1,Technology,Semiconductor Equipment & Materials
-CCKRF,CCKRF,0.0,-3.4,25,9,42,Healthcare,Pharmaceutical Retailers
+CCKRF,CCKRF,0.0,-3.4,25,9,41,Healthcare,Pharmaceutical Retailers
 SSLLF,Siltronic AG,0.0,11.61,68,57,94,Technology,Semiconductors
 UNLRY,PT Unilever Indonesia Tbk,7.2,3.91,100,100,17,Consumer Defensive,Household & Personal Products
 SECCF,Serco Group plc,0.0,-12.49,7,5,29,Industrials,Specialty Business Services
 OTTR,Otter Tail Corporation,0.89,1.28,50,34,45,Utilities,Electric Utilities: Central
 RNG,"RingCentral, Inc.",-1.46,-19.39,0,0,50,Technology,EDP Services
-MANU,MANU,2.57,14.6,64,54,80,Consumer Discretionary,Services-Misc. Amusement & Recreation
+MANU,MANU,2.57,14.6,64,54,81,Consumer Discretionary,Services-Misc. Amusement & Recreation
 BTE,Baytex Energy Corp.,-2.69,-23.05,0,0,78,Energy,Oil & Gas Production
 SMGSY,SMGSY,0.0,-14.43,4,2,15,Communication Services,Internet Content & Information
 BFH,"Bread Financial Holdings, Inc.",0.97,17.09,96,85,87,Consumer Discretionary,Business Services
@@ -2983,7 +2981,7 @@ OPMXF,"Operadora de Sites Mexicanos, S.A.B. de C.V.",-3.66,109.01,92,89,95,Indus
 GRBK,"Green Brick Partners, Inc.",4.51,13.56,100,90,60,Consumer Discretionary,Homebuilding
 IMPJY,Webuild S.p.A.,0.0,-3.52,34,18,15,Industrials,Engineering & Construction
 BRZE,"Braze, Inc.",-0.55,-12.09,0,0,11,Technology,Computer Software: Prepackaged Software
-LGDDF,Lagardere SA,0.0,-0.59,31,10,24,Consumer Cyclical,Specialty Retail
+LGDDF,Lagardere SA,0.0,-0.59,31,10,23,Consumer Cyclical,Specialty Retail
 DRTGF,Jet2 plc,0.0,21.45,95,86,36,Consumer Cyclical,Travel Services
 TR,"Tootsie Roll Industries, Inc.",-2.29,-10.06,0,0,28,Consumer Staples,Specialty Foods
 VNET,"VNET Group, Inc.",-5.2,-14.3,0,0,45,Technology,Computer Software: Programming Data Processing
@@ -3031,9 +3029,7 @@ VVX,"V2X, Inc.",-3.46,19.33,68,59,85,Consumer Discretionary,Diversified Commerci
 IDYA,"IDEAYA Biosciences, Inc.",-0.1,5.33,85,73,52,Health Care,Biotechnology: Pharmaceutical Preparations
 IVT,InvenTrust Properties Corp.,0.38,5.7,61,43,62,Real Estate,Real Estate Investment Trusts
 HKUOY,Hakuhodo DY Holdings Inc,0.0,-5.5,11,4,35,Communication Services,Advertising Agencies
-ZNKKY,"ZENKOKU HOSHO Co.,Ltd.",0.0,-5.75,26,12,21,Financial Services,Credit Services
-PDIYF,Predictive Discovery Limited,-1.5,-0.16,88,82,90,Basic Materials,Gold
-LCID,"Lucid Group, Inc.",4.28,-5.63,30,21,1,Industrials,Auto Manufacturing
+ZNKKY,ZNKKY,0.0,-5.75,26,12,21,Financial Services,Credit Services
 USNZY,Usinas Siderúrgicas de Minas Gerais S.A.,-5.98,-6.49,0,0,89,Basic Materials,Steel
 ELUXY,AB Electrolux (publ),-0.85,8.59,31,24,19,Consumer Cyclical,"Furnishings, Fixtures & Appliances"
 CUBI,"Customers Bancorp, Inc.",1.11,0.46,55,40,64,Finance,Major Banks
@@ -3101,6 +3097,8 @@ EKTAY,Elekta AB (publ),-0.2,-21.53,0,0,22,Healthcare,Medical Devices
 SPKKY,Spark New Zealand Limited,1.85,-4.34,43,26,15,Communication Services,Telecom Services
 CDGLY,ComfortDelGro Corporation Limited,6.16,14.21,100,78,33,Industrials,Railroads
 ODFJF,ODFJF,0.0,-13.14,0,0,90,Energy,Oil & Gas Drilling
+IMAX,IMAX Corporation,0.09,29.54,96,90,75,Consumer Discretionary,Industrial Machinery/Components
+NGCRF,NagaCorp Ltd.,0.0,-2.0,13,4,16,Consumer Cyclical,Resorts & Casinos
 MBIN,Merchants Bancorp,0.64,6.88,67,51,80,Finance,Major Banks
 MBINN,Merchants Bancorp,-0.88,-0.43,53,17,44,Finance,Major Banks
 MLCO,Melco Resorts & Entertainment Limited,1.65,2.41,21,16,13,Consumer Discretionary,Hotels/Resorts
@@ -3238,7 +3236,7 @@ XHR,"Xenia Hotels & Resorts, Inc.",2.51,18.46,100,100,83,Consumer Discretionary,
 AMLX,"Amylyx Pharmaceuticals, Inc.",2.75,15.14,100,100,86,Health Care,Biotechnology: Pharmaceutical Preparations
 RHUHF,Richelieu Hardware Ltd.,0.0,-1.42,7,0,33,Industrials,Tools & Accessories
 INVA,"Innoviva, Inc.",-0.66,1.12,54,39,47,Health Care,Biotechnology: Pharmaceutical Preparations
-VRNO,Verano Holdings Corp,-0.87,4.64,40,31,65,Healthcare,Drug Manufacturers - Specialty & Generic
+VRNO,Verano Holdings Corp,-0.87,4.64,40,31,64,Healthcare,Drug Manufacturers - Specialty & Generic
 FSUN,FirstSun Capital Bancorp,2.12,0.47,61,44,34,Finance,Major Banks
 BFC,Bank First Corporation,0.91,-0.26,56,39,55,Finance,Major Banks
 PGEN,"Precigen, Inc.",1.9,12.88,100,98,91,Health Care,Biotechnology: Pharmaceutical Preparations
@@ -3271,7 +3269,7 @@ WEN,The Wendy's Company,-2.16,-10.63,12,4,14,Consumer Discretionary,Restaurants
 ASCUF,Arizona Sonoran Copper Company Inc.,-2.06,12.31,45,38,96,Basic Materials,Copper
 GBX,"The Greenbrier Companies, Inc.",0.81,3.52,97,82,44,Industrials,Railroads
 FTRE,Fortrea Holdings Inc.,-0.07,11.75,54,45,90,Health Care,Medical Specialities
-KMPB,KMPB,-0.17,0.85,46,16,46,Finance,Property-Casualty Insurers
+KMPB,KMPB,-0.17,0.85,46,16,45,Finance,Property-Casualty Insurers
 CRLFF,Cardinal Energy Ltd.,-1.96,-18.81,0,0,68,Energy,Oil & Gas E&P
 FUGRF,Fugro N.V.,0.0,0.99,43,31,63,Energy,Oil & Gas Equipment & Services
 CSWC,Capital Southwest Corporation,0.61,-0.04,25,8,54,Consumer Discretionary,Textiles
@@ -3313,7 +3311,7 @@ GCT,GigaCloud Technology Inc.,3.0,-9.0,29,22,50,Consumer Discretionary,Catalog/S
 CHNFF,CHNFF,0.0,77.58,98,94,86,Consumer Defensive,Beverages - Non-Alcoholic
 TUYA,Tuya Inc.,-3.11,-9.66,0,0,11,Technology,Computer Software: Prepackaged Software
 RDWR,Radware Ltd.,-0.84,-5.54,0,0,44,Consumer Discretionary,Business Services
-MSDL,Morgan Stanley Direct Lending Fund,1.39,2.54,43,23,34,Financial Services,Asset Management
+MSDL,Morgan Stanley Direct Lending Fund,1.39,2.54,43,23,33,Financial Services,Asset Management
 ENOV,Enovis Corporation,5.37,-16.97,29,24,14,Health Care,Industrial Specialties
 PBT,Permian Basin Royalty Trust,-1.69,-18.74,0,0,84,Energy,Oil & Gas Production
 ATLC,Atlanticus Holdings Corporation,4.54,22.41,100,100,90,Finance,Finance: Consumer Services
@@ -3386,7 +3384,7 @@ LNN,Lindsay Corporation,2.58,9.79,100,88,28,Industrials,Industrial Machinery/Com
 INDI,"indie Semiconductor, Inc.",8.14,8.42,24,19,79,Technology,Semiconductors
 LQDT,"Liquidity Services, Inc.",3.69,9.99,75,50,80,Consumer Discretionary,Business Services
 DQ,Daqo New Energy Corp.,-1.94,-18.97,0,0,4,Technology,Semiconductors
-PZZA,"Papa John's International, Inc.",0.14,12.77,94,85,26,Consumer Discretionary,Restaurants
+PZZA,"Papa John's International, Inc.",0.14,12.77,94,85,25,Consumer Discretionary,Restaurants
 HFWA,Heritage Financial Corporation,1.45,2.76,45,33,62,Finance,Banks
 HSLV,Highlander Silver Corp.,-0.82,-13.9,39,30,12,Basic Materials,Silver
 DEA,"Easterly Government Properties, Inc.",0.74,-2.44,0,0,47,Real Estate,Real Estate Investment Trusts
@@ -3396,8 +3394,6 @@ ABR,"Arbor Realty Trust, Inc.",1.96,-7.37,12,8,3,Real Estate,Real Estate Investm
 MEQYF,Mainstreet Equity Corp.,0.0,-0.41,69,38,21,Real Estate,Real Estate Services
 AOD,Abrdn Total Dynamic Dividend Fund,0.87,0.1,62,0,64,Finance,Investment Managers
 NMAX,NMAX,3.73,6.43,17,8,15,Industrials,Broadcasting
-OSBC,"Old Second Bancorp, Inc.",1.06,4.39,59,43,62,Finance,Major Banks
-MGAWY,Megaworld Corporation,0.0,-3.79,48,32,22,Real Estate,Real Estate - Development
 NAT,Nordic American Tankers Limited,5.03,8.97,100,100,89,Consumer Discretionary,Marine Transportation
 EVV,Eaton Vance Limited Duration Income Fund,-0.33,0.12,20,1,32,Finance,Finance/Investors Services
 GLGDF,GoGold Resources Inc.,2.97,4.74,76,57,77,Basic Materials,Other Precious Metals & Mining
@@ -3529,7 +3525,7 @@ TT,Trane Technologies plc,2.3,7.26,100,80,62,Industrials,Auto Parts:O.E.M.
 BNS,The Bank of Nova Scotia,0.76,10.23,98,85,78,Finance,Major Banks
 GMBXF,"Grupo México, S.A.B. de C.V.",1.21,5.93,75,64,87,Basic Materials,Other Industrial Metals & Mining
 DUK,Duke Energy Corporation,0.11,0.04,52,31,40,Utilities,Power Generation
-STOHF,Equinor ASA,0.0,-3.55,10,4,71,Energy,Oil & Gas Integrated
+STOHF,Equinor ASA,0.0,-3.55,10,4,70,Energy,Oil & Gas Integrated
 CNQ,Canadian Natural Resources Limited,-3.23,-15.85,0,0,49,Energy,Oil & Gas Production
 FCX,Freeport-McMoRan Inc.,-0.55,12.83,76,65,83,Basic Materials,Metal Mining
 CHDRY,Christian Dior SE,-11.52,2.5,24,16,29,Consumer Cyclical,Luxury Goods
@@ -3570,7 +3566,7 @@ NTES,"NetEase, Inc.",0.36,4.47,45,22,27,Technology,Computer Software: Prepackage
 E,Eni S.p.A.,-1.59,-10.02,0,0,69,Energy,Oil & Gas Production
 EIPAF,Eni S.p.A.,0.0,-15.49,1,0,69,Energy,Oil & Gas Integrated
 GM,General Motors Company,-0.36,4.36,22,0,69,Industrials,Auto Manufacturing
-HLT,Hilton Worldwide Holdings Inc.,-0.13,7.76,87,63,72,Consumer Discretionary,Hotels/Resorts
+HLT,Hilton Worldwide Holdings Inc.,-0.13,7.76,87,63,71,Consumer Discretionary,Hotels/Resorts
 CI,The Cigna Group,-2.04,-0.78,32,24,34,Health Care,Medical Specialities
 MPC,Marathon Petroleum Corporation,-0.69,-5.98,0,0,70,Energy,Integrated oil Companies
 ECL,Ecolab Inc.,0.02,8.53,85,70,40,Consumer Discretionary,Package Goods/Cosmetics
@@ -3608,6 +3604,8 @@ MBGAF,Mercedes-Benz Group AG,-3.88,-10.83,0,0,20,Consumer Cyclical,Auto Manufact
 NBIS,NBIS,2.06,49.46,100,98,97,Technology,Computer Software: Programming Data Processing
 KEYS,"Keysight Technologies, Inc.",3.7,6.31,100,100,91,Industrials,Industrial Machinery/Components
 UMC,United Microelectronics Corporation,10.66,37.13,100,100,97,Technology,Semiconductors
+IMO,Imperial Oil Limited,-1.44,-15.49,0,0,58,Energy,Integrated oil Companies
+AFL,Aflac Incorporated,-0.66,-1.49,47,28,50,Finance,Accident &Health Insurance
 AAUKF,Anglo American plc,0.0,10.18,77,68,87,Basic Materials,Other Industrial Metals & Mining
 HOCPY,HOYA Corporation,4.11,4.72,100,100,65,Healthcare,Medical Instruments & Supplies
 OXY,Occidental Petroleum Corporation,-2.3,-11.57,0,0,46,Energy,Oil & Gas Production
@@ -3631,10 +3629,10 @@ NDAQ,"Nasdaq, Inc.",-1.26,-8.3,0,0,24,Finance,Investment Bankers/Brokers/Service
 LBLCF,Loblaw Companies Limited,0.0,2.39,40,28,46,Consumer Defensive,Grocery Stores
 ANCTF,Alimentation Couche-Tard Inc.,-1.17,0.92,45,27,49,Consumer Cyclical,Specialty Retail
 AME,"AMETEK, Inc.",2.66,5.81,100,85,67,Industrials,Industrial Machinery/Components
-BMWKY,BMWKY,-3.44,-21.15,0,0,9,Consumer Cyclical,Auto Manufacturers
+BMWKY,BMWKY,-3.44,-21.15,0,0,8,Consumer Cyclical,Auto Manufacturers
 HCMLF,Holcim AG,0.0,2.22,40,16,39,Basic Materials,Building Materials
 DBOEF,Deutsche Börse AG,0.79,-2.67,30,19,35,Financial Services,Financial Data & Stock Exchanges
-MCHPP,Microchip Technology Incorporated,5.36,6.08,100,99,83,Technology,Semiconductors
+MCHPP,Microchip Technology Incorporated,5.36,6.08,100,99,84,Technology,Semiconductors
 PRYMF,Prysmian S.p.A.,1.55,3.22,39,12,92,Industrials,Electrical Equipment & Parts
 ASMIY,ASM International NV,4.5,23.63,100,100,93,Technology,Semiconductor Equipment & Materials
 FAST,Fastenal Company,2.25,5.06,61,38,43,Consumer Discretionary,RETAIL: Building Materials
@@ -3728,7 +3726,7 @@ CKHUY,CK Hutchison Holdings Limited,0.92,-1.23,57,13,76,Industrials,Conglomerate
 EQT,EQT Corporation,-0.8,-12.29,5,2,19,Energy,Oil & Gas Production
 EPIAF,Epiroc AB (publ),-4.44,4.12,29,7,71,Industrials,Farm & Heavy Construction Machinery
 EPOAY,EPOAY,1.19,3.22,58,17,73,Industrials,Farm & Heavy Construction Machinery
-ONC,BeOne Medicines AG,2.84,-12.5,14,6,25,Health Care,Biotechnology: Pharmaceutical Preparations
+ONC,BeOne Medicines AG,2.84,-12.5,14,6,24,Health Care,Biotechnology: Pharmaceutical Preparations
 DNNGY,Ørsted A/S,-1.6,-12.54,0,0,15,Utilities,Utilities - Renewable
 DOGEF,Ørsted A/S,-3.46,-14.56,0,0,27,,
 CKHUF,CK Hutchison Holdings Limited,0.0,2.37,83,48,75,Industrials,Conglomerates
@@ -3747,11 +3745,11 @@ NTRA,"Natera, Inc.",2.19,12.93,100,94,65,Health Care,Medical Specialities
 DSKYF,"Daiichi Sankyo Company, Limited",2.72,2.72,61,50,9,Healthcare,Drug Manufacturers - General
 MTB,M&T Bank Corporation,-0.32,7.73,65,50,62,Finance,Major Banks
 CPRT,"Copart, Inc.",2.41,-8.5,8,1,9,Consumer Discretionary,Retail-Auto Dealers and Gas Stations
-CICOY,"COSCO SHIPPING Holdings Co., Ltd.",-3.93,-9.13,0,0,28,Industrials,Marine Shipping
+CICOY,"COSCO SHIPPING Holdings Co., Ltd.",-3.93,-9.13,0,0,27,Industrials,Marine Shipping
 ACGL,Arch Capital Group Ltd.,-1.29,-5.84,46,33,33,Finance,Property-Casualty Insurers
 TGOPY,3i Group plc,0.69,2.87,70,55,5,Financial Services,Asset Management
 KNYJY,KONE Oyj,-0.11,-5.85,8,1,18,Industrials,Specialty Industrial Machinery
-KYOCY,Kyocera Corporation,0.74,23.32,83,84,89,Industrials,Conglomerates
+KYOCY,Kyocera Corporation,-0.13,24.3,80,74,89,Industrials,Conglomerates
 LNTCY,LNTCY,22.65,3.88,100,100,40,Technology,Electronic Components
 HENKY,Henkel AG & Co. KGaA,0.74,5.76,96,70,47,Consumer Defensive,Household & Personal Products
 RYAAY,Ryanair Holdings plc,0.99,7.65,86,71,38,Consumer Discretionary,Air Freight/Delivery Services
@@ -3808,9 +3806,7 @@ MGDDF,Compagnie Générale des Établissements Michelin Société en commandite 
 SNMRF,Snam S.p.A.,-6.68,-7.69,30,21,56,Utilities,Utilities - Regulated Gas
 RYLPF,Koninklijke Philips N.V.,0.0,-3.17,32,19,30,Healthcare,Medical Devices
 KSHTY,Kuaishou Technology,-0.87,-5.37,66,45,7,Communication Services,Internet Content & Information
-BABWF,International Consolidated Airlines Group S.A.,0.0,13.32,79,62,64,Industrials,Airlines
-MGDDY,Compagnie Générale des Établissements Michelin Société en commandite par actions,0.42,9.72,77,59,59,Unknown,Unknown
-PPG,"PPG Industries, Inc.",0.95,13.28,82,64,61,Consumer Discretionary,Paints/Coatings
+BABWF,BABWF,0.0,13.32,79,62,64,Industrials,Airlines
 FUJIY,FUJIFILM Holdings Corporation,1.53,6.95,57,39,37,Industrials,Conglomerates
 AIBGY,AIB Group plc,0.0,5.88,82,62,77,Financial Services,Banks - Regional
 HRNNF,Hydro One Limited,-0.32,-6.11,13,6,39,Utilities,Utilities - Regulated Electric
@@ -3893,7 +3889,7 @@ GNENY,"Ganfeng Lithium Group Co., Ltd.",1.49,-14.67,35,28,88,Basic Materials,Che
 HKHHF,Heineken Holding N.V.,0.0,3.79,89,72,38,Consumer Defensive,Beverages - Brewers
 JIAXF,Jiangxi Copper Company Limited,0.0,-8.3,5,2,71,Basic Materials,Copper
 EFX,Equifax Inc.,-0.59,-6.31,0,0,6,Finance,Finance: Consumer Services
-MTUAY,MTU Aero Engines AG,3.38,16.99,100,100,35,Industrials,Aerospace & Defense
+MTUAY,MTU Aero Engines AG,3.38,16.99,100,100,34,Industrials,Aerospace & Defense
 TRATF,Traton SE,0.0,4.33,83,57,59,Industrials,Farm & Heavy Construction Machinery
 SBS,Companhia de Saneamento Básico do Estado de São Paulo - SABESP,-2.42,-10.41,0,0,42,Utilities,Water Supply
 RCIAF,Rogers Communications Inc.,0.0,5.65,73,54,50,Communication Services,Telecom Services
@@ -3925,7 +3921,7 @@ SUVPF,Sartorius Aktiengesellschaft,-15.4,-4.61,0,0,28,Healthcare,Medical Instrum
 SOMLY,"SECOM CO., LTD.",-1.2,-1.79,14,3,43,Industrials,Security & Protection Services
 EVMNY,Evolution Mining Limited,-0.63,8.17,85,74,76,Basic Materials,Gold
 MONRY,Moncler S.p.A.,1.11,4.12,20,0,40,Consumer Cyclical,Apparel Manufacturing
-WCC,"WESCO International, Inc.",3.83,4.55,77,61,89,Consumer Discretionary,Telecommunications Equipment
+WCC,"WESCO International, Inc.",3.83,4.55,77,61,88,Consumer Discretionary,Telecommunications Equipment
 TLN,Talen Energy Corporation,6.46,26.66,100,100,72,Utilities,Electric Utilities: Central
 RAIFF,Raiffeisen Bank International AG,0.0,5.19,64,43,89,Financial Services,Banks - Regional
 LII,Lennox International Inc.,3.16,7.93,91,64,44,Industrials,Industrial Machinery/Components
@@ -3973,7 +3969,7 @@ IEX,IDEX Corporation,0.55,8.43,95,71,74,Industrials,Fluid Controls
 GEN,Gen Digital Inc.,1.04,-3.28,0,0,32,Technology,Computer Software: Prepackaged Software
 LAMR,Lamar Advertising Company,0.37,-0.38,39,19,68,Real Estate,Real Estate Investment Trusts
 PFGC,Performance Food Group Company,0.2,9.5,84,71,58,Consumer Discretionary,Food Distributors
-BNT,Brookfield Wealth Solutions Ltd.,-0.54,-1.59,42,26,43,Finance,Property-Casualty Insurers
+BNT,Brookfield Wealth Solutions Ltd.,-0.54,-1.59,42,26,42,Finance,Property-Casualty Insurers
 PSLV,Sprott Physical Silver Trust,-2.19,-14.22,7,0,64,Financial Services,Asset Management
 VICR,Vicor Corporation,1.91,25.42,82,73,98,Technology,Industrial Machinery/Components
 SONVY,Sonova Holding AG,-1.59,-6.43,0,0,24,Healthcare,Medical Devices
@@ -4023,7 +4019,7 @@ SYIEF,Symrise AG,0.0,6.35,57,33,47,Basic Materials,Specialty Chemicals
 BVVBY,Bureau Veritas SA,0.48,-1.37,61,41,33,Industrials,Consulting Services
 TMTNF,Toromont Industries Ltd.,8.13,4.63,100,100,83,Industrials,Industrial Distribution
 SOLS,"Solstice Advanced Materials, Inc.",0.51,1.38,91,65,86,Industrials,Aerospace
-OSGSY,"Osaka Gas Co., Ltd.",-1.01,-6.78,47,33,67,Utilities,Utilities - Regulated Gas
+OSGSY,"Osaka Gas Co., Ltd.",-1.01,-6.78,47,33,66,Utilities,Utilities - Regulated Gas
 JBS,JBS N.V.,-2.37,-7.52,10,6,17,Consumer Staples,Meat/Poultry/Fish
 GLPI,"Gaming and Leisure Properties, Inc.",-1.48,-3.92,0,0,34,Real Estate,Real Estate Investment Trusts
 UNM,Unum Group,-1.79,7.34,69,50,67,Finance,Accident &Health Insurance
@@ -4169,7 +4165,7 @@ MASI,Masimo Corporation,0.0,0.9,57,50,56,Health Care,Biotechnology: Electromedic
 SIMO,Silicon Motion Technology Corporation,4.73,24.66,100,100,97,Technology,Semiconductors
 ONBPP,Old National Bancorp,-0.24,0.51,33,9,39,Finance,Major Banks
 SSB,SouthState Bank Corporation,0.71,2.08,61,42,45,Finance,Major Banks
-ASGLY,AGC Inc.,1.22,16.73,58,52,81,Industrials,Conglomerates
+ASGLY,AGC Inc.,1.22,16.73,58,52,82,Industrials,Conglomerates
 ACLIF,Accelleron Industries AG,0.0,-9.83,31,10,77,Industrials,Specialty Industrial Machinery
 MAKSF,Marks and Spencer Group plc,0.0,-11.84,9,4,25,Consumer Cyclical,Department Stores
 DDS,"Dillard's, Inc.",-0.7,2.85,7,0,36,Consumer Discretionary,Department/Specialty Retail Stores
@@ -4208,10 +4204,10 @@ ICL,ICL Group Ltd,-1.91,-19.53,0,0,25,Industrials,Agricultural Chemicals
 GGAL,Grupo Financiero Galicia S.A.,1.48,34.15,100,93,80,Finance,Commercial Banks
 CFR,"Cullen/Frost Bankers, Inc.",0.08,5.02,80,61,60,Finance,Major Banks
 WRFRF,Wharf Real Estate Investment Company Limited,-6.9,-22.3,0,0,61,Real Estate,Real Estate Services
-FR,"First Industrial Realty Trust, Inc.",1.81,-0.75,53,32,58,Real Estate,Real Estate Investment Trusts
+FR,"First Industrial Realty Trust, Inc.",1.81,-0.75,53,32,59,Real Estate,Real Estate Investment Trusts
 KT,KT Corporation,0.33,-0.87,52,27,20,Telecommunications,Telecommunications Equipment
 ACKDF,Auckland International Airport Limited,0.0,-0.4,81,55,37,Industrials,Airports & Air Services
-CMC,Commercial Metals Company,-1.17,1.8,14,0,69,Industrials,Steel/Iron Ore
+CMC,Commercial Metals Company,-1.17,1.8,14,0,68,Industrials,Steel/Iron Ore
 NCLH,Norwegian Cruise Line Holdings Ltd.,3.08,27.51,100,95,32,Consumer Discretionary,Marine Transportation
 BRRLY,Barry Callebaut AG,0.07,-12.52,0,0,30,Consumer Defensive,Confectioners
 HLTOY,Hellenic Telecommunications Organization S.A.,1.37,0.64,62,48,56,Communication Services,Telecom Services
@@ -4357,7 +4353,7 @@ PHJMF,PT Hanjaya Mandala Sampoerna Tbk,-16.67,0.0,44,38,31,Consumer Defensive,To
 HIMS,"Hims & Hers Health, Inc.",11.23,53.95,100,100,40,Health Care,Medical/Nursing Services
 LOAR,Loar Holdings Inc.,5.51,17.8,100,100,37,Industrials,Military/Government/Technical
 GLAPF,Glanbia plc,3.05,4.0,78,60,86,Consumer Defensive,Packaged Foods
-SCCTY,Scout24 SE,2.05,5.97,90,67,23,Communication Services,Internet Content & Information
+SCCTY,Scout24 SE,2.05,5.97,90,67,22,Communication Services,Internet Content & Information
 CACC,Credit Acceptance Corporation,2.91,3.91,100,72,69,Finance,Finance: Consumer Services
 UBSI,"United Bankshares, Inc.",0.52,3.84,62,44,65,Finance,Major Banks
 LNSPF,LondonMetric Property Plc,1.66,-9.36,21,14,29,Real Estate,REIT - Industrial
@@ -4450,7 +4446,7 @@ BECTY,Bechtle AG,2.06,10.13,100,87,31,Technology,Information Technology Services
 DNTUY,Dentsu Group Inc.,0.0,7.11,12,5,30,Communication Services,Advertising Agencies
 OGS,"ONE Gas, Inc.",0.93,-7.29,22,10,32,Utilities,Oil/Gas Transmission
 GBTG,"Global Business Travel Group, Inc.",0.0,-0.53,34,9,84,Consumer Discretionary,Transportation Services
-KYSEY,"Kyushu Electric Power Company, Incorporated",-6.06,-12.47,7,2,37,Utilities,Utilities - Independent Power Producers
+KYSEY,"Kyushu Electric Power Company, Incorporated",-6.06,-12.47,7,2,36,Utilities,Utilities - Independent Power Producers
 IPGP,IPG Photonics Corporation,3.85,-2.4,75,50,78,Technology,Semiconductors
 LBRDP,Liberty Broadband Corporation,0.67,0.3,52,24,25,Telecommunications,Cable & Other Pay Television Services
 LBRDK,LBRDK,-4.05,-12.44,0,0,2,Telecommunications,Cable & Other Pay Television Services
@@ -4555,7 +4551,7 @@ ERAS,"Erasca, Inc.",-2.22,22.93,79,72,98,Health Care,Biotechnology: Pharmaceutic
 NDGPF,Nine Dragons Paper (Holdings) Limited,0.0,7.14,88,73,74,Basic Materials,Paper & Paper Products
 LOPE,"Grand Canyon Education, Inc.",-0.61,-10.82,0,0,10,Real Estate,Other Consumer Services
 SLGN,Silgan Holdings Inc.,-0.53,9.96,90,81,32,Industrials,Containers/Packaging
-TUIFF,TUI AG,0.0,-1.02,31,10,20,Consumer Cyclical,Travel Services
+TUIFF,TUI AG,0.0,-1.02,31,10,19,Consumer Cyclical,Travel Services
 PJT,PJT Partners Inc.,0.3,0.28,33,14,39,Finance,Investment Managers
 UCB,"United Community Banks, Inc.",0.89,-0.63,38,24,53,Finance,Major Banks
 APNHY,Aspen Pharmacare Holdings Limited,0.0,7.0,63,41,77,Healthcare,Drug Manufacturers - Specialty & Generic
@@ -4599,7 +4595,7 @@ KC,Kingsoft Cloud Holdings Limited,-3.36,-27.94,0,0,7,Technology,Computer Softwa
 BHF,"Brighthouse Financial, Inc.",0.05,1.18,51,26,53,Finance,Life Insurance
 BHFAO,"Brighthouse Financial, Inc.",0.58,-1.98,62,35,33,Finance,Life Insurance
 DAVE,Dave Inc.,10.01,28.97,100,100,86,Finance,Finance: Consumer Services
-CNS,"Cohen & Steers, Inc.",0.71,4.61,64,46,59,Finance,Investment Managers
+CNS,"Cohen & Steers, Inc.",0.71,4.61,64,46,60,Finance,Investment Managers
 GBNXF,Gibson Energy Inc.,-1.62,-1.9,7,0,52,Energy,Oil & Gas Midstream
 OSIS,"OSI Systems, Inc.",2.42,5.4,65,49,17,Technology,Semiconductors
 TPZEF,Topaz Energy Corp.,-1.69,-10.07,0,0,45,Energy,Oil & Gas Midstream
@@ -4621,7 +4617,7 @@ AYAAF,"Ayala Land, Inc.",0.0,0.0,87,60,5,Real Estate,Real Estate - Development
 INOD,Innodata Inc.,-6.85,0.83,21,16,93,Technology,EDP Services
 MCHB,Mechanics Bancorp,0.07,3.85,35,24,60,Finance,Major Banks
 BULL,Webull Corporation,-0.56,1.29,93,86,27,Finance,Investment Bankers/Brokers/Service
-JOYY,JOYY Inc.,-1.05,15.54,70,57,63,Technology,EDP Services
+JOYY,JOYY Inc.,-1.05,15.54,70,57,62,Technology,EDP Services
 OLGPF,Olam Group Limited,0.0,25.72,95,88,82,Consumer Defensive,Food Distribution
 COLM,Columbia Sportswear Company,3.88,10.55,80,55,65,Consumer Discretionary,Apparel
 SII,Sprott Inc.,-4.99,-3.85,39,21,78,Finance,Finance: Consumer Services
@@ -4745,8 +4741,6 @@ TRMK,Trustmark Corporation,0.81,1.5,51,36,60,Finance,Major Banks
 KPLIF,Keppel Infrastructure Trust,0.0,-0.68,31,10,83,Basic Materials,Specialty Chemicals
 DJT,Trump Media & Technology Group Corp.,4.81,5.33,42,34,7,Technology,Computer Software: Programming Data Processing
 SMSGY,Samsonite Group S.A.,4.06,13.88,100,100,31,Consumer Cyclical,Footwear & Accessories
-MXCHF,"Orbia Advance Corporation, S.A.B. de C.V.",0.0,4.55,87,69,84,Industrials,Conglomerates
-HXPLF,HEXPOL AB (publ),-1.92,-1.66,11,4,19,Basic Materials,Specialty Chemicals
 AUKUF,ams-OSRAM AG,0.0,-5.35,0,0,94,Technology,Semiconductors
 HOG,"Harley-Davidson, Inc.",1.02,8.46,86,70,69,Consumer Discretionary,Motor Vehicles
 AMSSY,ams-OSRAM AG,-0.72,-8.62,29,22,95,Technology,Semiconductors
@@ -4776,7 +4770,7 @@ KRKKF,KRUK Spólka Akcyjna,0.0,63.08,92,84,90,Financial Services,Credit Services
 FBNC,First Bancorp,0.78,2.57,66,47,68,Finance,Major Banks
 ADPT,Adaptive Biotechnologies Corporation,4.47,25.57,72,66,79,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
 TRRVF,TerraVest Industries Inc.,-0.94,-14.34,12,6,9,Energy,Oil & Gas Equipment & Services
-OSW,OneSpaWorld Holdings Limited,2.88,15.38,100,100,75,Consumer Discretionary,Hotels/Resorts
+OSW,OneSpaWorld Holdings Limited,2.88,15.38,100,100,76,Consumer Discretionary,Hotels/Resorts
 XIFR,"XPLR Infrastructure, LP",1.63,4.79,25,20,70,Utilities,Electric Utilities: Central
 ANDE,"The Andersons, Inc.",3.56,0.81,29,17,82,Industrials,Farming/Seeds/Milling
 CMPR,Cimpress plc,0.3,-13.14,10,8,80,Consumer Discretionary,Publishing
@@ -4794,7 +4788,9 @@ CROMF,Crombie Real Estate Investment Trust,-0.57,0.61,19,2,54,Real Estate,REIT -
 BVNRY,Bavarian Nordic A/S,-0.11,-10.26,0,0,25,Healthcare,Biotechnology
 AVVOF,AVVOF,-3.65,4.67,11,3,33,Industrials,Aerospace & Defense
 TBBK,"The Bancorp, Inc.",1.59,2.31,71,61,28,Finance,Major Banks
-OCDGF,OCDGF,0.0,0.39,9,4,20,Consumer Defensive,Grocery Stores
+OCDGF,Ocado Group plc,0.0,0.39,9,4,20,Consumer Defensive,Grocery Stores
+SHHFF,SHHFF,-0.46,80.0,90,79,91,,
+DAC,Danaos Corporation,-0.56,-4.52,23,3,74,Consumer Discretionary,Marine Transportation
 NZTCF,Spark New Zealand Limited,0.0,-9.17,29,23,16,Communication Services,Telecom Services
 BCRX,"BioCryst Pharmaceuticals, Inc.",0.45,2.86,88,74,37,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
 ASRHF,ASRHF,4.07,-24.7,3,2,85,,
@@ -4809,7 +4805,7 @@ RVT,"Royce Small-Cap Trust, Inc.",1.01,1.46,51,19,63,Finance,Trusts Except Educa
 DRSHF,DroneShield Limited,-3.79,-6.53,0,0,26,Industrials,Aerospace & Defense
 BANR,Banner Corporation,0.11,0.28,42,27,45,Finance,Major Banks
 MTTRY,Ceconomy AG,0.0,-25.27,19,15,10,Consumer Cyclical,Specialty Retail
-CENT,Central Garden & Pet Company,2.35,13.04,99,80,69,Consumer Discretionary,Consumer Specialties
+CENT,Central Garden & Pet Company,2.35,13.04,99,80,68,Consumer Discretionary,Consumer Specialties
 PBI,Pitney Bowes Inc.,0.69,14.38,97,76,90,Miscellaneous,Office Equipment/Supplies/Services
 CLM,"Cornerstone Strategic Investment Fund, Inc.",0.81,0.31,55,14,46,Finance,Finance/Investors Services
 SRRLF,Sirius Real Estate Limited,0.0,-5.57,18,7,52,Real Estate,Real Estate Services
@@ -4987,7 +4983,7 @@ ARLO,"Arlo Technologies, Inc.",2.92,0.08,40,25,14,Consumer Staples,Consumer Elec
 NWL,Newell Brands Inc.,-1.01,42.16,94,91,67,Industrials,Plastic Products
 FGETF,Flight Centre Travel Group Limited,0.0,-3.1,26,10,17,Consumer Cyclical,Travel Services
 WWW,"Wolverine World Wide, Inc.",5.39,15.18,68,58,25,Consumer Discretionary,Shoe Manufacturing
-KALV,"KalVista Pharmaceuticals, Inc.",0.0,0.9,53,47,90,Health Care,Biotechnology: Pharmaceutical Preparations
+KALV,KalVista Pharmaceuticals Inc,0.0,0.9,53,47,90,Health Care,Biotechnology: Pharmaceutical Preparations
 JJSF,J&J Snack Foods Corp.,0.11,2.55,23,11,15,Consumer Staples,Specialty Foods
 YSWY,"Yesway, Inc.",0.94,-11.51,13,10,28,Consumer Staples,Food Chains
 DFH,"Dream Finders Homes, Inc.",7.44,11.99,100,93,15,Consumer Discretionary,Homebuilding
@@ -5045,7 +5041,7 @@ SBH,"Sally Beauty Holdings, Inc.",5.98,9.94,93,83,48,Consumer Discretionary,Othe
 CHFHY,China Foods Limited,0.0,-9.67,48,40,40,Consumer Defensive,Beverages - Non-Alcoholic
 TTNNF,Toho Titanium Co Ltd,0.0,13.49,18,15,99,Basic Materials,Other Industrial Metals & Mining
 AFYA,Afya Limited,1.88,-1.05,24,10,25,Real Estate,Other Consumer Services
-ALX,"Alexander's, Inc.",1.67,4.97,48,35,60,Real Estate,Real Estate Investment Trusts
+ALX,"Alexander's, Inc.",1.67,4.97,48,35,61,Real Estate,Real Estate Investment Trusts
 YELP,Yelp Inc.,1.55,1.82,32,24,10,Consumer Discretionary,Other Consumer Services
 TNGRF,Thungela Resources Limited,0.0,-4.11,15,10,57,Energy,Thermal Coal
 PEBO,Peoples Bancorp Inc.,1.4,5.44,71,50,67,Finance,Major Banks

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19T09:46:56Z",
+  "generated_at": "2026-06-20T08:30:39Z",
   "benchmark_date": "2026-06-18",
   "tickers": [
     {
@@ -5152,7 +5152,7 @@
       "ibd_raw": 1.3852,
       "sector": "Industrials",
       "industry": "Metal Fabrications",
-      "ibd_rs": 80
+      "ibd_rs": 81
     },
     {
       "ticker": "BAMGF",
@@ -11200,7 +11200,7 @@
       "ibd_raw": 0.7545,
       "sector": "Technology",
       "industry": "Semiconductors",
-      "ibd_rs": 8
+      "ibd_rs": 7
     },
     {
       "ticker": "CVE",
@@ -12544,7 +12544,7 @@
       "ibd_raw": 1.2103,
       "sector": "Industrials",
       "industry": "Electrical Equipment & Parts",
-      "ibd_rs": 67
+      "ibd_rs": 66
     },
     {
       "ticker": "FANUF",
@@ -15400,7 +15400,7 @@
       "ibd_raw": 1.3337,
       "sector": "Industrials",
       "industry": "Engineering & Construction",
-      "ibd_rs": 77
+      "ibd_rs": 78
     },
     {
       "ticker": "FJTSY",
@@ -21952,7 +21952,7 @@
       "ibd_raw": 1.22,
       "sector": "Financial Services",
       "industry": "Insurance - Property & Casualty",
-      "ibd_rs": 68
+      "ibd_rs": 67
     },
     {
       "ticker": "AIPUY",
@@ -22624,7 +22624,7 @@
       "ibd_raw": 1.029,
       "sector": "Energy",
       "industry": "Thermal Coal",
-      "ibd_rs": 39
+      "ibd_rs": 38
     },
     {
       "ticker": "BCE",
@@ -24584,7 +24584,7 @@
       "ibd_raw": 1.0787,
       "sector": "Finance",
       "industry": "Property-Casualty Insurers",
-      "ibd_rs": 48
+      "ibd_rs": 47
     },
     {
       "ticker": "ASCCY",
@@ -26208,7 +26208,7 @@
       "ibd_raw": 1.3489,
       "sector": "Industrials",
       "industry": "Metal Fabrications",
-      "ibd_rs": 78
+      "ibd_rs": 79
     },
     {
       "ticker": "INCY",
@@ -30774,7 +30774,7 @@
       "ibd_raw": 1.408,
       "sector": "Energy",
       "industry": "Oil & Gas Midstream",
-      "ibd_rs": 81
+      "ibd_rs": 82
     },
     {
       "ticker": "BPCGF",
@@ -35280,7 +35280,7 @@
       "ibd_raw": 1.0101,
       "sector": "Industrials",
       "industry": "Airports & Air Services",
-      "ibd_rs": 36
+      "ibd_rs": 35
     },
     {
       "ticker": "HAS",
@@ -43826,7 +43826,7 @@
       "ibd_raw": 1.1837,
       "sector": "Consumer Defensive",
       "industry": "Packaged Foods",
-      "ibd_rs": 64
+      "ibd_rs": 63
     },
     {
       "ticker": "SBSW",
@@ -48922,7 +48922,7 @@
       "ibd_raw": 1.2712,
       "sector": "Technology",
       "industry": "Software - Application",
-      "ibd_rs": 73
+      "ibd_rs": 72
     },
     {
       "ticker": "CEVMF",
@@ -50378,7 +50378,7 @@
       "ibd_raw": 1.2808,
       "sector": "Energy",
       "industry": "Oil & Gas Production",
-      "ibd_rs": 74
+      "ibd_rs": 73
     },
     {
       "ticker": "MNESP",
@@ -50546,7 +50546,7 @@
       "ibd_raw": 1.085,
       "sector": "Finance",
       "industry": "Finance: Consumer Services",
-      "ibd_rs": 49
+      "ibd_rs": 48
     },
     {
       "ticker": "GGPSF",
@@ -50658,7 +50658,7 @@
       "ibd_raw": 0.7893,
       "sector": "Consumer Staples",
       "industry": "Packaged Foods",
-      "ibd_rs": 10
+      "ibd_rs": 9
     },
     {
       "ticker": "DSGX",
@@ -51778,7 +51778,7 @@
       "ibd_raw": 1.322,
       "sector": "Health Care",
       "industry": "Medical/Dental Instruments",
-      "ibd_rs": 76
+      "ibd_rs": 77
     },
     {
       "ticker": "TOITF",
@@ -58946,7 +58946,7 @@
       "ibd_raw": 1.7289,
       "sector": "Industrials",
       "industry": "Engineering & Construction",
-      "ibd_rs": 91
+      "ibd_rs": 90
     },
     {
       "ticker": "MIR",
@@ -66734,7 +66734,7 @@
     },
     {
       "ticker": "GBDC",
-      "name": "Golub Capital BDC, Inc.",
+      "name": "GBDC",
       "daily_pct": 0.0,
       "one_month_pct": -2.95,
       "rs_sts_spy": 0,
@@ -66787,118 +66787,6 @@
       "sector": "Finance",
       "industry": "Finance: Consumer Services",
       "ibd_rs": 30
-    },
-    {
-      "ticker": "ASO",
-      "name": "Academy Sports and Outdoors, Inc.",
-      "daily_pct": 4.75,
-      "one_month_pct": 2.72,
-      "rs_sts_spy": 54,
-      "rs_sts_qqq": 46,
-      "rs_bar_spy": [
-        0.4437,
-        0.6654,
-        0.9492,
-        0.6655,
-        1.0,
-        0.5835,
-        0.5237,
-        0.3074,
-        0.4384,
-        0.2883,
-        0.6306,
-        0.5964,
-        0.3967,
-        0.4504,
-        0.7289,
-        0.4518,
-        0.0,
-        0.0656,
-        0.2206,
-        0.536
-      ],
-      "rs_bar_qqq": [
-        0.5979,
-        0.8011,
-        0.97,
-        0.7177,
-        1.0,
-        0.6088,
-        0.5276,
-        0.3048,
-        0.3886,
-        0.3206,
-        0.8244,
-        0.6824,
-        0.5683,
-        0.6535,
-        0.7757,
-        0.5173,
-        0.0,
-        0.1609,
-        0.284,
-        0.4561
-      ],
-      "ibd_raw": 1.046,
-      "sector": "Consumer Discretionary",
-      "industry": "Other Specialty Stores",
-      "ibd_rs": 41
-    },
-    {
-      "ticker": "MMTOY",
-      "name": "Mitsubishi Motors Corporation",
-      "daily_pct": 0.0,
-      "one_month_pct": -12.61,
-      "rs_sts_spy": 7,
-      "rs_sts_qqq": 2,
-      "rs_bar_spy": [
-        1.0,
-        0.9726,
-        0.9265,
-        0.9277,
-        0.8897,
-        0.8725,
-        0.8539,
-        0.8446,
-        0.893,
-        0.0,
-        0.1591,
-        0.1452,
-        0.1633,
-        0.2622,
-        0.1574,
-        0.1242,
-        0.018,
-        0.0541,
-        0.1308,
-        0.0676
-      ],
-      "rs_bar_qqq": [
-        1.0,
-        0.9737,
-        0.8657,
-        0.8726,
-        0.8217,
-        0.7995,
-        0.7636,
-        0.7362,
-        0.7518,
-        0.0239,
-        0.2883,
-        0.2036,
-        0.2668,
-        0.3786,
-        0.1957,
-        0.164,
-        0.0,
-        0.1011,
-        0.1553,
-        0.0238
-      ],
-      "ibd_raw": 0.7502,
-      "sector": "Consumer Cyclical",
-      "industry": "Auto Manufacturers",
-      "ibd_rs": 7
     },
     {
       "ticker": "SKYW",
@@ -68151,7 +68039,7 @@
         0.3267,
         0.0,
         0.189,
-        0.0146,
+        0.0147,
         0.1004,
         0.1834,
         0.1976,
@@ -68578,7 +68466,7 @@
       "ibd_raw": 1.202,
       "sector": "Consumer Discretionary",
       "industry": "Auto Parts:O.E.M.",
-      "ibd_rs": 66
+      "ibd_rs": 65
     },
     {
       "ticker": "CZGZF",
@@ -70370,7 +70258,7 @@
       "ibd_raw": 0.8672,
       "sector": "Consumer Defensive",
       "industry": "Farm Products",
-      "ibd_rs": 16
+      "ibd_rs": 17
     },
     {
       "ticker": "TE",
@@ -70431,8 +70319,8 @@
     {
       "ticker": "ADEA",
       "name": "Adeia Inc.",
-      "daily_pct": 1.4,
-      "one_month_pct": 20.71,
+      "daily_pct": 1.37,
+      "one_month_pct": 20.67,
       "rs_sts_spy": 81,
       "rs_sts_qqq": 73,
       "rs_bar_spy": [
@@ -70452,10 +70340,10 @@
         0.8104,
         1.0,
         0.8673,
-        0.8476,
+        0.8461,
         0.7941,
         0.7907,
-        0.8077
+        0.8062
       ],
       "rs_bar_qqq": [
         0.0694,
@@ -70474,12 +70362,12 @@
         0.891,
         1.0,
         0.8672,
-        0.7845,
+        0.7831,
         0.794,
         0.7792,
-        0.729
+        0.7275
       ],
-      "ibd_raw": 1.9369,
+      "ibd_raw": 1.9363,
       "sector": "Technology",
       "industry": "Computer Software: Prepackaged Software",
       "ibd_rs": 93
@@ -74570,7 +74458,7 @@
       "ibd_raw": 1.3654,
       "sector": "Industrials",
       "industry": "Industrial Machinery/Components",
-      "ibd_rs": 79
+      "ibd_rs": 80
     },
     {
       "ticker": "WFRSF",
@@ -78046,7 +77934,7 @@
       "ibd_raw": 1.4336,
       "sector": "Consumer Discretionary",
       "industry": "Construction/Ag Equipment/Trucks",
-      "ibd_rs": 82
+      "ibd_rs": 83
     },
     {
       "ticker": "BMRPF",
@@ -82885,6 +82773,118 @@
       "ibd_rs": 24
     },
     {
+      "ticker": "SGRY",
+      "name": "Surgery Partners, Inc.",
+      "daily_pct": 2.25,
+      "one_month_pct": 7.86,
+      "rs_sts_spy": 62,
+      "rs_sts_qqq": 54,
+      "rs_bar_spy": [
+        0.1428,
+        0.169,
+        0.1529,
+        0.1663,
+        0.2057,
+        0.0724,
+        0.0,
+        0.2181,
+        0.1506,
+        0.1995,
+        0.3612,
+        0.4092,
+        0.4708,
+        0.6682,
+        0.8786,
+        1.0,
+        0.8144,
+        0.856,
+        0.5531,
+        0.6246
+      ],
+      "rs_bar_qqq": [
+        0.2319,
+        0.2557,
+        0.1806,
+        0.1987,
+        0.2211,
+        0.0865,
+        0.0,
+        0.1914,
+        0.1035,
+        0.1963,
+        0.4806,
+        0.4524,
+        0.5615,
+        0.7798,
+        0.8858,
+        1.0,
+        0.7407,
+        0.8597,
+        0.5536,
+        0.5391
+      ],
+      "ibd_raw": 0.9472,
+      "sector": "Health Care",
+      "industry": "Hospital/Nursing Management",
+      "ibd_rs": 26
+    },
+    {
+      "ticker": "GLOB",
+      "name": "Globant S.A.",
+      "daily_pct": -11.18,
+      "one_month_pct": -26.44,
+      "rs_sts_spy": 0,
+      "rs_sts_qqq": 0,
+      "rs_bar_spy": [
+        0.7785,
+        0.728,
+        0.5778,
+        0.6087,
+        0.6764,
+        0.7014,
+        1.0,
+        0.8332,
+        0.6582,
+        0.6401,
+        0.6201,
+        0.6034,
+        0.5579,
+        0.5556,
+        0.4739,
+        0.5411,
+        0.4442,
+        0.4427,
+        0.3224,
+        0.0
+      ],
+      "rs_bar_qqq": [
+        0.838,
+        0.7869,
+        0.6059,
+        0.6391,
+        0.6971,
+        0.7181,
+        1.0,
+        0.8271,
+        0.6438,
+        0.6513,
+        0.6993,
+        0.6438,
+        0.6237,
+        0.6338,
+        0.5064,
+        0.5711,
+        0.4393,
+        0.4737,
+        0.349,
+        0.0
+      ],
+      "ibd_raw": 0.5416,
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "ibd_rs": 2
+    },
+    {
       "ticker": "PAYO",
       "name": "Payoneer Global Inc.",
       "daily_pct": 0.0,
@@ -82994,7 +82994,7 @@
       "ibd_raw": 1.24,
       "sector": "Consumer Discretionary",
       "industry": "Advertising",
-      "ibd_rs": 70
+      "ibd_rs": 69
     },
     {
       "ticker": "STRA",
@@ -84618,7 +84618,7 @@
       "ibd_raw": 0.9481,
       "sector": "Telecommunications",
       "industry": "Cable & Other Pay Television Services",
-      "ibd_rs": 27
+      "ibd_rs": 26
     },
     {
       "ticker": "BDJ",
@@ -91202,7 +91202,7 @@
       "ibd_raw": 1.0913,
       "sector": "Consumer Discretionary",
       "industry": "Transportation Services",
-      "ibd_rs": 50
+      "ibd_rs": 49
     },
     {
       "ticker": "ASM",
@@ -92306,7 +92306,7 @@
     },
     {
       "ticker": "BYITY",
-      "name": "Bytes Technology Group plc",
+      "name": "BYITY",
       "daily_pct": -7.06,
       "one_month_pct": 4.0,
       "rs_sts_spy": 29,
@@ -92359,118 +92359,6 @@
       "sector": "Technology",
       "industry": "Software - Infrastructure",
       "ibd_rs": 20
-    },
-    {
-      "ticker": "INGEF",
-      "name": "Ingenia Communities Group",
-      "daily_pct": 0.0,
-      "one_month_pct": -5.51,
-      "rs_sts_spy": 20,
-      "rs_sts_qqq": 7,
-      "rs_bar_spy": [
-        1.0,
-        0.9497,
-        0.8654,
-        0.8676,
-        0.0295,
-        0.0,
-        0.0402,
-        0.024,
-        0.1079,
-        0.0629,
-        0.3782,
-        0.3506,
-        0.3865,
-        0.5823,
-        0.3747,
-        0.309,
-        0.0985,
-        0.1701,
-        0.322,
-        0.1969
-      ],
-      "rs_bar_qqq": [
-        1.0,
-        0.9556,
-        0.773,
-        0.7847,
-        0.0778,
-        0.0426,
-        0.0438,
-        0.0,
-        0.0249,
-        0.0713,
-        0.5544,
-        0.3997,
-        0.5151,
-        0.7194,
-        0.3852,
-        0.3273,
-        0.0276,
-        0.2124,
-        0.3113,
-        0.0711
-      ],
-      "ibd_raw": 0.9159,
-      "sector": "Real Estate",
-      "industry": "REIT - Residential",
-      "ibd_rs": 22
-    },
-    {
-      "ticker": "HTLD",
-      "name": "Heartland Express, Inc.",
-      "daily_pct": 0.77,
-      "one_month_pct": 2.92,
-      "rs_sts_spy": 2,
-      "rs_sts_qqq": 0,
-      "rs_bar_spy": [
-        0.0,
-        0.0067,
-        0.1104,
-        0.1358,
-        0.265,
-        0.2134,
-        0.4472,
-        0.4371,
-        0.3261,
-        0.5715,
-        0.7664,
-        0.9646,
-        0.9044,
-        0.9156,
-        1.0,
-        0.9034,
-        0.6277,
-        0.451,
-        0.041,
-        0.0221
-      ],
-      "rs_bar_qqq": [
-        0.1503,
-        0.1543,
-        0.1776,
-        0.2057,
-        0.3002,
-        0.2479,
-        0.4302,
-        0.4007,
-        0.2769,
-        0.5442,
-        0.8697,
-        0.9531,
-        0.9602,
-        1.0,
-        0.9601,
-        0.8725,
-        0.5433,
-        0.4762,
-        0.1035,
-        0.0
-      ],
-      "ibd_raw": 1.5978,
-      "sector": "Industrials",
-      "industry": "Trucking Freight/Courier Services",
-      "ibd_rs": 88
     },
     {
       "ticker": "EVLV",
@@ -94262,7 +94150,7 @@
       "ibd_raw": 1.063,
       "sector": "Technology",
       "industry": "Computer Hardware",
-      "ibd_rs": 45
+      "ibd_rs": 44
     },
     {
       "ticker": "PXED",
@@ -99134,7 +99022,7 @@
       "ibd_raw": 1.0233,
       "sector": "Health Care",
       "industry": "Biotechnology: Pharmaceutical Preparations",
-      "ibd_rs": 38
+      "ibd_rs": 37
     },
     {
       "ticker": "IBKR",
@@ -102998,7 +102886,7 @@
       "ibd_raw": 1.0744,
       "sector": "Industrials",
       "industry": "Engineering & Construction",
-      "ibd_rs": 47
+      "ibd_rs": 46
     },
     {
       "ticker": "BE",
@@ -111174,7 +111062,7 @@
       "ibd_raw": 0.9353,
       "sector": "Consumer Defensive",
       "industry": "Grocery Stores",
-      "ibd_rs": 25
+      "ibd_rs": 24
     },
     {
       "ticker": "VMC",
@@ -111790,7 +111678,7 @@
       "ibd_raw": 1.4341,
       "sector": "Financial Services",
       "industry": "Banks - Regional",
-      "ibd_rs": 82
+      "ibd_rs": 83
     },
     {
       "ticker": "DTGHF",
@@ -113246,7 +113134,7 @@
       "ibd_raw": 0.9637,
       "sector": "Consumer Discretionary",
       "industry": "Containers/Packaging",
-      "ibd_rs": 29
+      "ibd_rs": 28
     },
     {
       "ticker": "MLYBY",
@@ -124446,7 +124334,7 @@
       "ibd_raw": 1.2198,
       "sector": "Industrials",
       "industry": "Building Products & Equipment",
-      "ibd_rs": 68
+      "ibd_rs": 67
     },
     {
       "ticker": "WES",
@@ -127918,7 +127806,7 @@
       "ibd_raw": 0.9167,
       "sector": "Industrials",
       "industry": "Military/Government/Technical",
-      "ibd_rs": 23
+      "ibd_rs": 22
     },
     {
       "ticker": "CHKP",
@@ -134402,7 +134290,7 @@
       "ibd_raw": 1.366,
       "sector": "Basic Materials",
       "industry": "Precious Metals",
-      "ibd_rs": 79
+      "ibd_rs": 80
     },
     {
       "ticker": "WYNN",
@@ -137762,7 +137650,7 @@
       "ibd_raw": 0.9708,
       "sector": "Industrials",
       "industry": "Conglomerates",
-      "ibd_rs": 30
+      "ibd_rs": 29
     },
     {
       "ticker": "EVKIY",
@@ -142130,7 +142018,7 @@
       "ibd_raw": 0.9258,
       "sector": "Communication Services",
       "industry": "Telecom Services",
-      "ibd_rs": 24
+      "ibd_rs": 23
     },
     {
       "ticker": "NXE",
@@ -142522,7 +142410,7 @@
       "ibd_raw": 0.9419,
       "sector": "Industrials",
       "industry": "Airlines",
-      "ibd_rs": 26
+      "ibd_rs": 25
     },
     {
       "ticker": "SOBO",
@@ -151618,7 +151506,7 @@
       "ibd_raw": 1.0362,
       "sector": "Energy",
       "industry": "Oil & Gas Production",
-      "ibd_rs": 40
+      "ibd_rs": 39
     },
     {
       "ticker": "GOLF",
@@ -153802,7 +153690,7 @@
       "ibd_raw": 0.5008,
       "sector": "Finance",
       "industry": "Finance: Consumer Services",
-      "ibd_rs": 2
+      "ibd_rs": 1
     },
     {
       "ticker": "MAIN",
@@ -158170,7 +158058,7 @@
       "ibd_raw": 1.0578,
       "sector": "Industrials",
       "industry": "Telecommunications Equipment",
-      "ibd_rs": 44
+      "ibd_rs": 43
     },
     {
       "ticker": "GTMEF",
@@ -160746,7 +160634,7 @@
       "ibd_raw": 1.0466,
       "sector": "Healthcare",
       "industry": "Pharmaceutical Retailers",
-      "ibd_rs": 42
+      "ibd_rs": 41
     },
     {
       "ticker": "SSLLF",
@@ -161082,7 +160970,7 @@
       "ibd_raw": 1.3855,
       "sector": "Consumer Discretionary",
       "industry": "Services-Misc. Amusement & Recreation",
-      "ibd_rs": 80
+      "ibd_rs": 81
     },
     {
       "ticker": "BTE",
@@ -166906,7 +166794,7 @@
       "ibd_raw": 0.9256,
       "sector": "Consumer Cyclical",
       "industry": "Specialty Retail",
-      "ibd_rs": 24
+      "ibd_rs": 23
     },
     {
       "ticker": "DRTGF",
@@ -169542,7 +169430,7 @@
     },
     {
       "ticker": "ZNKKY",
-      "name": "ZENKOKU HOSHO Co.,Ltd.",
+      "name": "ZNKKY",
       "daily_pct": 0.0,
       "one_month_pct": -5.75,
       "rs_sts_spy": 26,
@@ -169595,118 +169483,6 @@
       "sector": "Financial Services",
       "industry": "Credit Services",
       "ibd_rs": 21
-    },
-    {
-      "ticker": "PDIYF",
-      "name": "Predictive Discovery Limited",
-      "daily_pct": -1.5,
-      "one_month_pct": -0.16,
-      "rs_sts_spy": 88,
-      "rs_sts_qqq": 82,
-      "rs_bar_spy": [
-        0.5954,
-        0.2385,
-        0.0153,
-        0.0011,
-        0.0861,
-        0.0,
-        0.0188,
-        0.0139,
-        0.1655,
-        0.1513,
-        0.1107,
-        0.2061,
-        0.2173,
-        0.026,
-        0.0186,
-        0.2157,
-        0.512,
-        0.8048,
-        1.0,
-        0.8843
-      ],
-      "rs_bar_qqq": [
-        0.6828,
-        0.2994,
-        0.0762,
-        0.0609,
-        0.1057,
-        0.0239,
-        0.0163,
-        0.0,
-        0.1323,
-        0.1501,
-        0.1953,
-        0.241,
-        0.285,
-        0.1089,
-        0.0422,
-        0.2357,
-        0.4746,
-        0.8179,
-        1.0,
-        0.8224
-      ],
-      "ibd_raw": 1.6983,
-      "sector": "Basic Materials",
-      "industry": "Gold",
-      "ibd_rs": 90
-    },
-    {
-      "ticker": "LCID",
-      "name": "Lucid Group, Inc.",
-      "daily_pct": 4.28,
-      "one_month_pct": -5.63,
-      "rs_sts_spy": 30,
-      "rs_sts_qqq": 21,
-      "rs_bar_spy": [
-        0.6049,
-        0.5915,
-        0.6446,
-        0.8141,
-        0.91,
-        0.9527,
-        1.0,
-        0.7186,
-        0.4829,
-        0.4473,
-        0.1994,
-        0.1807,
-        0.2222,
-        0.0,
-        0.2311,
-        0.2323,
-        0.2082,
-        0.0924,
-        0.2002,
-        0.2974
-      ],
-      "rs_bar_qqq": [
-        0.6419,
-        0.6261,
-        0.6426,
-        0.8294,
-        0.9213,
-        0.9625,
-        1.0,
-        0.6858,
-        0.4181,
-        0.4105,
-        0.2201,
-        0.156,
-        0.2298,
-        0.0,
-        0.1993,
-        0.199,
-        0.1291,
-        0.0471,
-        0.1555,
-        0.212
-      ],
-      "ibd_raw": 0.4037,
-      "sector": "Industrials",
-      "industry": "Auto Manufacturing",
-      "ibd_rs": 1
     },
     {
       "ticker": "USNZY",
@@ -173459,6 +173235,118 @@
       "sector": "Energy",
       "industry": "Oil & Gas Drilling",
       "ibd_rs": 90
+    },
+    {
+      "ticker": "IMAX",
+      "name": "IMAX Corporation",
+      "daily_pct": 0.09,
+      "one_month_pct": 29.54,
+      "rs_sts_spy": 96,
+      "rs_sts_qqq": 90,
+      "rs_bar_spy": [
+        0.0,
+        0.4838,
+        0.5995,
+        0.4185,
+        0.4501,
+        0.4829,
+        0.5483,
+        0.5441,
+        0.4284,
+        0.4258,
+        0.51,
+        0.5159,
+        0.6218,
+        0.8849,
+        0.8106,
+        0.8003,
+        0.7381,
+        0.8927,
+        1.0,
+        0.9603
+      ],
+      "rs_bar_qqq": [
+        0.0,
+        0.5116,
+        0.59,
+        0.404,
+        0.426,
+        0.4558,
+        0.5112,
+        0.4942,
+        0.3573,
+        0.3873,
+        0.5658,
+        0.5197,
+        0.6662,
+        0.9644,
+        0.8152,
+        0.8025,
+        0.6817,
+        0.8983,
+        1.0,
+        0.8959
+      ],
+      "ibd_raw": 1.2967,
+      "sector": "Consumer Discretionary",
+      "industry": "Industrial Machinery/Components",
+      "ibd_rs": 75
+    },
+    {
+      "ticker": "NGCRF",
+      "name": "NagaCorp Ltd.",
+      "daily_pct": 0.0,
+      "one_month_pct": -2.0,
+      "rs_sts_spy": 13,
+      "rs_sts_qqq": 4,
+      "rs_bar_spy": [
+        0.42,
+        1.0,
+        0.7222,
+        0.724,
+        0.6654,
+        0.0271,
+        0.0,
+        0.5958,
+        0.6704,
+        0.6304,
+        0.9111,
+        0.2605,
+        0.2906,
+        0.4548,
+        0.2807,
+        0.2256,
+        0.049,
+        0.109,
+        0.2364,
+        0.1315
+      ],
+      "rs_bar_qqq": [
+        0.5145,
+        1.0,
+        0.6679,
+        0.678,
+        0.6036,
+        0.0634,
+        0.014,
+        0.4785,
+        0.5014,
+        0.5438,
+        0.9861,
+        0.321,
+        0.4205,
+        0.5968,
+        0.3085,
+        0.2585,
+        0.0,
+        0.1594,
+        0.2448,
+        0.0376
+      ],
+      "ibd_raw": 0.8644,
+      "sector": "Consumer Cyclical",
+      "industry": "Resorts & Casinos",
+      "ibd_rs": 16
     },
     {
       "ticker": "MBIN",
@@ -181186,7 +181074,7 @@
       "ibd_raw": 1.1924,
       "sector": "Healthcare",
       "industry": "Drug Manufacturers - Specialty & Generic",
-      "ibd_rs": 65
+      "ibd_rs": 64
     },
     {
       "ticker": "FSUN",
@@ -183034,7 +182922,7 @@
       "ibd_raw": 1.0692,
       "sector": "Finance",
       "industry": "Property-Casualty Insurers",
-      "ibd_rs": 46
+      "ibd_rs": 45
     },
     {
       "ticker": "CRLFF",
@@ -185386,7 +185274,7 @@
       "ibd_raw": 0.9977,
       "sector": "Financial Services",
       "industry": "Asset Management",
-      "ibd_rs": 34
+      "ibd_rs": 33
     },
     {
       "ticker": "ENOV",
@@ -189474,7 +189362,7 @@
       "ibd_raw": 0.9418,
       "sector": "Consumer Discretionary",
       "industry": "Restaurants",
-      "ibd_rs": 26
+      "ibd_rs": 25
     },
     {
       "ticker": "HFWA",
@@ -189979,118 +189867,6 @@
       "sector": "Industrials",
       "industry": "Broadcasting",
       "ibd_rs": 15
-    },
-    {
-      "ticker": "OSBC",
-      "name": "Old Second Bancorp, Inc.",
-      "daily_pct": 1.06,
-      "one_month_pct": 4.39,
-      "rs_sts_spy": 59,
-      "rs_sts_qqq": 43,
-      "rs_bar_spy": [
-        0.3076,
-        0.2711,
-        0.3892,
-        0.2771,
-        0.2566,
-        0.2423,
-        0.109,
-        0.2219,
-        0.0,
-        0.2782,
-        0.5864,
-        0.6313,
-        0.7621,
-        1.0,
-        0.8773,
-        0.948,
-        0.5625,
-        0.6417,
-        0.5866,
-        0.5887
-      ],
-      "rs_bar_qqq": [
-        0.4145,
-        0.3839,
-        0.3959,
-        0.3166,
-        0.2802,
-        0.2608,
-        0.1358,
-        0.1993,
-        0.0,
-        0.2719,
-        0.6787,
-        0.6147,
-        0.7812,
-        1.0,
-        0.7784,
-        0.8292,
-        0.4343,
-        0.5918,
-        0.5314,
-        0.4276
-      ],
-      "ibd_raw": 1.1738,
-      "sector": "Finance",
-      "industry": "Major Banks",
-      "ibd_rs": 62
-    },
-    {
-      "ticker": "MGAWY",
-      "name": "Megaworld Corporation",
-      "daily_pct": 0.0,
-      "one_month_pct": -3.79,
-      "rs_sts_spy": 48,
-      "rs_sts_qqq": 32,
-      "rs_bar_spy": [
-        1.0,
-        0.9552,
-        0.125,
-        0.1268,
-        0.0688,
-        0.0427,
-        0.0142,
-        0.0,
-        0.6886,
-        0.6467,
-        0.9405,
-        0.9148,
-        0.6512,
-        0.8289,
-        0.6405,
-        0.5809,
-        0.3898,
-        0.4548,
-        0.5926,
-        0.479
-      ],
-      "rs_bar_qqq": [
-        0.9896,
-        0.9502,
-        0.181,
-        0.1907,
-        0.1195,
-        0.0885,
-        0.0383,
-        0.0,
-        0.5095,
-        0.5525,
-        1.0,
-        0.8566,
-        0.7214,
-        0.9057,
-        0.6042,
-        0.552,
-        0.2816,
-        0.4484,
-        0.5376,
-        0.3209
-      ],
-      "ibd_raw": 0.9096,
-      "sector": "Real Estate",
-      "industry": "Real Estate - Development",
-      "ibd_rs": 22
     },
     {
       "ticker": "NAT",
@@ -197482,7 +197258,7 @@
       "ibd_raw": 1.2504,
       "sector": "Energy",
       "industry": "Oil & Gas Integrated",
-      "ibd_rs": 71
+      "ibd_rs": 70
     },
     {
       "ticker": "CNQ",
@@ -199778,7 +199554,7 @@
       "ibd_raw": 1.2584,
       "sector": "Consumer Discretionary",
       "industry": "Hotels/Resorts",
-      "ibd_rs": 72
+      "ibd_rs": 71
     },
     {
       "ticker": "CI",
@@ -201853,6 +201629,118 @@
       "ibd_rs": 97
     },
     {
+      "ticker": "IMO",
+      "name": "Imperial Oil Limited",
+      "daily_pct": -1.44,
+      "one_month_pct": -15.49,
+      "rs_sts_spy": 0,
+      "rs_sts_qqq": 0,
+      "rs_bar_spy": [
+        1.0,
+        0.9441,
+        0.7128,
+        0.5119,
+        0.3944,
+        0.2007,
+        0.28,
+        0.436,
+        0.5598,
+        0.5953,
+        0.5063,
+        0.5322,
+        0.3821,
+        0.532,
+        0.4697,
+        0.4542,
+        0.3068,
+        0.235,
+        0.1301,
+        0.0
+      ],
+      "rs_bar_qqq": [
+        1.0,
+        0.9494,
+        0.6908,
+        0.5217,
+        0.4059,
+        0.2331,
+        0.2862,
+        0.4047,
+        0.4891,
+        0.5621,
+        0.5995,
+        0.5562,
+        0.4677,
+        0.6206,
+        0.485,
+        0.4692,
+        0.2782,
+        0.2784,
+        0.1763,
+        0.0
+      ],
+      "ibd_raw": 1.1469,
+      "sector": "Energy",
+      "industry": "Integrated oil Companies",
+      "ibd_rs": 58
+    },
+    {
+      "ticker": "AFL",
+      "name": "Aflac Incorporated",
+      "daily_pct": -0.66,
+      "one_month_pct": -1.49,
+      "rs_sts_spy": 47,
+      "rs_sts_qqq": 28,
+      "rs_bar_spy": [
+        0.7935,
+        0.7529,
+        0.5749,
+        0.3844,
+        0.1071,
+        0.0596,
+        0.0,
+        0.132,
+        0.2941,
+        0.3287,
+        0.9178,
+        0.5937,
+        0.6642,
+        1.0,
+        0.7366,
+        0.8078,
+        0.5244,
+        0.6365,
+        0.6658,
+        0.472
+      ],
+      "rs_bar_qqq": [
+        0.7797,
+        0.7446,
+        0.5047,
+        0.3639,
+        0.1215,
+        0.0741,
+        0.0,
+        0.0752,
+        0.1629,
+        0.2644,
+        0.9374,
+        0.5589,
+        0.6929,
+        1.0,
+        0.64,
+        0.6916,
+        0.3503,
+        0.5551,
+        0.556,
+        0.2779
+      ],
+      "ibd_raw": 1.0922,
+      "sector": "Finance",
+      "industry": "Accident &Health Insurance",
+      "ibd_rs": 50
+    },
+    {
       "ticker": "AAUKF",
       "name": "Anglo American plc",
       "daily_pct": 0.0,
@@ -203194,7 +203082,7 @@
       "ibd_raw": 0.7745,
       "sector": "Consumer Cyclical",
       "industry": "Auto Manufacturers",
-      "ibd_rs": 9
+      "ibd_rs": 8
     },
     {
       "ticker": "HCMLF",
@@ -203362,7 +203250,7 @@
       "ibd_raw": 1.4531,
       "sector": "Technology",
       "industry": "Semiconductors",
-      "ibd_rs": 83
+      "ibd_rs": 84
     },
     {
       "ticker": "PRYMF",
@@ -208626,7 +208514,7 @@
       "ibd_raw": 0.935,
       "sector": "Health Care",
       "industry": "Biotechnology: Pharmaceutical Preparations",
-      "ibd_rs": 25
+      "ibd_rs": 24
     },
     {
       "ticker": "DNNGY",
@@ -209690,7 +209578,7 @@
       "ibd_raw": 0.9554,
       "sector": "Industrials",
       "industry": "Marine Shipping",
-      "ibd_rs": 28
+      "ibd_rs": 27
     },
     {
       "ticker": "ACGL",
@@ -209863,55 +209751,55 @@
     {
       "ticker": "KYOCY",
       "name": "Kyocera Corporation",
-      "daily_pct": 0.74,
-      "one_month_pct": 23.32,
-      "rs_sts_spy": 83,
-      "rs_sts_qqq": 84,
+      "daily_pct": -0.13,
+      "one_month_pct": 24.3,
+      "rs_sts_spy": 80,
+      "rs_sts_qqq": 74,
       "rs_bar_spy": [
-        0.0589,
         0.0,
-        0.0767,
-        0.0873,
-        0.0861,
-        0.136,
-        0.2567,
-        0.2156,
-        0.515,
-        0.5939,
-        0.7294,
-        0.749,
-        0.9722,
+        0.0545,
+        0.1867,
+        0.1417,
+        0.4692,
+        0.5556,
+        0.7039,
+        0.7253,
+        0.9695,
         1.0,
-        0.7101,
-        0.7736,
-        0.7492,
-        0.718,
-        0.8178,
-        0.8256
+        0.6828,
+        0.7523,
+        0.7256,
+        0.6914,
+        0.8006,
+        0.8092,
+        0.8925,
+        0.8372,
+        0.8489,
+        0.7991
       ],
       "rs_bar_qqq": [
-        0.0526,
         0.0,
-        0.0829,
-        0.073,
-        0.072,
-        0.1255,
-        0.218,
-        0.1769,
-        0.4905,
-        0.5712,
-        0.7043,
-        0.7121,
-        0.9325,
+        0.0577,
+        0.1574,
+        0.1131,
+        0.451,
+        0.5379,
+        0.6813,
+        0.6898,
+        0.9273,
         1.0,
-        0.7825,
-        0.7968,
-        0.8063,
-        0.7899,
-        0.8303,
-        0.8368
+        0.7656,
+        0.781,
+        0.7913,
+        0.7736,
+        0.8171,
+        0.8241,
+        0.8511,
+        0.8529,
+        0.8542,
+        0.7363
       ],
-      "ibd_raw": 1.6409,
+      "ibd_raw": 1.6633,
       "sector": "Industrials",
       "industry": "Conglomerates",
       "ibd_rs": 89
@@ -213050,7 +212938,7 @@
     },
     {
       "ticker": "BABWF",
-      "name": "International Consolidated Airlines Group S.A.",
+      "name": "BABWF",
       "daily_pct": 0.0,
       "one_month_pct": 13.32,
       "rs_sts_spy": 79,
@@ -213103,118 +212991,6 @@
       "sector": "Industrials",
       "industry": "Airlines",
       "ibd_rs": 64
-    },
-    {
-      "ticker": "MGDDY",
-      "name": "Compagnie G\u00e9n\u00e9rale des \u00c9tablissements Michelin Soci\u00e9t\u00e9 en commandite par actions",
-      "daily_pct": 0.42,
-      "one_month_pct": 9.72,
-      "rs_sts_spy": 77,
-      "rs_sts_qqq": 59,
-      "rs_bar_spy": [
-        0.1086,
-        0.0455,
-        0.0,
-        0.2534,
-        0.1282,
-        0.2506,
-        0.2404,
-        0.3105,
-        0.3258,
-        0.3574,
-        0.5104,
-        0.4511,
-        0.6826,
-        0.847,
-        0.8491,
-        0.8956,
-        0.8659,
-        1.0,
-        0.8321,
-        0.7704
-      ],
-      "rs_bar_qqq": [
-        0.2099,
-        0.1448,
-        0.0,
-        0.2566,
-        0.1077,
-        0.216,
-        0.176,
-        0.214,
-        0.188,
-        0.2985,
-        0.6683,
-        0.4825,
-        0.7942,
-        1.0,
-        0.8391,
-        0.8799,
-        0.7188,
-        0.9796,
-        0.7914,
-        0.5915
-      ],
-      "ibd_raw": 1.1499,
-      "sector": "Unknown",
-      "industry": "Unknown",
-      "ibd_rs": 59
-    },
-    {
-      "ticker": "PPG",
-      "name": "PPG Industries, Inc.",
-      "daily_pct": 0.95,
-      "one_month_pct": 13.28,
-      "rs_sts_spy": 82,
-      "rs_sts_qqq": 64,
-      "rs_bar_spy": [
-        0.0,
-        0.0562,
-        0.136,
-        0.3927,
-        0.3439,
-        0.3317,
-        0.2396,
-        0.3466,
-        0.2362,
-        0.2475,
-        0.6153,
-        0.5239,
-        0.8205,
-        0.6975,
-        0.9579,
-        0.9935,
-        1.0,
-        0.9881,
-        0.8331,
-        0.8248
-      ],
-      "rs_bar_qqq": [
-        0.0,
-        0.06,
-        0.047,
-        0.3401,
-        0.2586,
-        0.2339,
-        0.1019,
-        0.1891,
-        0.0272,
-        0.1196,
-        0.7509,
-        0.5185,
-        0.9351,
-        0.8403,
-        0.9654,
-        1.0,
-        0.8707,
-        0.9916,
-        0.7956,
-        0.6435
-      ],
-      "ibd_raw": 1.1637,
-      "sector": "Consumer Discretionary",
-      "industry": "Paints/Coatings",
-      "ibd_rs": 61
     },
     {
       "ticker": "FUJIY",
@@ -217856,7 +217632,7 @@
       "ibd_raw": 1.0049,
       "sector": "Industrials",
       "industry": "Aerospace & Defense",
-      "ibd_rs": 35
+      "ibd_rs": 34
     },
     {
       "ticker": "TRATF",
@@ -219648,7 +219424,7 @@
       "ibd_raw": 1.6228,
       "sector": "Consumer Discretionary",
       "industry": "Telecommunications Equipment",
-      "ibd_rs": 89
+      "ibd_rs": 88
     },
     {
       "ticker": "TLN",
@@ -222336,7 +222112,7 @@
       "ibd_raw": 1.0528,
       "sector": "Finance",
       "industry": "Property-Casualty Insurers",
-      "ibd_rs": 43
+      "ibd_rs": 42
     },
     {
       "ticker": "PSLV",
@@ -225136,7 +224912,7 @@
       "ibd_raw": 1.2103,
       "sector": "Utilities",
       "industry": "Utilities - Regulated Gas",
-      "ibd_rs": 67
+      "ibd_rs": 66
     },
     {
       "ticker": "JBS",
@@ -233312,7 +233088,7 @@
       "ibd_raw": 1.4078,
       "sector": "Industrials",
       "industry": "Conglomerates",
-      "ibd_rs": 81
+      "ibd_rs": 82
     },
     {
       "ticker": "ACLIF",
@@ -235496,7 +235272,7 @@
       "ibd_raw": 1.1478,
       "sector": "Real Estate",
       "industry": "Real Estate Investment Trusts",
-      "ibd_rs": 58
+      "ibd_rs": 59
     },
     {
       "ticker": "KT",
@@ -235664,7 +235440,7 @@
       "ibd_raw": 1.2286,
       "sector": "Industrials",
       "industry": "Steel/Iron Ore",
-      "ibd_rs": 69
+      "ibd_rs": 68
     },
     {
       "ticker": "NCLH",
@@ -243840,7 +243616,7 @@
       "ibd_raw": 0.9167,
       "sector": "Communication Services",
       "industry": "Internet Content & Information",
-      "ibd_rs": 23
+      "ibd_rs": 22
     },
     {
       "ticker": "CACC",
@@ -249048,7 +248824,7 @@
       "ibd_raw": 1.0167,
       "sector": "Utilities",
       "industry": "Utilities - Independent Power Producers",
-      "ibd_rs": 37
+      "ibd_rs": 36
     },
     {
       "ticker": "IPGP",
@@ -254928,7 +254704,7 @@
       "ibd_raw": 0.8926,
       "sector": "Consumer Cyclical",
       "industry": "Travel Services",
-      "ibd_rs": 20
+      "ibd_rs": 19
     },
     {
       "ticker": "PJT",
@@ -257360,7 +257136,7 @@
       "ibd_raw": 1.1546,
       "sector": "Finance",
       "industry": "Investment Managers",
-      "ibd_rs": 59
+      "ibd_rs": 60
     },
     {
       "ticker": "GBNXF",
@@ -258592,7 +258368,7 @@
       "ibd_raw": 1.1777,
       "sector": "Technology",
       "industry": "EDP Services",
-      "ibd_rs": 63
+      "ibd_rs": 62
     },
     {
       "ticker": "OLGPF",
@@ -265483,118 +265259,6 @@
       "ibd_rs": 31
     },
     {
-      "ticker": "MXCHF",
-      "name": "Orbia Advance Corporation, S.A.B. de C.V.",
-      "daily_pct": 0.0,
-      "one_month_pct": 4.55,
-      "rs_sts_spy": 87,
-      "rs_sts_qqq": 69,
-      "rs_bar_spy": [
-        0.8816,
-        0.8337,
-        0.7534,
-        0.7555,
-        0.0747,
-        0.0463,
-        0.0154,
-        0.0,
-        0.0801,
-        0.0371,
-        0.3385,
-        0.3121,
-        0.4363,
-        0.6249,
-        0.425,
-        0.3617,
-        0.159,
-        0.2279,
-        1.0,
-        0.873
-      ],
-      "rs_bar_qqq": [
-        1.0,
-        0.9538,
-        0.7636,
-        0.7758,
-        0.1428,
-        0.1058,
-        0.0458,
-        0.0,
-        0.0261,
-        0.0745,
-        0.5799,
-        0.418,
-        0.6193,
-        0.8347,
-        0.4824,
-        0.4214,
-        0.1056,
-        0.3004,
-        0.9578,
-        0.6911
-      ],
-      "ibd_raw": 1.4638,
-      "sector": "Industrials",
-      "industry": "Conglomerates",
-      "ibd_rs": 84
-    },
-    {
-      "ticker": "HXPLF",
-      "name": "HEXPOL AB (publ)",
-      "daily_pct": -1.92,
-      "one_month_pct": -1.66,
-      "rs_sts_spy": 11,
-      "rs_sts_qqq": 4,
-      "rs_bar_spy": [
-        0.3238,
-        0.2902,
-        0.2338,
-        0.2353,
-        0.0544,
-        0.0337,
-        0.0112,
-        0.0,
-        0.0583,
-        0.613,
-        0.8479,
-        0.8274,
-        0.8541,
-        1.0,
-        0.4044,
-        0.3578,
-        0.2086,
-        0.2593,
-        0.367,
-        0.1146
-      ],
-      "rs_bar_qqq": [
-        0.4032,
-        0.3737,
-        0.2522,
-        0.26,
-        0.0946,
-        0.0701,
-        0.0303,
-        0.0,
-        0.0173,
-        0.5192,
-        0.8776,
-        0.7628,
-        0.8484,
-        1.0,
-        0.3962,
-        0.3554,
-        0.1438,
-        0.2743,
-        0.3441,
-        0.0448
-      ],
-      "ibd_raw": 0.8889,
-      "sector": "Basic Materials",
-      "industry": "Specialty Chemicals",
-      "ibd_rs": 19
-    },
-    {
       "ticker": "AUKUF",
       "name": "ams-OSRAM AG",
       "daily_pct": 0.0,
@@ -267272,7 +266936,7 @@
       "ibd_raw": 1.3072,
       "sector": "Consumer Discretionary",
       "industry": "Hotels/Resorts",
-      "ibd_rs": 75
+      "ibd_rs": 76
     },
     {
       "ticker": "XIFR",
@@ -268228,7 +267892,7 @@
     },
     {
       "ticker": "OCDGF",
-      "name": "OCDGF",
+      "name": "Ocado Group plc",
       "daily_pct": 0.0,
       "one_month_pct": 0.39,
       "rs_sts_spy": 9,
@@ -268281,6 +267945,118 @@
       "sector": "Consumer Defensive",
       "industry": "Grocery Stores",
       "ibd_rs": 20
+    },
+    {
+      "ticker": "SHHFF",
+      "name": "SHHFF",
+      "daily_pct": -0.46,
+      "one_month_pct": 80.0,
+      "rs_sts_spy": 90,
+      "rs_sts_qqq": 79,
+      "rs_bar_spy": [
+        0.0,
+        0.9272,
+        0.7682,
+        0.8002,
+        0.7601,
+        0.6945,
+        0.7969,
+        0.7791,
+        0.6394,
+        0.7866,
+        0.7174,
+        0.7957,
+        0.7586,
+        0.8275,
+        0.8084,
+        1.0,
+        0.9786,
+        0.9701,
+        0.9292,
+        0.9041
+      ],
+      "rs_bar_qqq": [
+        0.0,
+        1.0,
+        0.8009,
+        0.8288,
+        0.7675,
+        0.6824,
+        0.738,
+        0.6888,
+        0.5514,
+        0.6992,
+        0.6332,
+        0.7163,
+        0.6864,
+        0.7409,
+        0.7216,
+        0.8791,
+        0.8557,
+        0.8948,
+        0.8442,
+        0.7919
+      ],
+      "ibd_raw": 1.8,
+      "sector": "",
+      "industry": "",
+      "ibd_rs": 91
+    },
+    {
+      "ticker": "DAC",
+      "name": "Danaos Corporation",
+      "daily_pct": -0.56,
+      "one_month_pct": -4.52,
+      "rs_sts_spy": 23,
+      "rs_sts_qqq": 3,
+      "rs_bar_spy": [
+        1.0,
+        0.7367,
+        0.5841,
+        0.3704,
+        0.1138,
+        0.0,
+        0.3357,
+        0.3407,
+        0.3935,
+        0.5151,
+        0.8085,
+        0.7957,
+        0.9519,
+        0.9884,
+        0.9069,
+        0.9665,
+        0.7098,
+        0.6014,
+        0.456,
+        0.2284
+      ],
+      "rs_bar_qqq": [
+        0.9387,
+        0.729,
+        0.4856,
+        0.3309,
+        0.1007,
+        0.0,
+        0.2232,
+        0.1916,
+        0.1837,
+        0.3718,
+        0.8619,
+        0.6995,
+        0.9212,
+        1.0,
+        0.7463,
+        0.7871,
+        0.437,
+        0.5016,
+        0.3618,
+        0.0298
+      ],
+      "ibd_raw": 1.2812,
+      "sector": "Consumer Discretionary",
+      "industry": "Marine Transportation",
+      "ibd_rs": 74
     },
     {
       "ticker": "NZTCF",
@@ -269120,7 +268896,7 @@
       "ibd_raw": 1.2288,
       "sector": "Consumer Discretionary",
       "industry": "Consumer Specialties",
-      "ibd_rs": 69
+      "ibd_rs": 68
     },
     {
       "ticker": "PBI",
@@ -279036,7 +278812,7 @@
     },
     {
       "ticker": "KALV",
-      "name": "KalVista Pharmaceuticals, Inc.",
+      "name": "KalVista Pharmaceuticals Inc",
       "daily_pct": 0.0,
       "one_month_pct": 0.9,
       "rs_sts_spy": 53,
@@ -282316,7 +282092,7 @@
       "ibd_raw": 1.1626,
       "sector": "Real Estate",
       "industry": "Real Estate Investment Trusts",
-      "ibd_rs": 60
+      "ibd_rs": 61
     },
     {
       "ticker": "YELP",
