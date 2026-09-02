@@ -31220,8 +31220,8 @@
     "industry": "Farm Products"
   },
   "TNIPF": {
-    "sector": "Unknown",
-    "industry": "Unknown"
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense"
   },
   "SGAMY": {
     "sector": "Communication Services",
@@ -31772,8 +31772,8 @@
     "industry": "Airlines"
   },
   "NBITF": {
-    "sector": "Unknown",
-    "industry": "Unknown"
+    "sector": "Technology",
+    "industry": "Scientific & Technical Instruments"
   },
   "GUZOF": {
     "sector": "Consumer Defensive",
@@ -37224,8 +37224,8 @@
     "industry": "Internet Content & Information"
   },
   "TKMSF": {
-    "sector": "Unknown",
-    "industry": "Unknown"
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense"
   },
   "DELKY": {
     "sector": "Energy",
