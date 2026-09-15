@@ -38220,8 +38220,8 @@
     "industry": "Gold"
   },
   "SLTMF": {
-    "sector": "Unknown",
-    "industry": "Unknown"
+    "sector": "Industrials",
+    "industry": "Marine Shipping"
   },
   "SUPIF": {
     "sector": "Industrials",
@@ -38490,5 +38490,9 @@
   "WCRIY": {
     "sector": "Energy",
     "industry": "Oil & Gas E&P"
+  },
+  "VRSUY": {
+    "sector": "Industrials",
+    "industry": "Security & Protection Services"
   }
 }
